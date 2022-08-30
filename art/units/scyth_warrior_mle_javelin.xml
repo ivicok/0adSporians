@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actor version="1">
+	<castshadow />
+	<group>
+		<variant>
+			<props>
+				<prop actor="props/head_hunter_mle.xml" attachpoint="head" />
+			</props>
+			<animations>
+				<animation file="units/0ad_swim_idle.dae" name="Float" id="float" frequency="1" speed="60"/>
+				<animation file="units/0ad_swim_move.dae" name="Swim" id="swim" frequency="1" speed="50"/>
+				<animation file="units/0ad_boat_crew_mle.dae" name="garrisoned" id="g_idle1" frequency="1" speed="50"/>
+			</animations>
+		</variant>
+	</group>
+	<group>
+		<variant frequency="1" name="cloth">
+			<mesh>units/0ad_mle.dae</mesh>
+			<textures>
+				<texture file="body_mle.png" name="baseTex" />
+			</textures>
+		</variant>
+		<variant frequency="1" name="tattoo">
+			<mesh>units/0ad_mle_tattoo.dae</mesh>
+			<textures>
+				<texture file="body_mle_tattoo.png" name="baseTex" />
+			</textures>
+		</variant>
+		<variant frequency="1" name="wool">
+			<mesh>units/0ad_mle_wool.dae</mesh>
+			<textures>
+				<texture file="body_mle.png" name="baseTex" />
+			</textures>
+		</variant>
+		<variant name="winter_1">
+			<mesh>units/0ad_mle_fur.dae</mesh>
+			<textures>
+				<texture file="body_mle.png" name="baseTex" />
+			</textures>
+		</variant>
+		<variant name="winter_2">
+			<mesh>units/0ad_mle_wool_hunt.dae</mesh>
+			<textures>
+				<texture file="body_mle.png" name="baseTex" />
+			</textures>
+		</variant>
+		<variant name="winter_3">
+			<mesh>units/0ad_mle_fur_b.dae</mesh>
+			<textures>
+				<texture file="body_mle.png" name="baseTex" />
+			</textures>
+		</variant>
+	</group>
+	<group>
+		<variant name="round_jav" frequency="1">
+			<props>
+				<prop actor="props/s_round.xml" attachpoint="l_weapon" />
+				<prop actor="props/s_javelin.xml" attachpoint="l_weapon" />
+				<prop actor="props/w_javelin_proj.xml" attachpoint="r_weapon" />
+				<prop actor="props/w_javelin_proj.xml" attachpoint="projectile" />
+			</props>
+		</variant>
+		<variant name="buckler_jav" frequency="1">
+			<props>
+				<prop actor="props/s_buckler.xml" attachpoint="l_weapon" />
+				<prop actor="props/s_javelin.xml" attachpoint="l_weapon" />
+				<prop actor="props/w_javelin_proj.xml" attachpoint="r_weapon" />
+				<prop actor="props/w_javelin_proj.xml" attachpoint="projectile" />
+			</props>
+		</variant>
+		<variant name="round_stick" frequency="1">
+			<props>
+				<prop actor="props/s_round.xml" attachpoint="l_weapon" />
+				<prop actor="props/s_stick.xml" attachpoint="l_weapon" />
+				<prop actor="props/w_stick_proj.xml" attachpoint="r_weapon" />
+				<prop actor="props/w_stick_proj.xml" attachpoint="projectile" />
+			</props>
+		</variant>
+		<variant name="jav_only" frequency="1">
+			<props>
+				<prop actor="props/s_javelin.xml" attachpoint="l_weapon" />
+				<prop actor="props/w_javelin_proj.xml" attachpoint="r_weapon" />
+				<prop actor="props/w_javelin_proj.xml" attachpoint="projectile" />
+			</props>
+		</variant>
+		<variant name="stick_only" frequency="1">
+			<props>
+				<prop actor="props/s_stick.xml" attachpoint="l_weapon" />
+				<prop actor="props/w_stick_proj.xml" attachpoint="r_weapon" />
+				<prop actor="props/w_stick_proj.xml" attachpoint="projectile" />
+			</props>
+		</variant>
+	</group>
+	<group>
+		<variant name="no_sidearm" frequency="1"/>
+		<variant name="sidearm" frequency="1">
+			<props>
+				<prop actor="props/e_sheath_mle.xml" attachpoint="belt" />
+			</props>
+		</variant>
+	</group>
+	<group>
+		<variant file="javelinist_mle_attack_ranged.xml" frequency="1"/>
+		<variant file="0ad_build.xml"/>
+		<variant file="0ad_gather_grain_mle.xml"/>
+		<variant file="0ad_gather_fruit_mle.xml"/>
+		<variant file="0ad_gather_meat_mle.xml"/>
+		<variant file="0ad_gather_ore.xml"/>
+		<variant file="0ad_gather_rock.xml"/>
+		<variant file="0ad_gather_ruins.xml"/>
+		<variant file="0ad_gather_skull_mle.xml"/>
+		<variant file="0ad_gather_tree.xml"/>
+	</group>
+</actor>

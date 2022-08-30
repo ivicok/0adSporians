@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actor version="1">
+	<castshadow />
+	<group>
+		<variant>
+			<props>
+				<prop actor="props/e_quiver_fem.xml" attachpoint="belt" />
+			</props>
+			<animations>
+				<animation file="units/0ad_fem_run.dae" name="Run" id="run" frequency="1" speed="7"/>
+				<animation file="units/0ad_fem_walk.dae" name="Walk" id="walk" frequency="1" speed="7"/>
+				<animation file="units/0ad_fem_death1.dae" name="Death" id="death1" frequency="1" speed="80"/>
+				<animation file="units/0ad_fem_death2.dae" name="Death" id="death2" frequency="1" speed="80"/>
+			</animations>
+		</variant>
+	</group>
+	<group>
+		<variant frequency="1" name="leather">
+			<mesh>units/0ad_fem_horse_archer_legs.dae</mesh>
+			<textures>
+				<texture file="body_fem_scale.png" name="baseTex" />
+			</textures>
+		</variant>
+	</group>
+	<group>
+		<variant name="bow" frequency="1">
+			<animations>
+				<animation file="units/0ad_horse_fem_idle_spear.dae" name="Idle" id="idle1" frequency="1" speed="80"/>
+				<animation file="units/0ad_horse_fem_walk_bow.dae" name="Walk" id="idle1" frequency="1" speed="12"/>
+				<animation file="units/0ad_horse_fem_walk_bow.dae" name="Run" id="idle1" frequency="1" speed="24"/>
+				<animation file="units/0ad_horse_mle_shot_bow.dae" name="attack_ranged" event="0.5" id="ranged" frequency="1" speed="60"/>
+			</animations>
+		</variant>
+	</group>
+	<material>player_trans.xml</material>
+</actor>

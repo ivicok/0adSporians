@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="fast_bovidae.xml" name="Base"/>
+  </group>
+  <group>
+    <variant frequency="1">
+      <mesh>units/test_aurochs.dae</mesh>
+      <props>
+        <prop actor="props/aurochs_rider_prop_fem.xml" attachpoint="neck"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Brown">
+      <textures>
+        <texture file="skeletal/animal_zebu_brown.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="2" name="Black">
+      <textures>
+        <texture file="skeletal/animal_zebu_black.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="100" name="Idle"/>
+    <variant file="quadraped/base_bovidae_death.xml" name="death"/>
+  </group>
+  <material>default.xml</material>
+</actor>

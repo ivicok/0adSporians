@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <mesh>skeletal/pony.dae</mesh>
+      <props>
+        <prop actor="units/scyth_raider_mle.xml" attachpoint="rider"/>
+	    <prop actor="props/e_blanket_pony.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+	<variant file="quadraped/pony_bay_01.xml" frequency="1" name="bay_01"/>
+	<variant file="quadraped/pony_bay_02.xml" frequency="1" name="bay_02"/>
+    <variant file="quadraped/pony_black.xml" frequency="1" name="black"/>
+	<variant file="quadraped/pony_brown.xml" frequency="1" name="brown"/>
+	<variant file="quadraped/pony_chestnut_01.xml" frequency="1" name="chest_01"/>
+	<variant file="quadraped/pony_chestnut_02.xml" frequency="1" name="chest_02"/>
+	<variant file="quadraped/pony_gray.xml" frequency="1" name="gray"/>
+	<variant file="quadraped/pony_spotted.xml" frequency="1" name="spotted"/>
+  </group>
+  <group>
+    <variant file="quadraped/base_pony_pace.xml" name="Horse-Pace" frequency="1"/>
+    <variant file="quadraped/pony_gather_meat.xml" name="gather_meat">
+      <props>
+        <prop actor="units/scyth_raider_mle.xml" attachpoint="rider_R"/>
+      </props>
+    </variant>
+    <variant file="quadraped/pony_gather_skulls.xml" name="gather_trophy">
+      <props>
+        <prop actor="units/scyth_raider_mle.xml" attachpoint="rider_R"/>
+      </props>
+    </variant>
+  </group>
+  <material>no_trans_parallax_spec.xml</material>
+</actor>
