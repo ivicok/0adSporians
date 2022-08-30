@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actor version="1">
+	<castshadow />
+	<group>
+		<variant>
+			<props>
+				<prop actor="props/head_raider_mle.xml" attachpoint="head" />
+				<prop actor="props/w_arrow.xml" attachpoint="r_weapon" />
+			</props>
+			<animations>
+				<animation file="units/0ad_fem_guard_bow.dae" name="Idle" id="idle1" frequency="1" speed="80"/>
+				<animation file="units/0ad_mle_run.dae" name="Run" id="run" frequency="1" speed="7"/>
+				<animation file="units/0ad_fem_walk.dae" name="Walk" id="walk" frequency="1" speed="7"/>
+				<animation file="units/0ad_fem_death1.dae" name="Death" id="death1" frequency="1" speed="80"/>
+				<animation file="units/0ad_fem_death2.dae" name="Death" id="death2" frequency="1" speed="80"/>
+			</animations>
+		</variant>
+	</group>
+	<group>
+		<variant frequency="1" name="leather">
+			<mesh>units/0ad_mle_horse_archer_torso.dae</mesh>
+			<textures>
+				<texture file="body_mle_scale.png" name="baseTex" />
+			</textures>
+		</variant>
+		<variant frequency="1" name="tattoo">
+			<mesh>units/0ad_mle_horse_archer_torso2.dae</mesh>
+			<textures>
+				<texture file="body_mle_iron.png" name="baseTex" />
+			</textures>
+		</variant>
+		<variant frequency="1" name="fancy">
+			<mesh>units/0ad_mle_horse_archer_torso3.dae</mesh>
+			<textures>
+				<texture file="body_mle_fancy.png" name="baseTex" />
+			</textures>
+		</variant>
+	</group>
+	<group>
+		<variant name="reflex">
+			<props>
+				<prop actor="props/w_bow_reflex_armed.xml" attachpoint="l_bow" />
+			</props>
+		</variant>
+		<variant name="composite">
+			<props>
+				<prop actor="props/w_bow_composite_armed.xml" attachpoint="l_bow" />
+			</props>
+		</variant>
+	</group>
+	<group>
+		<variant frequency="1" name="Idle"/>
+		<variant name="attack_ranged">
+			<animations>
+				<animation file="units/0ad_fem_shot_bow.dae" load="0.72" name="attack_ranged" id="Attack1" speed="80"/>
+			</animations>
+		</variant>
+	</group>
+	<material>player_trans.xml</material>
+</actor>

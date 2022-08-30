@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <mesh>props/0ad_fem_head.dae</mesh>
+    </variant>
+  </group>
+	<group>
+	<variant frequency="1" name="basic">
+	  <textures>
+		<texture file="body_fem_head.png" name="baseTex" />
+	  </textures>
+	</variant>
+	<variant frequency="1" name="scarred">
+	  <textures>
+		<texture file="body_fem_head_black.png" name="baseTex" />
+	  </textures>
+	</variant>
+	<variant frequency="1" name="painted">
+	  <textures>
+		<texture file="body_fem_head_blond.png" name="baseTex" />
+	  </textures>
+	</variant>
+	</group>
+	<group>
+		<variant frequency="1" name="hair_fem1">
+			<props>
+				<prop actor="props/hair_fem1.xml" attachpoint="hair" />
+			</props>
+		</variant>
+		<variant frequency="1" name="hair_fem2">
+			<props>
+				<prop actor="props/hair_fem2.xml" attachpoint="hair" />
+			</props>
+		</variant>
+		<variant frequency="1" name="hair_fem3">
+			<props>
+				<prop actor="props/hair_fem3.xml" attachpoint="hair" />
+			</props>
+		</variant>
+		<variant frequency="1" name="hair_fem5">
+			<props>
+				<prop actor="props/hair_fem5.xml" attachpoint="hair" />
+			</props>
+		</variant>
+	</group>
+</actor>

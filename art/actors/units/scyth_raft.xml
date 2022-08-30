@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actor version="1">
+  <castshadow/>
+  <float/>
+  <group>
+    <variant frequency="100" name="raft">
+      <mesh>units/0ad_raft.dae</mesh>
+      <props>
+        <prop actor="props/e_raft_sail.xml" attachpoint="sail"/>
+        <prop actor="props/e_raft_load.xml" attachpoint="stuff"/>
+      </props>
+      <textures>
+        <texture file="structural/celt_ship.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="fem">
+      <props>
+        <prop actor="units/scyth_boatman_fem.xml" attachpoint="rower"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="mle">
+      <props>
+        <prop actor="units/scyth_boatman_mle.xml" attachpoint="rower"/>
+      </props>
+    </variant>
+    <variant name="winter_1">
+      <props>
+        <prop actor="units/scyth_boatman_mle_winter.xml" attachpoint="rower"/>
+      </props>
+    </variant>
+    <variant name="winter_2">
+      <props>
+        <prop actor="units/scyth_boatman_fem_winter.xml" attachpoint="rower"/>
+      </props>
+    </variant>
+    <variant name="winter_3">
+      <props>
+        <prop actor="units/scyth_boatman_mle_winter.xml" attachpoint="rower"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant name="walk"/>
+    <variant name="run"/>
+  </group>
+  <material>player_trans.xml</material>
+</actor>

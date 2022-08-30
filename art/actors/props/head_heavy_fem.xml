@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <mesh>props/0ad_fem_head.dae</mesh>
+    </variant>
+  </group>
+	<group>
+	<variant frequency="1" name="basic">
+	  <textures>
+		<texture file="body_fem_head.png" name="baseTex" />
+	  </textures>
+	</variant>
+	<variant frequency="1" name="scarred">
+	  <textures>
+		<texture file="body_fem_head_black.png" name="baseTex" />
+	  </textures>
+	</variant>
+	<variant frequency="1" name="painted">
+	  <textures>
+		<texture file="body_fem_head_blond.png" name="baseTex" />
+	  </textures>
+	</variant>
+	</group>
+	<group>
+		<variant frequency="1" name="helmet_la-tene">
+			<props>
+				<prop actor="props/hair_fem4.xml" attachpoint="hair" />
+				<prop actor="props/head_fem_la-tene.xml" attachpoint="helmet" />
+			</props>
+		</variant>
+		<variant frequency="1" name="helmet_phrygian">
+			<props>
+				<prop actor="props/hair_fem4.xml" attachpoint="hair" />
+				<prop actor="props/head_fem_phrygian.xml" attachpoint="helmet" />
+			</props>
+		</variant>
+		<variant frequency="1" name="helmet_corinthian">
+			<props>
+				<prop actor="props/hair_fem4.xml" attachpoint="hair" />
+				<prop actor="props/head_fem_corinthian.xml" attachpoint="helmet" />
+			</props>
+		</variant>
+		<variant frequency="1" name="helmet_spangen">
+			<props>
+				<prop actor="props/hair_fem4.xml" attachpoint="hair" />
+				<prop actor="props/head_fem_spangen.xml" attachpoint="helmet" />
+			</props>
+		</variant>
+	</group>
+</actor>

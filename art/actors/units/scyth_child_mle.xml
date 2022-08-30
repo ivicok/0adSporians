@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actor version="1">
+	<castshadow />
+	<group>
+		<variant>
+			<props>
+				<prop actor="props/head_child_mle.xml" attachpoint="head" />
+			</props>
+			<animations>
+				<animation file="units/0ad_child_idle.dae" name="Idle" id="idle1" frequency="1" speed="80"/>
+				<animation file="units/0ad_child_run.dae" name="Run" id="run" frequency="1" speed="7"/>
+				<animation file="units/0ad_child_run.dae" name="Walk" id="walk" frequency="1" speed="10"/>
+				<animation file="units/0ad_mle_dance.dae" name="promotion" id="promotion" frequency="1" speed="100"/>
+				<animation file="units/0ad_fem_death1.dae" name="Death" id="death1" frequency="1" speed="80"/>
+				<animation file="units/0ad_fem_death2.dae" name="Death" id="death2" frequency="1" speed="80"/>
+			</animations>
+		</variant>
+	</group>
+	<group>
+		<variant frequency="1" name="cloth">
+			<mesh>units/0ad_mle_child.dae</mesh>
+			<textures>
+				<texture file="body_mle.png" name="baseTex" />
+			</textures>
+		</variant>
+		<variant frequency="1" name="caftan">
+			<mesh>units/0ad_mle_child_caftan.dae</mesh>
+			<textures>
+				<texture file="body_mle.png" name="baseTex" />
+			</textures>
+		</variant>
+		<variant frequency="1" name="wool">
+			<mesh>units/0ad_mle_child_wool.dae</mesh>
+			<textures>
+				<texture file="body_mle.png" name="baseTex" />
+			</textures>
+		</variant>
+		<variant name="winter_1">
+			<mesh>units/0ad_mle_child_fur.dae</mesh>
+			<props>
+				<prop actor="props/head_child_mle_winter.xml" attachpoint="head" />
+			</props>
+			<textures>
+				<texture file="body_mle.png" name="baseTex" />
+			</textures>
+		</variant>
+		<variant name="winter_2">
+			<mesh>units/0ad_mle_child_fur.dae</mesh>
+			<props>
+				<prop actor="props/head_child_mle_winter.xml" attachpoint="head" />
+			</props>
+			<textures>
+				<texture file="body_mle.png" name="baseTex" />
+			</textures>
+		</variant>
+		<variant name="winter_3">
+			<mesh>units/0ad_mle_child_fur.dae</mesh>
+			<props>
+				<prop actor="props/head_child_mle_winter.xml" attachpoint="head" />
+				<prop actor="props/fur_shoulder_mle.xml" attachpoint="spine" />
+			</props>
+			<textures>
+				<texture file="body_mle.png" name="baseTex" />
+			</textures>
+		</variant>
+	</group>
+	<group>
+		<variant name="Idle" frequency="1"/>
+		<variant file="0ad_build_child.xml"/>
+		<variant file="0ad_gather_grain_child.xml"/>
+		<variant file="0ad_gather_fruit_child.xml"/>
+		<variant file="0ad_gather_meat_child.xml"/>
+		<variant file="0ad_gather_ore_child.xml"/>
+		<variant file="0ad_gather_rock_child.xml"/>
+		<variant file="0ad_gather_ruins_child.xml"/>
+		<variant file="0ad_gather_skull_child.xml"/>
+		<variant file="0ad_gather_tree_child.xml"/>
+	</group>
+</actor>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <mesh>props/0ad_mle_head_child.dae</mesh>
+    </variant>
+  </group>
+	<group>
+	<variant frequency="1" name="basic">
+	  <textures>
+		<texture file="body_fem_head.png" name="baseTex" />
+	  </textures>
+	</variant>
+	</group>
+	<group>
+		<variant frequency="1" name="hair_mle1">
+			<props>
+				<prop actor="props/hair_mle_child.xml" attachpoint="hair" />
+			</props>
+		</variant>
+	</group>
+</actor>

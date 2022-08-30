@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actor version="1">
+	<castshadow />
+	<group>
+		<variant frequency="1" name="Base">
+			<props>
+				<prop actor="props/head_scyth_mle.xml" attachpoint="head" />
+			</props>
+			<animations>
+				<animation file="units/0ad_boat_idle.dae" name="Idle" id="idle1" frequency="1" speed="80"/>
+				<animation file="units/0ad_boat_row.dae" name="Run" id="run" frequency="1" speed="20"/>
+				<animation file="units/0ad_boat_row.dae" name="Walk" id="walk" frequency="1" speed="20"/>
+				<animation file="units/0ad_mle_dance.dae" name="promotion" id="promotion" frequency="1" speed="100"/>
+				<animation file="units/0ad_fem_death1.dae" name="Death" id="death1" frequency="1" speed="80"/>
+				<animation file="units/0ad_fem_death2.dae" name="Death" id="death2" frequency="1" speed="80"/>
+			</animations>
+		</variant>
+	</group>
+	<group>
+		<variant frequency="1" name="cloth">
+			<mesh>units/0ad_mle.dae</mesh>
+			<textures>
+				<texture file="body_mle.png" name="baseTex" />
+			</textures>
+		</variant>
+		<variant frequency="1" name="tattoo">
+			<mesh>units/0ad_mle_cloth_b.dae</mesh>
+			<textures>
+				<texture file="body_mle.png" name="baseTex" />
+			</textures>
+		</variant>
+		<variant frequency="1" name="cloth_c">
+			<mesh>units/0ad_mle_cloth_c.dae</mesh>
+			<textures>
+				<texture file="body_mle.png" name="baseTex" />
+			</textures>
+		</variant>
+		<variant frequency="1" name="wool">
+			<mesh>units/0ad_mle_wool.dae</mesh>
+			<textures>
+				<texture file="body_mle.png" name="baseTex" />
+			</textures>
+		</variant>
+	</group>
+	<group>
+		<variant name="Idle" frequency="1">
+			<props>
+				<prop actor="props/w_oar.xml" attachpoint="r_weapon" />
+			</props>
+			<animations>
+				<animation file="units/0ad_boat_idle.dae" name="Idle" id="idle1" frequency="1" speed="80"/>
+			</animations>
+		</variant>
+		<variant name="gather_fish">
+			<props>
+				<prop actor="props/w_fishing_rod.xml" attachpoint="r_weapon" />
+			</props>
+			<animations>
+				<animation file="units/0ad_boat_idle.dae" name="Idle" id="idle1" frequency="1" speed="80"/>
+				<animation file="units/0ad_boat_fish_mle.dae" name="gather_fish" id="gather_fish1" frequency="1" speed="80"/>
+			</animations>
+		</variant>
+	</group>
+</actor>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actor version="1">
+	<castshadow />
+	<group>
+		<variant>
+			<props>
+				<prop actor="props/head_shaman_mle.xml" attachpoint="head" />
+				<prop actor="particle/p_bolt_shot.xml" attachpoint="projectile" />
+			</props>
+			<animations>
+				<animation file="units/0ad_mle_run.dae" name="Run" id="run" frequency="1" speed="7"/>
+				<animation file="units/0ad_mle_walk.dae" name="Walk" id="walk" frequency="1" speed="15"/>
+				<animation file="units/0ad_boat_crew_mle.dae" name="garrisoned" id="g_idle1" frequency="1" speed="50"/>
+				<animation file="units/0ad_fem_death1.dae" name="Death" id="death1" frequency="1" speed="80"/>
+				<animation file="units/0ad_fem_death2.dae" name="Death" id="death2" frequency="1" speed="80"/>
+				<animation file="units/0ad_mle_dance.dae" name="Heal" id="heal1" frequency="1" speed="100"/>
+				<animation file="units/0ad_fem_kneel.dae" name="Heal" id="heal2" frequency="1" speed="80"/>
+			</animations>
+		</variant>
+	</group>
+	<group>
+		<variant frequency="1" name="robe">
+			<mesh>units/0ad_mle_shaman.dae</mesh>
+			<textures>
+				<texture file="body_mle_fancy.png" name="baseTex" />
+			</textures>
+		</variant>
+		<variant frequency="1" name="fur">
+			<mesh>units/0ad_mle_shaman.dae</mesh>
+			<props>
+				<prop actor="props/fur_shoulder_mle.xml" attachpoint="spine" />
+			</props>
+			<textures>
+				<texture file="body_mle_fancy.png" name="baseTex" />
+			</textures>
+		</variant>
+		<variant frequency="1" name="fancy">
+			<mesh>units/0ad_mle_fancy.dae</mesh>
+			<textures>
+				<texture file="body_mle_fancy.png" name="baseTex" />
+			</textures>
+		</variant>
+		<variant name="winter_1">
+			<mesh>units/0ad_mle_fur.dae</mesh>
+			<textures>
+				<texture file="body_mle.png" name="baseTex" />
+			</textures>
+		</variant>
+		<variant name="winter_2">
+			<mesh>units/0ad_mle_shaman.dae</mesh>
+			<props>
+				<prop actor="props/fur_shoulder_mle.xml" attachpoint="spine" />
+			</props>
+			<textures>
+				<texture file="body_mle_fancy.png" name="baseTex" />
+			</textures>
+		</variant>
+		<variant name="winter_3">
+			<mesh>units/0ad_mle_fancy_caftan.dae</mesh>
+			<textures>
+				<texture file="body_mle_fancy.png" name="baseTex" />
+			</textures>
+		</variant>
+	</group>
+	<group>
+		<variant name="dagger" frequency="1">
+			<props>
+				<prop actor="props/w_bone.xml" attachpoint="r_weapon" />
+			</props>
+			<animations>
+				<animation file="units/0ad_mle_idle_1hand.dae" name="Idle" id="idle1" frequency="1" speed="80"/>
+				<animation file="units/0ad_mle_guard_shield.dae" name="Phalanx_Front" id="guard1" frequency="1" speed="40"/>
+				<animation file="units/0ad_mle_guard_shield.dae" name="Phalanx_Mid" id="guard1" frequency="1" speed="40"/>
+				<animation file="units/0ad_mle_guard_shield.dae" name="Phalanx_Back" id="guard1" frequency="1" speed="40"/>
+				<animation event="0.5" file="units/0ad_mle_nach_oberhau_1hand.dae" name="attack_melee" id="attack1" speed="50"/>
+				<animation event="0.5" file="units/0ad_mle_vor_stich_1hand.dae" name="attack_melee" id="attack2" speed="50"/>
+				<animation event="0.5" file="units/0ad_mle_indes_oberhau_1hand.dae" name="attack_melee" id="attack3" speed="50"/>
+				<animation file="units/0ad_mle_dance.dae" name="attack_ranged" id="attack4" frequency="1" speed="100"/>
+			</animations>
+		</variant>
+		<variant name="staff_goat" frequency="1">
+			<props>
+				<prop actor="props/w_staff.xml" attachpoint="r_weapon" />
+			</props>
+			<animations>
+				<animation file="units/0ad_mle_idle_staff.dae" name="Idle" id="idle1" frequency="1" speed="80"/>
+				<animation file="units/0ad_mle_guard_shield.dae" name="Phalanx_Front" id="guard1" frequency="1" speed="40"/>
+				<animation file="units/0ad_mle_guard_shield.dae" name="Phalanx_Mid" id="guard1" frequency="1" speed="40"/>
+				<animation file="units/0ad_mle_guard_shield.dae" name="Phalanx_Back" id="guard1" frequency="1" speed="40"/>
+				<animation event="0.5" file="units/0ad_mle_vor_stich_1hand.dae" name="attack_melee" id="attack2" speed="50"/>
+				<animation event="0.5" file="units/0ad_mle_indes_oberhau_1hand.dae" name="attack_melee" id="attack3" speed="50"/>
+				<animation file="units/0ad_mle_dance.dae" name="attack_ranged" id="attack4" frequency="1" speed="100"/>
+			</animations>
+		</variant>
+		<variant name="staff_human" frequency="1">
+			<props>
+				<prop actor="props/w_staff_b.xml" attachpoint="r_weapon" />
+			</props>
+			<animations>
+				<animation file="units/0ad_mle_idle_staff.dae" name="Idle" id="idle1" frequency="1" speed="80"/>
+				<animation file="units/0ad_mle_guard_shield.dae" name="Phalanx_Front" id="guard1" frequency="1" speed="40"/>
+				<animation file="units/0ad_mle_guard_shield.dae" name="Phalanx_Mid" id="guard1" frequency="1" speed="40"/>
+				<animation file="units/0ad_mle_guard_shield.dae" name="Phalanx_Back" id="guard1" frequency="1" speed="40"/>
+				<animation event="0.5" file="units/0ad_mle_vor_stich_1hand.dae" name="attack_melee" id="attack2" speed="50"/>
+				<animation event="0.5" file="units/0ad_mle_indes_oberhau_1hand.dae" name="attack_melee" id="attack3" speed="50"/>
+				<animation file="units/0ad_mle_dance.dae" name="attack_ranged" id="attack4" frequency="1" speed="100"/>
+			</animations>
+		</variant>
+	</group>
+	<material>player_trans.xml</material>
+</actor>

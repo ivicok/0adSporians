@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actor version="1">
+	<castshadow />
+	<group>
+		<variant>
+			<animations>
+				<animation file="units/0ad_fem_guard_bow.dae" name="Idle" id="idle1" frequency="1" speed="80"/>
+				<animation file="units/0ad_fem_run.dae" name="Run" id="run" frequency="1" speed="7"/>
+				<animation file="units/0ad_fem_walk_bow.dae" name="Walk" id="walk" frequency="1" speed="12"/>
+				<animation file="units/0ad_fem_dance.dae" name="promotion" id="promotion" frequency="1" speed="100"/>
+				<animation file="units/0ad_fem_death1.dae" name="Death" id="death1" frequency="1" speed="80"/>
+				<animation file="units/0ad_fem_death2.dae" name="Death" id="death2" frequency="1" speed="80"/>
+			</animations>
+			<props>
+				<prop actor="props/head_helmet_fem.xml" attachpoint="head" />
+				<prop actor="props/e_quiver_fem.xml" attachpoint="belt" />
+				<prop actor="props/w_arrow_long.xml" attachpoint="r_weapon" />
+				<prop actor="props/e_sheath_fem.xml" attachpoint="belt" />
+			</props>
+		</variant>
+	</group>
+	<group>
+		<variant frequency="1" name="cloth">
+			<mesh>units/0ad_fem_orichalcum.dae</mesh>
+			<textures>
+				<texture file="body_fem_fancy.dds" name="baseTex" />
+			</textures>
+		</variant>
+		<variant frequency="1" name="leather">
+			<mesh>units/0ad_fem_leather.dae</mesh>
+			<textures>
+				<texture file="body_fem_scale.png" name="baseTex" />
+			</textures>
+		</variant>
+		<variant frequency="1" name="scale">
+			<mesh>units/0ad_fem_scale_lt.dae</mesh>
+			<textures>
+				<texture file="body_fem_scale.png" name="baseTex" />
+			</textures>
+		</variant>
+		<variant name="winter_1">
+			<mesh>units/0ad_fem_orichalcum_caftan.dae</mesh>
+			<textures>
+				<texture file="body_fem_fancy.dds" name="baseTex" />
+			</textures>
+		</variant>
+		<variant name="winter_2">
+			<mesh>units/0ad_fem_leather_fur.dae</mesh>
+			<textures>
+				<texture file="body_fem_scale.png" name="baseTex" />
+			</textures>
+		</variant>
+		<variant name="winter_3">
+			<mesh>units/0ad_fem_scale_lt_fur.dae</mesh>
+			<textures>
+				<texture file="body_fem_scale.png" name="baseTex" />
+			</textures>
+		</variant>
+	</group>
+	<group>
+		<variant name="longbow">
+			<props>
+				<prop actor="props/w_bow_long_armed.xml" attachpoint="l_bow" />
+			</props>
+		</variant>
+		<variant name="reflex">
+			<props>
+				<prop actor="props/w_bow_reflex_armed.xml" attachpoint="l_bow" />
+			</props>
+		</variant>
+		<variant name="composite">
+			<props>
+				<prop actor="props/w_bow_composite_armed.xml" attachpoint="l_bow" />
+			</props>
+		</variant>
+	</group>
+	<group>
+		<variant name="shield">
+			<props>
+				<prop actor="props/s_round_elbow.xml" attachpoint="elbow" />
+			</props>
+		</variant>
+		<variant name="no_shield" />
+	</group>
+	<group>
+		<variant frequency="1" name="Idle"/>
+		<variant name="attack_ranged">
+			<animations>
+				<animation file="units/0ad_fem_shot_bow.dae" event="0.5" load="0.72" name="attack_ranged" id="Attack1" speed="80"/>
+			</animations>
+			<props>
+				<prop actor="props/w_arrow_astra_proj.xml" attachpoint="projectile" />
+			</props>
+		</variant>
+		<variant name="attack_melee">
+			<animations>
+				<animation event="0.5" file="units/0ad_fem_indes_oberhau_1hand.dae" name="attack_melee" id="attack1" speed="50"/>
+				<animation event="0.5" file="units/0ad_fem_vor_stich_1hand.dae" name="attack_melee" id="attack2" speed="50"/>
+				<animation event="0.5" file="units/0ad_fem_nach_oberhau_1hand.dae" name="attack_melee" id="attack3" speed="50"/>
+			</animations>
+			<props>
+				<prop actor="props/w_akinaka.xml" attachpoint="r_weapon" />
+				<prop actor="" attachpoint="l_bow" />
+			</props>
+		</variant>
+		<variant name="garrisoned">
+			<animations>
+				<animation file="units/0ad_boat_crew_fem.dae" name="garrisoned" id="g_idle1" frequency="1" speed="50"/>
+			</animations>
+			<props>
+				<prop actor="props/w_bow_armed.xml" attachpoint="r_weapon" />
+				<prop actor="" attachpoint="l_bow" />
+				<prop actor="" attachpoint="projectile" />
+			</props>
+		</variant>
+		<variant file="0ad_build.xml"/>
+		<variant file="0ad_gather_grain_fem.xml"/>
+		<variant file="0ad_gather_fruit_fem.xml"/>
+		<variant file="0ad_gather_meat_fem.xml"/>
+		<variant file="0ad_gather_ore.xml"/>
+		<variant file="0ad_gather_rock.xml"/>
+		<variant file="0ad_gather_ruins.xml"/>
+		<variant file="0ad_gather_skull_fem.xml"/>
+		<variant file="0ad_gather_tree.xml"/>
+	</group>
+	<material>player_trans.xml</material>
+</actor>
