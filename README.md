@@ -22,6 +22,7 @@ The Sporian faction is loosely based on early medieval Sclaveni, so to call it a
 - Winter Variants: most units use different clothes in warm and cold environment.
 
 
+
 - Sporian Unit List
 
 Children (PSl *jauˀnāku/*dēˀwāˀ)
@@ -66,6 +67,7 @@ Raft (PSl *parˀmi)
 
 Sailing ship (PSl *karāˀbu)
 - Heaviest Sporian ship is slightly stronger than bireme, but weaker than trireme, it is also slower. It can carry max. of 15 units.
+
 
 
 References
