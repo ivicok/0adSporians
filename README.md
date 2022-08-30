@@ -6,14 +6,23 @@ The mod has started as an exploration of 0 AD engine's capabilities, without muc
 The Sporian faction is loosely based on early medieval Sclaveni, so to call it a "civilization" would be misleading, as they were considered a prototypical barbarian tribe, with all the stereotypes (cf. Curta 2004), the name "Sporoi" itself coming from Procopius. The idea crystallized while reading on the menace of "Sclavonian Scythians" (Leake 1814) as a supposed cause for the emergence of Balkan Sprachbund. The language tries to be close to the reconstructed Proto-Slavic of Georg Holzer (2011) - from the perspective of diachronic linguistics, each form should be considered with an "*", they are left unaccented (for obvious reasons), and slightly adjusted towards Lithuanian orthography. 
 
 - Houses: can be used to heal garrisoned units from the beginning.
+
 - Gender: most units have both male and female variants. This has some historical basis for Sclaveni (e.g. in Patriarch Nicephorus' account of siege of Constantinople in 626). Male variants deal slightly more damage, female units have a higher resistance. The gender is randomly generated before the training.
+
 - Shaman: heals only a meager amount, enough only to make an idol stay. They serve as drop-off points for skulls and provide auras for nearby melee units. With an idol of Peraunu, the aura raises their attack damage and moving speed. With an idol if Welinˀsu, they recover a small amount of dealt damage from enemy units. Think of dreadlords from Warcraft III.
+
 - Idols: central building of the tribe's cult devoted to Peraunu or Welinˀsu (for now). Only one idol can be built, because the two gods do not like each other very much (idols of Perunъ and Velesъ were kept separated, e.g. in pagan Kiev, as mentioned in Primary Chronicle). They provide a bonus (Peraunu to attack power, Welinˀsu to regeneration), serve as a drop-off points for skulls, and fall appart in time, unless maintained by a Shaman or workers. Protect the idol well: if lost, you will not be allowed to build a second one.
+
 - Sacrifices: fallen enemies sometimes leave an intact skull behind; of course, not very often, as axes are the weapon of choice. Skulls can be collected and brought to the idol or shamans, and then processed into ritual vessels of libation or jewelry for *wulxwāˀ-s. This acts as a resource, which can be used for unit upgrades and magic.
+
 - Totemic Upgrades: most units can be upgraded to totemic variants according to the god, to whom a shrine is built. Peraunu, as a god of war, enables advanced tactics and technologies like horse archery. Welinˀsu, being a god of underworld, provides poison arrows.
+
 - Swimming: light infantry units can traverse water at a reduced speed. Swimming units can carry resources and may enter or exit ships. They can also use melee attacks, but not fire bows or throw javelins.
+
 - Winter Variants: most units use different clothes in warm and cold environment.
 
+
+- Sporian Unit List
 
 Children (PSl *jauˀnāku/*dēˀwāˀ)
 - While not grown and trained enough to join the warband on their exploits, children can provide a helping hand in basic works of the tribe, like gathering food and skulls. However, they are less effective in hard work like lumbering and mining.
@@ -44,7 +53,6 @@ Champion (PSl *wīˀtingu/*xarˀbrīˀkāˀ )
 - Peraunu upgrade: (something more mundane, like a magical axe or whatever)
 - Welinˀsu upgrade: a dragon
 
-
 Shaman (PSl *džiriku/*wulxwāˀ)
 - Support unit. Preserves the cult of gods and other spirits around the tribe. Healing powers are not so powerful, but enough to stop decay of an idol. Furthermore, Shamans can serve as a drop-off point for collected skulls. Only one can be built at time.
 - Peraunu abilities: the Shaman receives a powerful magical attack, effective against buildings. Gives an aura to melee units improving their damage output.
@@ -65,5 +73,8 @@ References
 - Curta 2004 - https://www.academia.edu/422133/The_making_of_the_Slavs_Slavic_ethnogenesis_revisited 
 - Holzer 2011 - http://knjige.ihjj.hr/knjiga/glasovni-razvoj-hrvatskoga-jezika/149/ 
 - Leake 1814 - https://books.google.at/books/about/Researches_in_Greece.html?id=DjxEAAAAcAAJ&redir_esc=y 
-
+- Nicephorus - https://digilib.phil.muni.cz/handle/11222.digilib/136465
+- Primary Chronicle - https://en.wikipedia.org/wiki/Primary_Chronicle
+- Procopius - https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Procopius/Wars/home.html
+- Strategikon - https://en.wikipedia.org/wiki/Strategikon_of_Maurice
 
