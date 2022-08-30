@@ -1,0 +1,20 @@
+
+Attack.js - 1. nontarget check: hack to prevent units to attack "turrets" of horse archers; 2. some checks for swimming
+
+Auras.js - 1. application (and removal) of life drain effect for shaman's aura; 2. control of winter biome (both cf. Health)
+
+Health.js - 1. life drain effect of attacks by injured units against organic enemies, triggered by a specific aura (cf. Auras); the effect of aura is limited to organic melee units by the aura template (vampiric.json); the drain rate is set here to 25%, i.e. the attacker gains 1/4 of dealt damage to its HP; 2. lootable trophies: 50% chance of spawning an entity (skull) on death for the attacker; 3. handling of winter biome actor variants
+
+Identity.js - RequiredTechBuilding element: used for building prerequisites of units in TechnologyManager
+
+ProductionQueue.js - 1. gender randomizer: if templates have gender variants (marked by suffixes _mle and _fem on file names), the AddItem() function will randomly choose between them when adding unit into the queue; 2. shaman variant selection according to the technology activated by the idol
+
+ResourceGatherer.js - added capacity for the "skull" resource; gathering is stopped after each collected skull (the gatherer tends to ignore other skulls in the area and simply goes back towards the drop-off site)
+
+TechnologyManager.js - check for buildings required for production of units (e.g. corral for cavalry, forge for heavy infantry)
+
+TurretHolder.js - 1. stuff for horse archers: sets up rotation, checks for death; 2. stuff for monoxyla: the number of passengers and rowers determines the speed of the boat
+
+UnitAI.js - 1. more stuff for horse archers: "turrets" return to default position when entering the idle state; 2. lootable trophies: prevents units in formation run towards the drop site, when not collecting; 3. swimming: special animations selected for swimming-capable infantry; 4. special animations for units in boats
+
+UnitMotionFlying.js - added animations to various states of movement
