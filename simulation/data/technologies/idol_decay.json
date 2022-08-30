@@ -1,0 +1,15 @@
+{
+	"autoResearch": true,
+	"genericName": "Idol Decay",
+	"description": "Idols require shamans to praise them, otherwise they decay.",
+	"affects": ["Idol"],
+	"requirements": {
+		"entity": {
+			"class": "Idol",
+			"number": 1
+		}
+	},
+	"modifications": [
+		{ "value": "Health/RegenRate", "add": -1 }
+	]
+}

@@ -1,0 +1,82 @@
+{
+	"Code": "pers",
+	"Culture": "pers",
+	"Name": "Sporians",
+	"Emblem": "session/portraits/emblems/emblem_persians.png",
+	"History": "From the depths of Greater Scythia a horde of barbarians marches on the civilized world. Like the Hydra, they have no single ruler, build no empires to last, devouring not only lands, but also peoples of different customs, laws, and languages.",
+	"Music": [
+		{
+			"File": "Eastern_Dreams.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Valley_of_the_Nile.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Land_between_the_two_Seas.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Sands_of_Time.ogg",
+			"Type": "peace"
+		}
+	],
+	"CivBonuses": [],
+	"WallSets": [
+		"structures/pers/wallset_palisade"
+	],
+	"StartEntities": [
+		{
+			"Template": "structures/pers/civil_centre"
+		},
+		{
+			"Template": "units/pers/warrior_mle",
+			"Count": 4
+		},
+		{
+			"Template": "units/pers/warrior_fem",
+			"Count": 2
+		},
+		{
+			"Template": "units/pers/hunter_mle",
+			"Count": 2
+		},
+		{
+			"Template": "units/pers/raider_mle"
+		}
+	],
+	"Formations": [
+		"special/formations/null",
+		"special/formations/box",
+		"special/formations/column_closed",
+		"special/formations/line_closed",
+		"special/formations/column_open",
+		"special/formations/line_open",
+		"special/formations/flank",
+		"special/formations/battle_line",
+		"special/formations/skirmish"
+	],
+	"AINames": [
+		"Ardagasti",
+		"Swentaslāˀwu",
+		"Peiragasti",
+		"Sāˀmu",
+		"Waīˀnuku",
+		"Barunāˀ",
+		"Peribudu",
+		"Akameiru",
+		"Xwālibudu",
+		"Dabragaiza",
+		"Kailagasti",
+		"Mezameiru"
+	],
+	"SkirmishReplacements": {
+		"skirmish/units/default_support_female_citizen": "units/pers/warrior_mle",
+		"skirmish/units/default_infantry_melee_b": "units/pers/warrior_fem",
+		"skirmish/units/default_infantry_ranged_b": "units/pers/hunter_mle",
+		"skirmish/units/default_cavalry": "units/pers/raider_mle",
+		"skirmish/structures/default_house_5": "structures/{civ}/house"
+	},
+	"SelectableInGameSetup": true
+}

@@ -1,0 +1,10 @@
+{
+	"type": "range",
+	"radius": 1,
+	"affects": ["Idol"],
+	"modifications": [
+		{ "value": "Health/RegenRate", "add": -1 }
+	],
+	"auraName": "Decay",
+	"auraDescription": "Idols require shamans to praise them, otherwise they decay."
+}

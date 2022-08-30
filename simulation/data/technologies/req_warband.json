@@ -1,0 +1,18 @@
+{
+	"autoResearch": true,
+	"genericName": "Forge",
+	"specificName": {
+		"pers": "Abrandžīlīˀtja"
+	},
+	"description": "Build a forge to gain access to advanced infantry.",
+	"requirements": {
+		"entity": {
+			"class": "Forge",
+			"number": 1
+		}
+	},
+	"icon": "sword_01.png",
+	"tooltip": "Build a forge to gain access to advanced infantry.",
+	"modifications": [],
+	"soundComplete": "interface/alarm/alarm_phase.xml"
+}

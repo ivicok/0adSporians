@@ -1,0 +1,16 @@
+{
+	"type": "range",
+	"radius": 60,
+	"affects": ["Organic"],
+	"modifications": [
+		{ "value": "Attack/Capture/Capture", "add": 2 },
+		{ "value": "Attack/Melee/Damage/Hack", "multiply": 1.1 },
+		{ "value": "Attack/Melee/Damage/Pierce", "multiply": 1.1 },
+		{ "value": "Attack/Melee/Damage/Crush", "multiply": 1.1 },
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.1 }
+		],
+	"auraName": "Bloodlust",
+	"auraDescription": "Units under the aura's influence gain a 10% bonus to melee attack damage and walking speed.",
+	"requiredTechnology": "req_peraunu",
+	"overlayIcon": "art/textures/ui/session/auras/attack_bonus.png"
+}

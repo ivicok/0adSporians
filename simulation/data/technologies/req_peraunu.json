@@ -1,0 +1,18 @@
+{
+	"autoResearch": true,
+	"genericName": "Idol",
+	"specificName": {
+		"pers": "Kāˀpu Peraunuju"
+	},
+	"description": "Requires an Idol of Peraunu.",
+	"requirements": {
+		"entity": {
+			"class": "Peraunu",
+			"number": 1
+		}
+	},
+	"icon": "horse_trainer.png",
+	"tooltip": "Build an idol to upgrade unit.",
+	"modifications": [],
+	"soundComplete": "interface/alarm/alarm_phase.xml"
+}

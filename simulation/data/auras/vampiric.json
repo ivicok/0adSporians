@@ -1,0 +1,10 @@
+{
+	"type": "vampiric",
+	"radius": 80,
+	"affects": ["Organic", "Melee"],
+	"modifications": [],
+	"auraName": "Vampiric Aura",
+	"auraDescription": "Melee units under the aura's influence regain 25% of dealt damage as bonus hitpoints.",
+	"requiredTechnology": "req_welinsu",
+	"overlayIcon": "art/textures/ui/session/auras/heal.png"
+}

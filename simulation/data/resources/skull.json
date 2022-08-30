@@ -1,0 +1,11 @@
+{
+	"code": "skull",
+	"name": "Skulls",
+	"description": "Collect trophies from defeated enemies.",
+	"order": 4.1,
+	"subtypes": {
+		"trophy": "Trophy"
+	},
+	"truePrice": 100,
+	"aiAnalysisInfluenceGroup": "ignore"
+}

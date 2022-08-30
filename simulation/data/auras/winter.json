@@ -1,0 +1,9 @@
+{
+	"type": "winter",
+	"radius": 10000,
+	"affects": ["Biome"],
+	"affectedPlayers": ["Enemy"],
+	"modifications": [],
+	"auraName": "Winter",
+	"auraDescription": "A tree specific for the winter biome."
+}

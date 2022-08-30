@@ -1,0 +1,14 @@
+{
+	"genericName": "Ramˀpeijāˀ",
+	"description": "Fiercely devoted to Peraunu, the ancient tribe of Walˀxeine will supply your warriors with their ritual weapons with a high hack damage bonus, if you provide the right sacrifice.",
+	"cost": {
+		"metal": 100
+	},
+	"icon": "sword_01.png",
+	"tooltip": "Warriors: +25% melee hack damage.",
+	"modifications": [
+		{ "value": "Attack/Melee/Damage/Hack", "multiply": 1.25 }
+	],
+	"affects": ["Soldier !Elephant"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

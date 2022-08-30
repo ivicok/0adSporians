@@ -1,0 +1,15 @@
+{
+	"autoResearch": true,
+	"genericName": "any idol",
+	"description": "Build an idol to train shamans.",
+	"requirements": {
+		"entity": {
+			"class": "Idol",
+			"number": 1
+		}
+	},
+	"icon": "horse_trainer.png",
+	"tooltip": "Build an idol to train shamans.",
+	"modifications": [],
+	"soundComplete": "interface/alarm/alarm_phase.xml"
+}
