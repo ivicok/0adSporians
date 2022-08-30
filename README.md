@@ -22,9 +22,7 @@ The Sporian faction is loosely based on early medieval Sclaveni, so to call it a
 - Winter Variants: most units use different clothes in warm and cold environment.
 
 
-
-- Sporian Unit List
-
+ 
 Children (PSl *jauˀnāku/*dēˀwāˀ)
 - While not grown and trained enough to join the warband on their exploits, children can provide a helping hand in basic works of the tribe, like gathering food and skulls. However, they are less effective in hard work like lumbering and mining.
 
@@ -69,7 +67,7 @@ Sailing ship (PSl *karāˀbu)
 - Heaviest Sporian ship is slightly stronger than bireme, but weaker than trireme, it is also slower. It can carry max. of 15 units.
 
 
-
+ 
 References
 - 0 A.D. - https://github.com/0ad/0ad 
 - Curta 2004 - https://www.academia.edu/422133/The_making_of_the_Slavs_Slavic_ethnogenesis_revisited 
