@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <mesh>props/0ad_mle_head.dae</mesh>
+    </variant>
+  </group>
+	<group>
+	<variant frequency="1" name="basic">
+	  <textures>
+		<texture file="body_mle_head.png" name="baseTex" />
+	  </textures>
+	</variant>
+	<variant frequency="1" name="scarred">
+	  <textures>
+		<texture file="body_mle_head_black.png" name="baseTex" />
+	  </textures>
+	</variant>
+	</group>
+	<group>
+		<variant frequency="1" name="hair_mle1">
+			<props>
+				<prop actor="props/hair_mle1.xml" attachpoint="hair" />
+			</props>
+		</variant>
+		<variant frequency="1" name="hair_mle2">
+			<props>
+				<prop actor="props/hair_mle2.xml" attachpoint="hair" />
+			</props>
+		</variant>
+		<variant frequency="1" name="hair_mle3">
+			<props>
+				<prop actor="props/hair_mle3.xml" attachpoint="hair" />
+			</props>
+		</variant>
+		<variant frequency="3" name="cap">
+			<props>
+				<prop actor="props/head_mle_cap.xml" attachpoint="helmet" />
+			</props>
+		</variant>
+	</group>
+	<group>
+		<variant frequency="1" name="beard1">
+			<props>
+				<prop actor="props/beard_mle1.xml" attachpoint="beard" />
+			</props>
+		</variant>
+		<variant frequency="1" name="beard2">
+			<props>
+				<prop actor="props/beard_mle2.xml" attachpoint="beard" />
+			</props>
+		</variant>
+		<variant frequency="1" name="beard3">
+			<props>
+				<prop actor="props/beard_mle3.xml" attachpoint="beard" />
+			</props>
+		</variant>
+		<variant frequency="1" name="no_beard">
+		</variant>
+	</group>
+</actor>

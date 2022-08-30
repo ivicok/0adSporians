@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+	<group>
+		<variant frequency="1" name="pelta">
+		  <mesh>props/s_aspis.dae</mesh>
+		</variant>
+	</group>   
+	<group>
+		<variant frequency="1" name="var_1">
+		  <textures>
+			<texture file="props/shield_hv_remap_1.dds" name="baseTex"/>
+		  </textures>
+		</variant>
+		<variant frequency="1" name="var_2">
+		  <textures>
+			<texture file="props/shield_hv_remap_2.dds" name="baseTex"/>
+		  </textures>
+		</variant>
+		<variant frequency="1" name="var_3">
+		  <textures>
+			<texture file="props/shield_hv_remap_3.dds" name="baseTex"/>
+		  </textures>
+		</variant>
+		<variant frequency="1" name="var_4">
+		  <textures>
+			<texture file="props/shield_hv_remap_4.dds" name="baseTex"/>
+		  </textures>
+		</variant>
+		<variant frequency="1" name="var_5">
+		  <textures>
+			<texture file="props/shield_hv_remap_5.dds" name="baseTex"/>
+		  </textures>
+		</variant>
+	</group>  
+  <material>player_trans.xml</material>
+</actor>

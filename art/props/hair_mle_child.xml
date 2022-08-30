@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <mesh>props/0ad_mle_hair_child.dae</mesh>
+    </variant>
+  </group>
+   <group>
+    <variant frequency="1" name="hair-red">
+      <textures>
+		<texture file="body_mle_head.png" name="baseTex" />
+      </textures>
+    </variant>
+    <variant frequency="1" name="hair-black">
+      <textures>
+		<texture file="body_mle_head_black.png" name="baseTex" />
+      </textures>
+    </variant>
+    <variant frequency="1" name="hair-blond">
+      <textures>
+		<texture file="body_mle_head_blond.png" name="baseTex" />
+      </textures>
+    </variant>
+  </group>
+</actor>

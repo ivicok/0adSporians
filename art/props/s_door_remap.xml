@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+	<group>
+	<variant>
+	  <mesh>props/s_door_remap.dae</mesh>
+	</variant>
+	</group>
+	<group>
+		<variant frequency="1" name="shield-1">
+		  <textures><texture file="props/shield_remap_1.dds" name="baseTex"/></textures>
+		</variant>
+		<variant frequency="1" name="shield-2">
+		  <textures><texture file="props/shield_remap_2.dds" name="baseTex"/></textures>
+		</variant>
+		<variant frequency="1" name="shield-3">
+		  <textures><texture file="props/shield_remap_3.dds" name="baseTex"/></textures>
+		</variant>
+		<variant frequency="1" name="shield-4">
+		  <textures><texture file="props/shield_remap_4.dds" name="baseTex"/></textures>
+		</variant>
+	</group>
+  <material>player_trans.xml</material>
+</actor>
