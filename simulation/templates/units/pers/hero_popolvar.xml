@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_cavalry_spearman">
+  <Auras datatype="tokens">
+    units/heroes/pers_hero_cyrus_ii
+  </Auras>
+  <Identity>
+    <Civ>pers</Civ>
+    <Lang>persian</Lang>
+    <SpecificName>Papluwāˀrju Praiwelīˀku</SpecificName>
+    <Icon>units/scyth_hero_papluwarju.dds</Icon>
+  </Identity>
+  <ResourceGatherer>
+    <MaxDistance>2.0</MaxDistance>
+    <BaseSpeed>1.0</BaseSpeed>
+    <Rates>
+      <skull.trophy>1</skull.trophy>
+    </Rates>
+    <Capacities>
+      <skull>20</skull>
+    </Capacities>
+  </ResourceGatherer>
+  <VisualActor>
+    <Actor>units/scyth_hero_popolvar_horse.xml</Actor>
+  </VisualActor>
+</Entity>

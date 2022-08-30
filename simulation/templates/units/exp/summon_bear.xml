@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit">
+  <Attack>
+    <Melee>
+      <AttackName>Paws</AttackName>
+      <Damage>
+        <Hack>12</Hack>
+        <Crush>20</Crush>
+      </Damage>
+      <MaxRange>3.5</MaxRange>
+      <PrepareTime>1000</PrepareTime>
+      <RepeatTime>2000</RepeatTime>
+      <RestrictedClasses datatype="tokens">Ship</RestrictedClasses>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>1</BuildTime>
+    <Population>0</Population>
+    <Resources>
+      <skull>3</skull>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Square width="2.5" depth="5.0"/>
+    <Height>3</Height>
+  </Footprint>
+  <Health>
+    <Max>70</Max>
+  </Health>
+  <Identity>
+    <Classes datatype="tokens">Human FastMoving</Classes>
+    <GenericName>Bear</GenericName>
+    <SpecificName>Medwēˀ</SpecificName>
+    <Icon>gaia/fauna_bear_brown.png</Icon>
+    <RequiredTechnology>req_welinsu</RequiredTechnology>
+    <Tooltip>Ask Welinˀsu to send your shaman a beast of the wilderness. Cannot attack Ships.</Tooltip>
+    <VisibleClasses datatype="tokens">Bear Melee</VisibleClasses>
+  </Identity>
+  <Loot>
+    <xp>10</xp>
+  </Loot>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>128x256/ellipse.png</MainTexture>
+        <MainTextureMask>128x256/ellipse_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <Sound>
+    <SoundGroups>
+      <order_attack>actor/fauna/animal/lion_select.xml</order_attack>
+      <order_walk>actor/fauna/animal/lion_select.xml</order_walk>
+      <walk>actor/mounted/movement/walk.xml</walk>
+      <run>actor/mounted/movement/walk.xml</run>
+      <select>actor/fauna/animal/lion_select.xml</select>
+      <attack_melee>actor/fauna/animal/lion_attack.xml</attack_melee>
+      <death>actor/fauna/animal/lion_death.xml</death>
+      <trained>interface/complete/building/complete_kennel.xml</trained>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <HeightOffset>4.0</HeightOffset>
+  </StatusBars>
+  <TrainingRestrictions>
+    <Category>WarDog</Category>
+  </TrainingRestrictions>
+  <TreasureCollector disable=""/>
+  <Vision>
+    <Range>30</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>fauna/bear_brown.xml</Actor>
+  </VisualActor>
+</Entity>

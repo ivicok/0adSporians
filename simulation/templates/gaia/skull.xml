@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_gaia">
+  <Footprint replace="">
+    <Circle radius="2"/>
+    <Height>2.0</Height>
+  </Footprint>
+  <Identity>
+    <SpecificName>Intact skull</SpecificName>
+    <Tooltip>Bring trophies to the idol as a sacrifice.</Tooltip>
+  </Identity>
+  <Minimap>
+    <Type>food</Type>
+    <Color r="155" g="204" b="102"/>
+  </Minimap>
+  <Obstruction>
+    <Active>false</Active>
+    <BlockMovement>false</BlockMovement>
+    <Static width="2.0" depth="2.0"/>
+    <!-- Delete as a workaround to facilitate wall placement. -->
+    <DeleteUponConstruction>true</DeleteUponConstruction>
+  </Obstruction>
+  <ResourceSupply>
+    <KillBeforeGather>false</KillBeforeGather>
+    <Max>1</Max>
+    <Type>skull.trophy</Type>
+    <MaxGatherers>1</MaxGatherers>
+  </ResourceSupply>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/resource/sel_fruit.xml</select>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <BarWidth>3.0</BarWidth>
+    <BarHeight>0.5</BarHeight>
+    <HeightOffset>4.0</HeightOffset>
+  </StatusBars>
+  <VisualActor>
+    <SelectionShape>
+      <Footprint/>
+    </SelectionShape>
+    <Actor>props/r_skull.xml</Actor>
+  </VisualActor>
+</Entity>

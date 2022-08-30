@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="base_hunter_poison">
+  <Identity>
+    <Civ>pers</Civ>
+    <Lang>persian</Lang>
+    <Phenotype>female</Phenotype>
+    <SelectionGroupName>units/exp/hunter_mle_poison</SelectionGroupName>
+    <GenericName>Poison Archer</GenericName>
+    <SpecificName>Strēlikūnjāˀ sum abtrawāmīˀ</SpecificName>
+    <Icon>units/scyth_lavikunja_p.dds</Icon>
+  </Identity>
+  <Promotion disable=""/>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">1</Hack>
+        <Pierce op="add">1</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <order_attack>voice/{lang}/civ/civ_{phenotype}_attack.xml</order_attack>
+      <order_build>voice/{lang}/civ/civ_{phenotype}_build.xml</order_build>
+      <order_repair>voice/{lang}/civ/civ_{phenotype}_repair.xml</order_repair>
+      <trained>interface/alarm/alarm_create_female.xml</trained>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/scyth_hunter_fem_poison.xml</Actor>
+  </VisualActor>
+</Entity>

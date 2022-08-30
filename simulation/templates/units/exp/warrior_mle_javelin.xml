@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="base_warrior_javelin">
+  <Attack>
+    <Ranged>
+      <AttackName>Javelin</AttackName>
+      <Damage>
+        <Pierce op="add">4</Pierce>
+      </Damage>
+    </Ranged>
+  </Attack>
+  <Identity>
+    <Civ>pers</Civ>
+    <Lang>persian</Lang>
+    <SelectionGroupName>units/exp/warrior_mle_javelin</SelectionGroupName>
+    <GenericName>Skirmisher</GenericName>
+    <SpecificName>Saudljučiniku</SpecificName>
+    <Icon>units/scyth_wainu_j.dds</Icon>
+  </Identity>
+  <Promotion disable=""/>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>128x128/arrow.png</MainTexture>
+        <MainTextureMask>128x128/arrow_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <VisualActor>
+    <Actor>units/scyth_warrior_mle_javelin.xml</Actor>
+  </VisualActor>
+</Entity>

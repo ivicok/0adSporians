@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="base_raider_bull">
+  <Attack>
+    <Melee>
+      <Damage>
+        <Crush op="add">6</Crush>
+      </Damage>
+    </Melee>
+  </Attack>
+  <Identity>
+    <Civ>pers</Civ>
+    <Lang>persian</Lang>
+    <SelectionGroupName>units/exp/raider_bull_mle</SelectionGroupName>
+    <GenericName>Bull Warrior</GenericName>
+    <SpecificName>Tauriju baˀriku</SpecificName>
+    <Icon>units/scyth_najaddiniku_b.dds</Icon>
+  </Identity>
+  <Promotion disable=""/>
+  <VisualActor>
+    <Actor>units/scyth_raider_aurochs_mle.xml</Actor>
+  </VisualActor>
+</Entity>

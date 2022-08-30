@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="base_hunter_astra">
+  <Attack>
+    <Ranged>
+      <AttackName>Astra Bow</AttackName>
+      <Damage>
+        <Pierce op="add">3.5</Pierce>
+      </Damage>
+    </Ranged>
+  </Attack>
+  <Identity>
+    <Civ>pers</Civ>
+    <Lang>persian</Lang>
+    <SelectionGroupName>units/exp/hunter_mle_astra</SelectionGroupName>
+    <GenericName>Sharpshooter</GenericName>
+    <SpecificName>Astrastrēliku</SpecificName>
+    <Icon>units/scyth_laviku_a.dds</Icon>
+  </Identity>
+  <Promotion disable=""/>
+  <VisualActor>
+    <Actor>units/scyth_hunter_mle_astra.xml</Actor>
+  </VisualActor>
+</Entity>

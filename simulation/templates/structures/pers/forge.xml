@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_forge">
+  <Identity>
+    <Civ>pers</Civ>
+    <SpecificName>Abrandžīlīˀtja</SpecificName>	 <!-- or Kawāˀkistwa? -->
+  </Identity>
+  <ProductionQueue>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/pers/siege_ram_lt
+    </Entities>
+    <Technologies datatype="tokens">
+      siege_attack
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/britons/blacksmith.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="base_raider_archer">
+  <TurretHolder>
+	<TurretPoints>
+		<One>
+			<X>0</X>
+			<Y>1.3</Y>
+			<Z>0.6</Z>
+			<Template>units/exp/turret_raider_fem</Template>
+			<Angle>1.54</Angle>
+			<Ejectable>false</Ejectable>
+		</One>
+	</TurretPoints>
+  </TurretHolder>
+  <Identity>
+    <Civ>pers</Civ>
+    <Lang>persian</Lang>
+    <Phenotype>female</Phenotype>
+    <SelectionGroupName>units/exp/raider_mle_bow</SelectionGroupName>
+    <GenericName>Horse Archer</GenericName>
+    <SpecificName>Jāˀddāčikāˀ sum lankumi</SpecificName>
+    <Icon>units/scyth_najaddinika_a.dds</Icon>
+  </Identity>
+  <Promotion disable=""/>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">2</Hack>
+        <Pierce op="add">1</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <order_attack>voice/{lang}/civ/civ_{phenotype}_attack.xml</order_attack>
+      <order_build>voice/{lang}/civ/civ_{phenotype}_build.xml</order_build>
+      <order_repair>voice/{lang}/civ/civ_{phenotype}_repair.xml</order_repair>
+      <trained>interface/alarm/alarm_create_female.xml</trained>
+    </SoundGroups>
+  </Sound>
+  <Turretable/>
+  <VisualActor>
+    <Actor>units/scyth_raider_pony_fem_bow.xml</Actor>
+  </VisualActor>
+</Entity>

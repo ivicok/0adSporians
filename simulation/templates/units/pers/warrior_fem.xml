@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="base_warrior">
+  <Identity>
+    <Civ>pers</Civ>
+    <Classes datatype="tokens">FemaleCitizen</Classes>
+    <Lang>persian</Lang>
+    <Phenotype>female</Phenotype>
+    <SelectionGroupName>units/pers/warrior_mle</SelectionGroupName>
+    <SpecificName>Artinīˀkāˀ</SpecificName>
+    <Icon>units/scyth_artinika.dds</Icon>
+  </Identity>
+  <Promotion>
+    <Entity>units/pers/warrior_fem_adv</Entity>
+  </Promotion>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">1</Hack>
+        <Pierce op="add">1</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <order_attack>voice/{lang}/civ/civ_{phenotype}_attack.xml</order_attack>
+      <order_build>voice/{lang}/civ/civ_{phenotype}_build.xml</order_build>
+      <order_repair>voice/{lang}/civ/civ_{phenotype}_repair.xml</order_repair>
+      <trained>interface/alarm/alarm_create_female.xml</trained>
+    </SoundGroups>
+  </Sound>
+  <Upgrade>
+	<Peraunu>
+		<Entity>units/exp/warrior_fem_falx</Entity>
+		<Tooltip>Equip the warrior with the ritual weapon of the ancient tribe of Walˀxeine, bestowing a high hack damage bonus.</Tooltip>
+		<Cost>
+			<skull>3</skull>
+		</Cost>
+		<RequiredTechnology>req_peraunu</RequiredTechnology>
+	</Peraunu>
+	<Welinˀsu>
+		<Entity>units/exp/warrior_fem_javelin</Entity>
+		<Tooltip>Train the warrior in combat with javelins. Provides a ranged attack.</Tooltip>
+		<Cost>
+			<skull>1</skull>
+		</Cost>
+		<RequiredTechnology>req_welinsu</RequiredTechnology>
+	</Welinˀsu>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/scyth_warrior_fem.xml</Actor>
+  </VisualActor>
+</Entity>

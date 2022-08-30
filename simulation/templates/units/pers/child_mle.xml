@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="base_child">
+  <Identity>
+    <Civ>pers</Civ>
+    <GenericName>Sporian Boy</GenericName>
+    <Lang>persian</Lang>
+    <SpecificName>Jauˀnāku</SpecificName>
+    <Icon>units/scyth_jaunaku.dds</Icon>
+    <SelectionGroupName>units/pers/child_mle</SelectionGroupName>
+  </Identity>
+  <ResourceGatherer>
+    <Capacities>
+      <food>6</food>
+      <wood>6</wood>
+      <stone>6</stone>
+      <metal>6</metal>
+      <skull>6</skull>
+    </Capacities>
+  </ResourceGatherer>
+  <VisualActor>
+    <Actor>units/scyth_child_mle.xml</Actor>
+  </VisualActor>
+</Entity>

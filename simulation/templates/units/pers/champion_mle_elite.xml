@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="base_champion">
+  <Attack>
+    <Melee>
+      <AttackName>Spear</AttackName>
+      <Damage>
+        <Hack op="add">4</Hack>
+        <Pierce op="add">6</Pierce>
+      </Damage>
+    </Melee>
+  </Attack>
+  <Identity>
+    <Civ>pers</Civ>
+    <Lang>persian</Lang>
+    <SelectionGroupName>units/pers/champion_mle</SelectionGroupName>
+    <SpecificName>Wīˀtingu</SpecificName>
+    <Icon>units/scyth_witingu.dds</Icon>
+    <Rank>Elite</Rank>
+  </Identity>
+  <Promotion disable=""/>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">2</Hack>
+        <Pierce op="add">4</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <ResourceGatherer>
+    <Rates>
+      <skull.trophy>2.5</skull.trophy>
+    </Rates>
+  </ResourceGatherer>
+  <Upgrade>
+	<Welinˀsu>
+		<Entity>units/exp/champion_mle_dragon</Entity>
+		<Tooltip>Summon a mighty dragon to serve as a mount for the warrior.</Tooltip>
+		<Cost>
+			<skull>30</skull>
+		</Cost>
+		<RequiredTechnology>req_welinsu</RequiredTechnology>
+	</Welinˀsu>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/scyth_champ_mle_elite.xml</Actor>
+  </VisualActor>
+</Entity>

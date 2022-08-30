@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="base_champion_dragon">
+  <Identity>
+    <Civ>pers</Civ>
+    <Classes datatype="tokens">FemaleCitizen</Classes>
+    <Lang>persian</Lang>
+    <Phenotype>female</Phenotype>
+    <SelectionGroupName>units/exp/champion_mle_dragon</SelectionGroupName>
+    <SpecificName>Sāˀnju barikūnjāˀ</SpecificName>
+    <Icon>units/scyth_sanju.dds</Icon>
+  </Identity>
+  <Promotion disable=""/>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">1</Hack>
+        <Pierce op="add">2</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <order_attack>voice/{lang}/civ/civ_{phenotype}_attack.xml</order_attack>
+      <order_build>voice/{lang}/civ/civ_{phenotype}_build.xml</order_build>
+      <order_repair>voice/{lang}/civ/civ_{phenotype}_repair.xml</order_repair>
+      <trained>interface/alarm/alarm_create_female.xml</trained>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/scyth_dragon_mount_fem.xml</Actor>
+  </VisualActor>
+</Entity>

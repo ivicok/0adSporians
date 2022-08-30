@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="base_hunter">
+  <Attack>
+    <Ranged>
+      <AttackName>Bow</AttackName>
+      <Damage>
+        <Pierce op="add">2</Pierce>
+      </Damage>
+    </Ranged>
+  </Attack>
+  <Identity>
+    <Civ>pers</Civ>
+    <Lang>persian</Lang>
+    <SelectionGroupName>units/pers/hunter_mle</SelectionGroupName>
+    <SpecificName>Lawiku</SpecificName>
+    <Icon>units/scyth_laviku.dds</Icon>
+    <Rank>Advanced</Rank>
+  </Identity>
+  <Promotion>
+    <Entity>units/pers/hunter_mle_elite</Entity>
+  </Promotion>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">1</Hack>
+        <Pierce op="add">1</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <ResourceGatherer>
+    <Rates>
+      <skull.trophy>2.3</skull.trophy>
+    </Rates>
+  </ResourceGatherer>
+  <Upgrade>
+	<Peraunu>
+		<Entity>units/exp/hunter_mle_astra</Entity>
+		<Tooltip>Grant magical Astra arrows to the archer, capable of hitting multiple enemies.</Tooltip>
+		<Cost>
+			<skull>3</skull>
+		</Cost>
+		<RequiredTechnology>req_peraunu</RequiredTechnology>
+	</Peraunu>
+	<Welinˀsu>
+		<Entity>units/exp/hunter_mle_poison</Entity>
+		<Tooltip>Equip the hunter with poisoned arrows, dealing additional damage over time.</Tooltip>
+		<Cost>
+			<skull>1</skull>
+		</Cost>
+		<RequiredTechnology>req_welinsu</RequiredTechnology>
+	</Welinˀsu>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/scyth_hunter_mle_adv.xml</Actor>
+  </VisualActor>
+</Entity>

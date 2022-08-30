@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_javelineer">
+  <Auras datatype="tokens">
+    units/heroes/brit_hero_caratacos
+  </Auras>
+  <Identity>
+    <Civ>pers</Civ>
+    <Classes datatype="tokens">Biome</Classes>
+    <VisibleClasses datatype="tokens">Swimmer</VisibleClasses>
+    <Lang>persian</Lang>
+    <SpecificName>Ardagasti</SpecificName>
+    <Icon>units/scyth_hero_ardagasti.dds</Icon>
+  </Identity>
+  <ResourceGatherer>
+    <MaxDistance>2.0</MaxDistance>
+    <BaseSpeed>1.0</BaseSpeed>
+    <Rates>
+      <skull.trophy>1</skull.trophy>
+    </Rates>
+    <Capacities>
+      <skull>10</skull>
+    </Capacities>
+  </ResourceGatherer>
+  <Turretable/>
+  <UnitMotion>
+    <WalkSpeed op="add">1</WalkSpeed>
+	<PassabilityClass>swimmer</PassabilityClass>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/scyth_hero_radagast.xml</Actor>
+  </VisualActor>
+</Entity>

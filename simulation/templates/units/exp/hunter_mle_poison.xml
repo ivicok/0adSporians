@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="base_hunter_poison">
+  <Attack>
+    <Ranged>
+      <AttackName>Bow</AttackName>
+      <Damage>
+        <Pierce op="add">2</Pierce>
+      </Damage>
+    </Ranged>
+  </Attack>
+  <Identity>
+    <Civ>pers</Civ>
+    <Lang>persian</Lang>
+    <SelectionGroupName>units/exp/hunter_mle_poison</SelectionGroupName>
+    <GenericName>Poison Archer</GenericName>
+    <SpecificName>Strēliku sum abtrawāmīˀ</SpecificName>
+    <Icon>units/scyth_laviku_p.dds</Icon>
+  </Identity>
+  <Promotion disable=""/>
+  <VisualActor>
+    <Actor>units/scyth_hunter_mle_poison.xml</Actor>
+  </VisualActor>
+</Entity>

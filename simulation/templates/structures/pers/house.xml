@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_civic_house2">
+  <Footprint>
+    <Square disable=""/>
+    <Circle radius="6.0"/>
+  </Footprint>
+  <GarrisonHolder>
+    <BuffHeal>5</BuffHeal>
+    <Max>3</Max>
+    <List datatype="tokens">Infantry Cavalry</List>
+  </GarrisonHolder>
+  <Identity>
+    <Civ>pers</Civ>
+    <SpecificName>Kanˀtjāˀ</SpecificName>
+  </Identity>
+  <Obstruction>
+    <Static width="10.0" depth="10.0"/>
+  </Obstruction>
+  <VisualActor>
+    <Actor>structures/britons/house.xml</Actor>
+  </VisualActor>
+</Entity>

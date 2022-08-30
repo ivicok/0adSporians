@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="base_raider">
+  <Attack>
+    <Melee>
+      <AttackName>Weapon</AttackName>
+      <Damage>
+        <Hack op="add">1</Hack>
+        <Pierce op="add">1</Pierce>
+      </Damage>
+    </Melee>
+  </Attack>
+  <Identity>
+    <Civ>pers</Civ>
+    <Lang>persian</Lang>
+    <SelectionGroupName>units/pers/scyth_raider_horse_mle</SelectionGroupName>
+    <SpecificName>Nājāˀddinīku</SpecificName>
+    <Icon>units/scyth_najaddiniku.dds</Icon>
+    <RequiredTechBuilding>req_horses</RequiredTechBuilding>
+    <RequiredTechnology>req_horses</RequiredTechnology>
+  </Identity>
+  <Promotion>
+    <Entity>units/pers/raider_mle_adv</Entity>
+  </Promotion>
+  <Upgrade>
+	<Peraunu>
+		<Entity>units/exp/raider_mle_archer</Entity>
+		<Tooltip>Teach the unit in the martial art of Xruwāte, providing a ranged attack.</Tooltip>
+		<Cost>
+			<skull>3</skull>
+		</Cost>
+		<RequiredTechnology>req_peraunu</RequiredTechnology>
+	</Peraunu>
+	<Welinˀsu>
+		<Entity>units/exp/raider_mle_bull</Entity>
+		<Tooltip>Summon a mighty aurochs to serve the warrior as its mount. Bonus to crush damage.</Tooltip>
+		<Cost>
+			<skull>5</skull>
+		</Cost>
+		<RequiredTechnology>req_welinsu</RequiredTechnology>
+	</Welinˀsu>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/scyth_raider_pony_mle.xml</Actor>
+  </VisualActor>
+</Entity>

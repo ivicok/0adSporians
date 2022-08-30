@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_civic_temple_idol">
+  <Footprint>
+    <Square width="9.5" depth="8.5"/>
+    <Height>12.0</Height>
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_4x4</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>pers</Civ>
+    <Classes datatype="tokens">Welinsu</Classes>
+	<Icon>structures/monument.png</Icon>
+	<GenericName>Idol of Welinˀsu</GenericName>
+    <SpecificName>Kāˀpu Welinˀsuju</SpecificName>
+    <Tooltip>Dedicates the tribe to Welinˀsu, god of wealth and underworld.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static width="9.0" depth="7.5"/>
+  </Obstruction>
+  <VisualActor>
+    <Actor>structures/b_idol_welinsu.xml</Actor>
+    <FoundationActor>structures/fndn_3x3.xml</FoundationActor>
+  </VisualActor>
+</Entity>

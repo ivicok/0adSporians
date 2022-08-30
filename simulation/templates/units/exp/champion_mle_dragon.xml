@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="base_champion_dragon">
+  <Identity>
+    <Civ>pers</Civ>
+    <Lang>persian</Lang>
+    <SelectionGroupName>units/exp/champion_mle_dragon</SelectionGroupName>
+    <SpecificName>Sāˀnju bariku</SpecificName>
+    <Icon>units/scyth_sanju.dds</Icon>
+  </Identity>
+  <Promotion disable=""/>
+  <VisualActor>
+    <Actor>units/scyth_dragon_mount_mle.xml</Actor>
+  </VisualActor>
+</Entity>

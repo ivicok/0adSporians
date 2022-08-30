@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_ship_merchant">
+  <Attack disable="" />
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <wood>80</wood>
+      <metal>20</metal>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="15.0" depth="30.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <GarrisonHolder disable="" />
+  <Health>
+    <Max>150</Max>
+  </Health>
+  <Identity>
+    <Civ>pers</Civ>
+    <Classes datatype="tokens">Biome</Classes>
+    <Lang>persian</Lang>
+    <GenericName>Raft</GenericName>
+    <SpecificName>Parˀmi</SpecificName>
+    <Tooltip>A simple cargo raft. Provides a drop-off point for workers. Can also trade between docks.</Tooltip>
+    <Icon>units/scyth_parmi.dds</Icon>
+  </Identity>
+  <Loot>
+    <wood>40</wood>
+    <metal>10</metal>
+  </Loot>
+  <ResourceGatherer disable="" />
+  <ResourceDropsite>
+    <Types>food wood stone metal</Types>
+    <Sharable>true</Sharable>
+  </ResourceDropsite>
+  <UnitMotion>
+    <PassabilityClass>ship-small</PassabilityClass>
+    <WalkSpeed op="mul">0.5</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/scyth_raft.xml</Actor>
+  </VisualActor>
+</Entity>

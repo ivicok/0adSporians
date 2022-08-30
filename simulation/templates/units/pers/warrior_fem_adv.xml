@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="base_warrior">
+  <Attack>
+    <Melee>
+      <AttackName>Weapon</AttackName>
+      <Damage>
+        <Hack op="add">2</Hack>
+        <Pierce op="add">2</Pierce>
+      </Damage>
+    </Melee>
+  </Attack>
+  <Identity>
+    <Civ>pers</Civ>
+    <Lang>persian</Lang>
+    <Phenotype>female</Phenotype>
+    <SelectionGroupName>units/pers/warrior_mle</SelectionGroupName>
+    <SpecificName>Artinīˀkāˀ</SpecificName>
+    <Icon>units/scyth_artinika.dds</Icon>
+    <Rank>Advanced</Rank>
+  </Identity>
+  <Promotion>
+    <Entity>units/pers/warrior_fem_elite</Entity>
+  </Promotion>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">2</Hack>
+        <Pierce op="add">2</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <ResourceGatherer>
+    <Rates>
+      <skull.trophy>2.3</skull.trophy>
+    </Rates>
+  </ResourceGatherer>
+  <Sound>
+    <SoundGroups>
+      <order_attack>voice/{lang}/civ/civ_{phenotype}_attack.xml</order_attack>
+      <order_build>voice/{lang}/civ/civ_{phenotype}_build.xml</order_build>
+      <order_repair>voice/{lang}/civ/civ_{phenotype}_repair.xml</order_repair>
+      <trained>interface/alarm/alarm_create_female.xml</trained>
+    </SoundGroups>
+  </Sound>
+  <Upgrade>
+	<Peraunu>
+		<Entity>units/exp/warrior_fem_falx</Entity>
+		<Tooltip>Equip the warrior with the ritual weapon of the ancient tribe of Walˀxeine, bestowing a high hack damage bonus.</Tooltip>
+		<Cost>
+			<skull>1</skull>
+		</Cost>
+		<RequiredTechnology>req_peraunu</RequiredTechnology>
+	</Peraunu>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/scyth_warrior_fem_adv.xml</Actor>
+  </VisualActor>
+</Entity>

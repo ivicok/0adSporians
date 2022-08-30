@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_swordsman">
+  <Auras datatype="tokens">
+    units/heroes/pers_hero_darius_i
+  </Auras>
+  <Garrisonable>
+    <Size>1</Size>
+  </Garrisonable>
+  <Identity>
+    <Civ>pers</Civ>
+    <Classes datatype="tokens">Rower Biome</Classes>
+    <VisibleClasses datatype="tokens">Swimmer</VisibleClasses>
+    <Lang>persian</Lang>
+    <Phenotype>female</Phenotype>
+    <SpecificName>Sanjāˀ Ragateijnuskāˀ</SpecificName>
+    <Icon>units/scyth_hero_sanja.dds</Icon>
+  </Identity>
+  <ProductionQueue>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/exp/summon_dragon
+    </Entities>
+    <TechCostMultiplier>
+      <food>1.0</food>
+      <wood>1.0</wood>
+      <stone>1.0</stone>
+      <metal>1.0</metal>
+      <time>1.0</time>
+    </TechCostMultiplier>
+  </ProductionQueue>
+  <ResourceGatherer>
+    <MaxDistance>2.0</MaxDistance>
+    <BaseSpeed>1.0</BaseSpeed>
+	<Rates>
+      <skull.trophy>1</skull.trophy>
+	</Rates>
+    <Capacities>
+      <skull>10</skull>
+    </Capacities>
+  </ResourceGatherer>
+  <Sound>
+    <SoundGroups>
+      <order_attack>voice/{lang}/civ/civ_{phenotype}_attack.xml</order_attack>
+      <order_build>voice/{lang}/civ/civ_{phenotype}_build.xml</order_build>
+      <order_repair>voice/{lang}/civ/civ_{phenotype}_repair.xml</order_repair>
+      <trained>interface/alarm/alarm_create_female.xml</trained>
+    </SoundGroups>
+  </Sound>
+  <Turretable/>
+  <UnitMotion>
+    <WalkSpeed op="add">2</WalkSpeed>
+	<PassabilityClass>swimmer</PassabilityClass>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/scyth_hero_sonja.xml</Actor>
+  </VisualActor>
+</Entity>

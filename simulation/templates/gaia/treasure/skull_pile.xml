@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_gaia_treasure">
+  <Footprint replace="">
+    <Circle radius="2"/>
+    <Height>2.0</Height>
+  </Footprint>
+  <Identity>
+    <SpecificName>Intact skull</SpecificName>
+  </Identity>
+  <Obstruction>
+    <Static width="2.0" depth="2.0"/>
+  </Obstruction>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/resource/sel_stone.xml</select>
+    </SoundGroups>
+  </Sound>
+  <Treasure>
+    <Resources>
+      <skull>10</skull>
+    </Resources>
+  </Treasure>
+  <VisualActor>
+    <Actor>props/r_skull.xml</Actor>
+  </VisualActor>
+</Entity>

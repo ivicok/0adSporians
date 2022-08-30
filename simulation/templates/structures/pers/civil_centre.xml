@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_civic_civil_centre">
+  <Footprint replace="">
+    <Circle radius="15.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>decay|rubble/rubble_brit_cc</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>pers</Civ>
+    <GenericName>Center of Settlement</GenericName>
+    <SpecificName>Kručimāˀ</SpecificName>	 <!-- or simply Gardu? -->
+  </Identity>
+  <Obstruction>
+    <Static width="25.0" depth="25.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.6</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/pers/child_mle
+      units/pers/warrior_mle
+      units/pers/hunter_mle
+      units/pers/raider_mle
+      units/pers/champion_mle
+	  units/pers/shaman_mle
+	  -units/{civ}/support_female_citizen
+    </Entities>
+    <Technologies datatype="tokens"/>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/britons/civic_centre.xml</Actor>
+    <FoundationActor>structures/fndn_7x8.xml</FoundationActor>
+  </VisualActor>
+</Entity>

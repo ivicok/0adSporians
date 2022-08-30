@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="base_warrior_falx">
+  <Attack>
+    <Melee>
+      <AttackName>Rhomphaia</AttackName>
+      <Damage>
+        <Hack op="add">4</Hack>
+      </Damage>
+    </Melee>
+  </Attack>
+  <Identity>
+    <Civ>pers</Civ>
+    <Lang>persian</Lang>
+    <SelectionGroupName>units/exp/warrior_mle_falx</SelectionGroupName>
+    <GenericName>Rhomphaia Warrior</GenericName>
+    <SpecificName>Ramˀpjanasiku</SpecificName>
+    <Icon>units/scyth_wainu_r.dds</Icon>
+  </Identity>
+  <Promotion disable=""/>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>128x128/arrow.png</MainTexture>
+        <MainTextureMask>128x128/arrow_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <VisualActor>
+    <Actor>units/scyth_warrior_mle_falx.xml</Actor>
+  </VisualActor>
+</Entity>

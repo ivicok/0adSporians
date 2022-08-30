@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="base_raider_archer">
+  <TurretHolder>
+	<TurretPoints>
+		<One>
+			<X>0</X>
+			<Y>1.5</Y>
+			<Z>0.5</Z>
+			<Template>units/exp/turret_raider_mle</Template>
+			<Angle>1.54</Angle>
+			<Ejectable>false</Ejectable>
+		</One>
+	</TurretPoints>
+  </TurretHolder>
+  <Identity>
+    <Civ>pers</Civ>
+    <Lang>persian</Lang>
+    <SelectionGroupName>units/exp/raider_mle_bow</SelectionGroupName>
+    <GenericName>Horse Archer</GenericName>
+    <SpecificName>Jāˀddiku sum lankumi</SpecificName>
+    <Icon>units/scyth_najaddiniku_a.dds</Icon>
+  </Identity>
+  <Promotion disable=""/>
+  <Turretable/>
+  <VisualActor>
+    <Actor>units/scyth_raider_pony_mle_bow.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="base_raider">
+  <Attack>
+    <Melee>
+      <AttackName>Weapon</AttackName>
+      <Damage>
+        <Hack op="add">3</Hack>
+        <Pierce op="add">3</Pierce>
+      </Damage>
+    </Melee>
+  </Attack>
+  <Identity>
+    <Civ>pers</Civ>
+    <Lang>persian</Lang>
+    <Phenotype>female</Phenotype>
+    <SelectionGroupName>units/pers/scyth_raider_horse_mle</SelectionGroupName>
+    <SpecificName>Nājāˀddinīˀkāˀ</SpecificName>
+    <Icon>units/scyth_najaddinika.dds</Icon>
+    <Rank>Elite</Rank>
+  </Identity>
+  <Promotion disable=""/>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">4</Hack>
+        <Pierce op="add">4</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <ResourceGatherer>
+    <Rates>
+      <skull.trophy>2.5</skull.trophy>
+    </Rates>
+  </ResourceGatherer>
+  <Sound>
+    <SoundGroups>
+      <order_attack>voice/{lang}/civ/civ_{phenotype}_attack.xml</order_attack>
+      <order_build>voice/{lang}/civ/civ_{phenotype}_build.xml</order_build>
+      <order_repair>voice/{lang}/civ/civ_{phenotype}_repair.xml</order_repair>
+      <trained>interface/alarm/alarm_create_female.xml</trained>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/scyth_raider_horse_fem_elite.xml</Actor>
+  </VisualActor>
+</Entity>

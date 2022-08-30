@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="base_warrior">
+  <Attack>
+    <Melee>
+      <AttackName>Weapon</AttackName>
+      <Damage>
+        <Hack op="add">1</Hack>
+        <Pierce op="add">1</Pierce>
+      </Damage>
+    </Melee>
+  </Attack>
+  <Identity>
+    <Civ>pers</Civ>
+    <Lang>persian</Lang>
+    <SelectionGroupName>units/pers/warrior_mle</SelectionGroupName>
+    <SpecificName>Waīˀnu</SpecificName>
+    <Icon>units/scyth_wainu.dds</Icon>
+  </Identity>
+  <Promotion>
+    <Entity>units/pers/warrior_mle_adv</Entity>
+  </Promotion>
+  <Upgrade>
+	<Peraunu>
+		<Entity>units/exp/warrior_mle_falx</Entity>
+		<Tooltip>Equip the warrior with the ritual weapon of the ancient tribe of Walˀxeine, bestowing a high hack damage bonus.</Tooltip>
+		<Cost>
+			<skull>3</skull>
+		</Cost>
+		<RequiredTechnology>req_peraunu</RequiredTechnology>
+	</Peraunu>
+	<Welinˀsu>
+		<Entity>units/exp/warrior_mle_javelin</Entity>
+		<Tooltip>Train the warrior in combat with javelins. Provides a ranged attack.</Tooltip>
+		<Cost>
+			<skull>1</skull>
+		</Cost>
+		<RequiredTechnology>req_welinsu</RequiredTechnology>
+	</Welinˀsu>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/scyth_warrior_mle.xml</Actor>
+  </VisualActor>
+</Entity>

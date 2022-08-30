@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Entity>
+  <Builder>
+    <Rate>1.0</Rate>
+    <Entities datatype="tokens">
+      structures/{civ}/civil_centre
+      structures/{civ}/house
+      structures/{civ}/storehouse
+      structures/{civ}/farmstead
+      structures/{civ}/field
+      structures/{civ}/corral
+      structures/{civ}/dock
+      structures/{civ}/market
+      structures/{civ}/forge
+      structures/{civ}/outpost
+      structures/{civ}/sentry_tower
+      structures/{civ}/defense_tower
+      structures/{civ}/fortress
+      structures/{civ}/wallset_palisade
+	  structures/pers/temple_p
+	  structures/pers/temple_w
+    </Entities>
+  </Builder>
+  <Identity>
+    <VisibleClasses datatype="tokens">Builder</VisibleClasses>
+  </Identity>
+</Entity>

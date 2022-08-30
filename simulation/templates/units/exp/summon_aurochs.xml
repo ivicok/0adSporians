@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit">
+  <Attack>
+    <Melee>
+      <AttackName>Horns</AttackName>
+      <Damage>
+        <Crush>70</Crush>
+      </Damage>
+      <MaxRange>7</MaxRange>
+      <PrepareTime>1000</PrepareTime>
+      <RepeatTime>2000</RepeatTime>
+      <RestrictedClasses datatype="tokens">Ship</RestrictedClasses>
+      <Splash>
+        <Shape>Circular</Shape>
+        <Range>7</Range>
+        <FriendlyFire>false</FriendlyFire>
+        <Damage>
+          <Crush>10</Crush>
+        </Damage>
+      </Splash>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>1</BuildTime>
+    <Population>0</Population>
+    <Resources>
+      <skull>5</skull>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Square width="3.0" depth="6.0"/>
+    <Height>4</Height>
+  </Footprint>
+  <Health>
+    <Max>120</Max>
+  </Health>
+  <Identity>
+    <Classes datatype="tokens">Human FastMoving</Classes>
+    <GenericName>Aurochs</GenericName>
+    <SpecificName>Tauru</SpecificName>
+    <Icon>gaia/fauna_bull.png</Icon>
+    <RequiredTechnology>req_welinsu</RequiredTechnology>
+    <Tooltip>Ask Welinˀsu to send your shaman a beast of the wilderness. Cannot attack Ships.</Tooltip>
+    <VisibleClasses datatype="tokens">Aurochs Melee</VisibleClasses>
+  </Identity>
+  <Loot>
+    <xp>40</xp>
+  </Loot>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">4</Hack>
+        <Pierce op="add">4</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>128x256/ellipse.png</MainTexture>
+        <MainTextureMask>128x256/ellipse_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <Sound>
+    <SoundGroups>
+      <walk>actor/mounted/movement/walk.xml</walk>
+      <run>actor/mounted/movement/walk.xml</run>
+      <select>actor/fauna/animal/elephant_select.xml</select>
+      <order_walk>actor/fauna/animal/elephant_order.xml</order_walk>
+      <order_attack>actor/fauna/animal/elephant_attack_order.xml</order_attack>
+      <order_gather>actor/fauna/animal/elephant_order.xml</order_gather>
+      <order_garrison>actor/fauna/animal/elephant_order.xml</order_garrison>
+      <death>actor/fauna/animal/elephant_death.xml</death>
+      <trained>actor/fauna/animal/elephant_trained.xml</trained>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <HeightOffset>4.0</HeightOffset>
+  </StatusBars>
+  <TrainingRestrictions>
+    <Category>WarDog</Category>
+  </TrainingRestrictions>
+  <TreasureCollector disable=""/>
+  <Vision>
+    <Range>30</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>units/scyth_shaman_aurochs.xml</Actor>
+  </VisualActor>
+</Entity>

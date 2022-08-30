@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="base_hunter">
+  <Identity>
+    <Civ>pers</Civ>
+    <Classes datatype="tokens">FemaleCitizen</Classes>
+    <Lang>persian</Lang>
+    <Phenotype>female</Phenotype>
+    <SelectionGroupName>units/pers/hunter_mle</SelectionGroupName>
+    <GenericName>Huntress</GenericName>
+    <SpecificName>Lawikūnjāˀ</SpecificName>
+    <Icon>units/scyth_lavikunja.dds</Icon>
+  </Identity>
+  <Sound>
+    <SoundGroups>
+      <order_attack>voice/{lang}/civ/civ_{phenotype}_attack.xml</order_attack>
+      <order_build>voice/{lang}/civ/civ_{phenotype}_build.xml</order_build>
+      <order_repair>voice/{lang}/civ/civ_{phenotype}_repair.xml</order_repair>
+      <trained>interface/alarm/alarm_create_female.xml</trained>
+    </SoundGroups>
+  </Sound>
+  <Promotion>
+    <Entity>units/pers/hunter_fem_adv</Entity>
+  </Promotion>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">1</Hack>
+        <Pierce op="add">1</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Upgrade>
+	<Peraunu>
+		<Entity>units/exp/hunter_fem_astra</Entity>
+		<Tooltip>Grant magical Astra arrows to the archer, capable of hitting multiple enemies.</Tooltip>
+		<Cost>
+			<skull>5</skull>
+		</Cost>
+		<RequiredTechnology>req_peraunu</RequiredTechnology>
+	</Peraunu>
+	<Welinˀsu>
+		<Entity>units/exp/hunter_fem_poison</Entity>
+		<Tooltip>Equip the hunter with poisoned arrows, dealing additional damage over time.</Tooltip>
+		<Cost>
+			<skull>3</skull>
+		</Cost>
+		<RequiredTechnology>req_welinsu</RequiredTechnology>
+	</Welinˀsu>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/scyth_hunter_fem.xml</Actor>
+  </VisualActor>
+</Entity>

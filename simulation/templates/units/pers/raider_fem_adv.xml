@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="base_raider">
+  <Attack>
+    <Melee>
+      <AttackName>Weapon</AttackName>
+      <Damage>
+        <Hack op="add">2</Hack>
+        <Pierce op="add">2</Pierce>
+      </Damage>
+    </Melee>
+  </Attack>
+  <Identity>
+    <Civ>pers</Civ>
+    <Lang>persian</Lang>
+    <Phenotype>female</Phenotype>
+    <SelectionGroupName>units/pers/scyth_raider_horse_mle</SelectionGroupName>
+    <SpecificName>Nājāˀddinīˀkāˀ</SpecificName>
+    <Icon>units/scyth_najaddinika.dds</Icon>
+    <Rank>Advanced</Rank>
+  </Identity>
+  <Promotion>
+    <Entity>units/pers/raider_fem_elite</Entity>
+  </Promotion>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">2</Hack>
+        <Pierce op="add">2</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <ResourceGatherer>
+    <Rates>
+      <skull.trophy>2.3</skull.trophy>
+    </Rates>
+  </ResourceGatherer>
+  <Sound>
+    <SoundGroups>
+      <order_attack>voice/{lang}/civ/civ_{phenotype}_attack.xml</order_attack>
+      <order_build>voice/{lang}/civ/civ_{phenotype}_build.xml</order_build>
+      <order_repair>voice/{lang}/civ/civ_{phenotype}_repair.xml</order_repair>
+      <trained>interface/alarm/alarm_create_female.xml</trained>
+    </SoundGroups>
+  </Sound>
+  <Upgrade>
+	<Peraunu>
+		<Entity>units/exp/raider_fem_archer</Entity>
+		<Tooltip>Teach the unit in the martial art of Xruwāte, providing a ranged attack.</Tooltip>
+		<Cost>
+			<skull>1</skull>
+		</Cost>
+		<RequiredTechnology>req_peraunu</RequiredTechnology>
+	</Peraunu>
+	<Welinˀsu>
+		<Entity>units/exp/raider_fem_bull</Entity>
+		<Tooltip>Summon a mighty aurochs to serve the warrior as its mount. Bonus to crush damage.</Tooltip>
+		<Cost>
+			<skull>3</skull>
+		</Cost>
+		<RequiredTechnology>req_welinsu</RequiredTechnology>
+	</Welinˀsu>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/scyth_raider_pony_fem_adv.xml</Actor>
+  </VisualActor>
+</Entity>

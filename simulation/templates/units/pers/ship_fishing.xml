@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_ship_fishing">
+  <Attack disable="" />
+  <Cost>
+    <BuildTime>12</BuildTime>
+    <Resources>
+      <wood>40</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="4.0" depth="10.0"/>
+    <Height>6.0</Height>
+  </Footprint>
+  <GarrisonHolder disable="" />
+  <Identity>
+    <Civ>pers</Civ>
+    <Classes datatype="tokens">Monoxylon Biome</Classes>
+    <Lang>persian</Lang>
+    <GenericName>Monoxylon Boat</GenericName>
+    <SpecificName>Aldīˀjāˀ</SpecificName>
+    <Icon>units/scyth_aldija.dds</Icon>
+  </Identity>
+  <ResourceGatherer>
+    <MaxDistance>10.0</MaxDistance>
+    <BaseSpeed>1.0</BaseSpeed>
+    <Rates>
+      <food.fish>0.5</food.fish>
+    </Rates>
+    <Capacities>
+      <food>20</food>
+    </Capacities>
+  </ResourceGatherer>
+  <TurretHolder>
+    <TurretPoints>
+      <One>
+        <X>0.5</X>
+        <Y>0.1</Y>
+        <Z>1.5</Z>
+      </One>
+      <Two>
+        <X>0.25</X>
+        <Y>0.2</Y>
+        <Z>3</Z>
+      </Two>
+      <Three>
+        <X>0.5</X>
+        <Y>0</Y>
+        <Z>-1.5</Z>
+      </Three>
+      <Four>
+        <X>-0.25</X>
+        <Y>0</Y>
+        <Z>0</Z>
+      </Four>
+    </TurretPoints>
+  </TurretHolder>
+  <UnitMotion>
+    <PassabilityClass>ship-small</PassabilityClass>
+    <WalkSpeed op="mul">1</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/scyth_monoxylon.xml</Actor>
+  </VisualActor>
+</Entity>
