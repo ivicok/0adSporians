@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<variant name="gather_meat">
+	<props>
+		<prop actor="props/w_bone.xml" attachpoint="r_weapon" />
+		<prop actor="" attachpoint="l_weapon" />
+		<prop actor="" attachpoint="l_bow" />
+	</props>
+	<animations>
+		<animation file="units/0ad_mle_march.dae" name="Walk" id="walk" speed="12"/>
+		<animation file="units/0ad_mle_run.dae" name="Run" id="run" speed="7"/>
+		<animation file="units/0ad_mle_idle_1hand.dae" name="Idle" id="idle1" speed="80"/>
+		<animation file="units/0ad_swim_idle.dae" name="Float" id="float" frequency="1" speed="60"/>
+		<animation file="units/0ad_swim_move.dae" name="Swim" id="swim" frequency="1" speed="50"/>
+		<animation event="0.5" sound="0.0" file="units/0ad_mle_gather.dae" name="gather_meat" id="gather1" speed="80"/>
+		<animation event="0.5" file="units/0ad_mle_gather.dae" name="attack_slaughter" speed="100"/>
+	</animations>
+</variant>

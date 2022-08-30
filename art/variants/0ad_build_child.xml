@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<variant name="build">
+	<props>
+		<prop actor="props/w_hammer.xml" attachpoint="r_weapon" />
+		<prop actor="" attachpoint="l_weapon" />
+		<prop actor="" attachpoint="l_bow" />
+	</props>
+	<animations>
+		<animation event="0.5" file="units/0ad_child_build.dae" name="build" id="build1" speed="80"/>
+	</animations>
+</variant>

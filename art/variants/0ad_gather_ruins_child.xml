@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<variant name="approach_rock">
+	<props>
+		<prop actor="props/w_axe_gather.xml" attachpoint="r_weapon" />
+		<prop actor="" attachpoint="l_weapon" />
+		<prop actor="" attachpoint="l_bow" />
+	</props>
+	<animations>
+		<animation file="units/0ad_child_march_2hand.dae" name="Walk" id="walk" speed="12"/>
+		<animation file="units/0ad_child_run.dae" name="Run" id="run" speed="7"/>
+		<animation file="units/0ad_child_idle.dae" name="Idle" id="idle1" speed="80"/>
+		<animation event="0.5" file="units/0ad_child_pick.dae" name="gather_rock" id="gather1" speed="80"/>
+	</animations>
+</variant>

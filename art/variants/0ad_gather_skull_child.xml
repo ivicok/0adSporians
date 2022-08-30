@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<variant name="approach_trophy">
+	<props>
+		<prop actor="props/w_bone.xml" attachpoint="r_weapon" />
+		<prop actor="" attachpoint="l_weapon" />
+		<prop actor="" attachpoint="l_bow" />
+	</props>
+	<animations>
+		<animation file="units/0ad_child_march_2hand.dae" name="Walk" id="walk" speed="12"/>
+		<animation file="units/0ad_child_run.dae" name="Run" id="run" speed="7"/>
+		<animation file="units/0ad_child_idle.dae" name="Idle" id="idle1" speed="80"/>
+		<animation file="units/0ad_child_gather.dae" name="gather_trophy" id="gather1" speed="150"/>
+	</animations>
+</variant>

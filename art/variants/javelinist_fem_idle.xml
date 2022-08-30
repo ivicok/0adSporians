@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<variant name="idle">
+  <animations>
+	<animation file="units/0ad_fem_idle_shield.dae" name="Idle" id="idle1" frequency="1" speed="80"/>
+	<animation file="units/0ad_fem_march.dae" name="Walk" id="walk" frequency="1" speed="10"/>
+	<animation file="units/0ad_fem_run.dae" name="Run" id="run" frequency="1" speed="7"/>
+	<animation file="units/0ad_fem_death1.dae" name="Death" id="death1" frequency="1" speed="80"/>
+	<animation file="units/0ad_fem_death2.dae" name="Death" id="death2" frequency="1" speed="80"/>
+	<animation file="units/0ad_fem_guard_shield.dae" name="Phalanx_Front" id="guard1" frequency="1" speed="40"/>
+	<animation file="units/0ad_fem_guard_shield.dae" name="Phalanx_Mid" id="guard1" frequency="1" speed="40"/>
+	<animation file="units/0ad_fem_guard_shield.dae" name="Phalanx_Back" id="guard1" frequency="1" speed="40"/>
+	<animation event="0.5" file="units/0ad_fem_vor_stich_shield.dae" name="attack_melee" id="attack3" speed="50"/>
+	<animation event="0.5" file="units/0ad_fem_vor_stich2_shield.dae" name="attack_melee" id="attack5" speed="40"/>
+  </animations>
+  <props>
+    <prop actor="props/w_javelin.xml" attachpoint="r_weapon" />
+  </props>
+</variant>

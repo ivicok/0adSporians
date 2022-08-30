@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<variant name="row_right">
+	<props>
+		<prop actor="props/w_oar.xml" attachpoint="r_weapon" />
+		<prop actor="" attachpoint="l_weapon" />
+		<prop actor="" attachpoint="l_bow" />
+	</props>
+	<animations>
+		<animation file="units/0ad_boat_idle.dae" name="row_idle" id="row_idle1" frequency="1" speed="100"/>
+		<animation file="units/0ad_boat_row.dae" name="row_slow" id="row_slow1" frequency="1" speed="70"/>
+		<animation file="units/0ad_boat_row.dae" name="row_fast" id="row_fast1" frequency="1" speed="100"/>
+	</animations>
+</variant>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<variant name="attack_ranged">
+  <animations>
+	<animation file="units/0ad_mle_idle_shield.dae" name="Idle" id="idle1" frequency="1" speed="80"/>
+	<animation file="units/0ad_mle_run.dae" name="Run" id="run" frequency="1" speed="7"/>
+	<animation file="units/0ad_mle_march.dae" name="Walk" id="walk" frequency="1" speed="10"/>
+	<animation file="units/0ad_swim_idle_shield.dae" name="Float" id="float" frequency="1" speed="60"/>
+	<animation file="units/0ad_swim_move_shield.dae" name="Swim" id="swim" frequency="1" speed="50"/>
+	<animation file="units/0ad_mle_dance.dae" name="promotion" id="promotion" frequency="1" speed="100"/>
+	<animation file="units/0ad_fem_death1.dae" name="Death" id="death1" frequency="1" speed="80"/>
+	<animation file="units/0ad_fem_death2.dae" name="Death" id="death2" frequency="1" speed="80"/>
+	<animation file="units/0ad_mle_guard_shield.dae" name="Phalanx_Front" id="guard1" frequency="1" speed="40"/>
+	<animation file="units/0ad_mle_guard_shield.dae" name="Phalanx_Mid" id="guard1" frequency="1" speed="40"/>
+	<animation file="units/0ad_mle_guard_shield.dae" name="Phalanx_Back" id="guard1" frequency="1" speed="40"/>
+	<animation event="0.3" file="units/0ad_fem_throw.dae" name="attack_ranged" id="attack1" speed="100"/>
+	<animation event="0.5" file="units/0ad_mle_vor_stich_shield.dae" name="attack_melee" id="attack2" speed="50"/>
+	<animation event="0.5" file="units/0ad_fem_vor_stich2_shield.dae" name="attack_melee" id="attack5" speed="40"/>
+	<animation event="0.3" file="units/0ad_swim_oberhau.dae" name="attack_swim" id="attack4" speed="50"/>
+  </animations>
+</variant>

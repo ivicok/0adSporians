@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<variant name="approach_trophy">
+	<props>
+		<prop actor="props/w_bone.xml" attachpoint="r_weapon" />
+		<prop actor="" attachpoint="l_weapon" />
+		<prop actor="" attachpoint="l_bow" />
+	</props>
+	<animations>
+		<animation file="units/0ad_mle_gather.dae" name="gather_trophy" id="gather1" speed="120"/>
+	</animations>
+</variant>

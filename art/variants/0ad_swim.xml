@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<variant name="Swim">
+	<animations>
+		<animation file="units/0ad_swim_idle.dae" name="Idle" id="float" frequency="1" speed="100"/>
+		<animation file="units/0ad_swim_move.dae" name="Walk" id="swim" frequency="1" speed="100"/>
+	</animations>
+</variant>
