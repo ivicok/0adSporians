@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.79.0 commit date:2018-03-22, commit time:14:10, hash:f4dc9f9d68b</authoring_tool>
+    </contributor>
+    <created>2022-01-02T22:29:50</created>
+    <modified>2022-01-02T22:29:50</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="scale_dds" name="scale_dds">
+      <init_from>scale.png</init_from>
+    </image>
+  </library_images>
+  <library_effects>
+    <effect id="Material_scale-effect">
+      <profile_COMMON>
+        <newparam sid="scale_dds-surface">
+          <surface type="2D">
+            <init_from>scale_dds</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="scale_dds-sampler">
+          <sampler2D>
+            <source>scale_dds-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="scale_dds-sampler"/>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.25 0.25 0.25 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="Material_scale-material" name="Material_scale">
+      <instance_effect url="#Material_scale-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="AurochsMesh_002-mesh" name="AurochsMesh.002">
+      <mesh>
+        <source id="AurochsMesh_002-mesh-positions">
+          <float_array id="AurochsMesh_002-mesh-positions-array" count="57">-0.7092786 -2.971722 3.83639 -0.7535959 -1.357867 4.481995 -0.6764231 -1.990968 4.887737 -0.9906974 -1.951223 3.457356 -0.5746557 -3.218091 4.793959 -0.315442 -2.169017 5.079465 -0.4390555 -3.048524 5.107728 0.7339593 -2.971722 3.83639 0.6863501 -1.357867 4.481995 0.559224 -1.990968 4.887737 0.8925827 -1.951223 3.457356 0.5754179 -3.218091 4.793959 0.3162044 -2.169017 5.079465 0.4398179 -3.048524 5.107728 3.81176e-4 -1.575634 5.085421 3.81177e-4 -3.281054 5.340476 3.81176e-4 -1.11529 5.224875 3.81176e-4 -2.348649 5.114564 3.81177e-4 -2.785078 5.45639</float_array>
+          <technique_common>
+            <accessor source="#AurochsMesh_002-mesh-positions-array" count="19" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="AurochsMesh_002-mesh-normals">
+          <float_array id="AurochsMesh_002-mesh-normals-array" count="57">-0.7940177 0.05285918 0.6055922 0.01327562 -0.160315 0.9869767 0.03048849 0.0272535 0.9991635 -0.8965278 0.1563491 0.4144793 -0.9757015 -0.144173 0.1649872 -0.9700341 -0.1227192 0.2096999 0 0.2783671 0.9604748 -0.7049106 -0.2010019 0.6802202 0 -0.3590609 0.9333142 -0.2706783 0.09613668 0.9578576 0 0.1550974 0.9878993 -0.916889 -0.2081105 0.3405945 0.8090499 0.07846349 0.5824792 0.9087971 0.07995998 0.409505 0.9796739 -0.03683692 0.1971861 0.9723953 -0.06231969 0.2248637 0.7290037 -0.1764599 0.661374 0.3439807 0.1133174 0.9321141 0.9275078 -0.1348031 0.3486509</float_array>
+          <technique_common>
+            <accessor source="#AurochsMesh_002-mesh-normals-array" count="19" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="AurochsMesh_002-mesh-map-0">
+          <float_array id="AurochsMesh_002-mesh-map-0-array" count="156">0.6973611 0.585102 0.7113075 0.6239317 0.6630939 0.6166716 0.6630939 0.6166716 0.6565087 0.5628154 0.6973611 0.585102 0.7696028 0.5344157 0.6973611 0.585102 0.7083509 0.534379 0.7867209 0.6288082 0.7673884 0.6080067 0.7924672 0.6235063 0.6565087 0.5628154 0.7083509 0.534379 0.6973611 0.585102 0.6973611 0.585102 0.7673884 0.6080067 0.7229494 0.6081572 0.7490142 0.62637 0.7113075 0.6239317 0.7229494 0.6081572 0.6973611 0.585102 0.7229494 0.6081572 0.7113075 0.6239317 0.7696028 0.5344157 0.7711479 0.5986799 0.6973611 0.585102 0.7924672 0.6235063 0.7673884 0.6080067 0.7711479 0.5986799 0.7673884 0.6080067 0.7490142 0.62637 0.7229494 0.6081572 0.6973611 0.585102 0.7711479 0.5986799 0.7673884 0.6080067 0.6973611 0.585102 0.6630939 0.6166716 0.7113075 0.6239317 0.6630939 0.6166716 0.6973611 0.585102 0.6565087 0.5628154 0.7696028 0.5344157 0.7083509 0.534379 0.6973611 0.585102 0.7867209 0.6288082 0.7924672 0.6235063 0.7673884 0.6080067 0.6565087 0.5628154 0.6973611 0.585102 0.7083509 0.534379 0.6973611 0.585102 0.7229494 0.6081572 0.7673884 0.6080067 0.7490142 0.62637 0.7229494 0.6081572 0.7113075 0.6239317 0.6973611 0.585102 0.7113075 0.6239317 0.7229494 0.6081572 0.7696028 0.5344157 0.6973611 0.585102 0.7711479 0.5986799 0.7924672 0.6235063 0.7711479 0.5986799 0.7673884 0.6080067 0.7490142 0.62637 0.7673884 0.6080067 0.7229494 0.6081572 0.6973611 0.585102 0.7673884 0.6080067 0.7711479 0.5986799 0.7673884 0.6080067 0.7867209 0.6288082 0.7490142 0.62637 0.7490142 0.62637 0.7867209 0.6288082 0.7673884 0.6080067</float_array>
+          <technique_common>
+            <accessor source="#AurochsMesh_002-mesh-map-0-array" count="78" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="AurochsMesh_002-mesh-vertices">
+          <input semantic="POSITION" source="#AurochsMesh_002-mesh-positions"/>
+        </vertices>
+        <triangles material="Material_scale-material" count="26">
+          <input semantic="VERTEX" source="#AurochsMesh_002-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#AurochsMesh_002-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#AurochsMesh_002-mesh-map-0" offset="2" set="0"/>
+          <p>2 0 0 14 1 1 16 2 2 16 2 3 1 3 4 2 0 5 0 4 6 2 0 7 3 5 8 18 6 9 6 7 10 15 8 11 1 3 12 3 5 13 2 0 14 2 0 15 6 7 16 5 9 17 17 10 18 14 1 19 5 9 20 2 0 21 5 9 22 14 1 23 0 4 24 4 11 25 2 0 26 15 8 27 6 7 28 4 11 29 6 7 30 17 10 31 5 9 32 2 0 33 4 11 34 6 7 35 9 12 36 16 2 37 14 1 38 16 2 39 9 12 40 8 13 41 7 14 42 10 15 43 9 12 44 18 6 45 15 8 46 13 16 47 8 13 48 9 12 49 10 15 50 9 12 51 12 17 52 13 16 53 17 10 54 12 17 55 14 1 56 9 12 57 14 1 58 12 17 59 7 14 60 9 12 61 11 18 62 15 8 63 11 18 64 13 16 65 17 10 66 13 16 67 12 17 68 9 12 69 13 16 70 11 18 71 6 7 72 18 6 73 17 10 74 17 10 75 18 6 76 13 16 77</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="Bovidae_Skeleton_Aurochs_saddle_b-skin" name="Bovidae_Skeleton">
+      <skin source="#AurochsMesh_002-mesh">
+        <bind_shape_matrix>1.1 0 0 0 0 1.1 0 0 0 0 1.1 0 0 0 0 1</bind_shape_matrix>
+        <source id="Bovidae_Skeleton_Aurochs_saddle_b-skin-joints">
+          <Name_array id="Bovidae_Skeleton_Aurochs_saddle_b-skin-joints-array" count="41">Bovidae_belly Bovidae_ear_L Bovidae_ear_R Bovidae_eartip_L Bovidae_eartip_R Bovidae_FrontLegTop_L Bovidae_FrontLegTop_R Bovidae_FrontThigh_L Bovidae_FrontThigh_R Bovidae_Head Bovidae_Neck Bovidae_pelvis Bovidae_RearThigh_L Bovidae_RearThigh_R Bovidae_ReartLegTop_L Bovidae_ReartLegTop_R Bovidae_spine Bovidae_spine1 Bovidae_SpineBottom Bovidae_Tail Bovidae_TailMid Bovidae_TailTip Bovidae_FrontCalf_left Bovidae_FrontCalf_right Bovidae_FrontFoot_left Bovidae_FrontFoot_right Bovidae_RearCalf_left Bovidae_RearCalf_right Bovidae_RearFoot_left Bovidae_RearFoot_right Bovidae_Root prop_neck Bovidae_front_knee_L Bovidae_Frontfoot_IK_L Bovidae_RearFoot_IK_L Bovidae_Head_IK Bovidae_rear_knee_L Bovidae_front_knee_R Bovidae_Frontfoot_IK_R Bovidae_RearFoot_IK_R Bovidae_rear_knee_R</Name_array>
+          <technique_common>
+            <accessor source="#Bovidae_Skeleton_Aurochs_saddle_b-skin-joints-array" count="41" stride="1">
+              <param name="JOINT" type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Bovidae_Skeleton_Aurochs_saddle_b-skin-bind_poses">
+          <float_array id="Bovidae_Skeleton_Aurochs_saddle_b-skin-bind_poses-array" count="656">-1 0 3.27121e-7 -4.87737e-7 0 -0.992278 -0.1240347 0.4152199 3.35344e-7 -0.1240348 0.9922779 -1.741869 0 0 0 1 -0.3025506 0.9430096 -0.1385495 2.793959 -0.787634 -0.3292199 -0.5208135 0.3706125 -0.5367453 -0.04844588 0.8423526 -2.740189 0 0 0 1 -0.3025506 -0.9430096 0.1385494 -2.793959 0.7876336 -0.32922 -0.5208135 0.3706126 0.5367454 -0.04844605 0.8423523 -2.740189 0 0 0 1 0.6012563 0.4355857 -0.6698928 3.360869 -0.3100414 -0.6455002 -0.6980001 -0.01872479 -0.7364541 0.6273717 -0.2530612 2.007145 0 0 0 1 0.6012561 -0.4355854 0.6698926 -3.360869 0.3100413 -0.6455001 -0.6979999 -0.01872503 0.7364541 0.6273716 -0.2530613 2.007145 0 0 0 1 0.8215216 0.5549275 -0.1309866 1.324543 -0.5549272 0.7253896 -0.4072661 1.789823 -0.1309866 0.4072661 0.9038677 -1.32592 0 0 0 1 0.8215216 -0.5549276 0.1309865 -1.324543 0.5549273 0.7253897 -0.407266 1.789823 0.1309864 0.407266 0.9038675 -1.325919 0 0 0 1 0.9998264 -0.01315629 0.01317816 0.4217126 0.01315629 -0.001750409 -0.9999117 1.961332 0.01317828 0.999912 -0.001577138 1.247166 0 0 0 1 0.9998266 0.01315623 -0.01317816 -0.4217125 -0.01315617 -0.001750588 -0.9999116 1.961332 -0.01317852 0.999912 -0.001577079 1.247166 0 0 0 1 0.9999999 0 0 0 0 -0.9083262 -0.4182626 -1.06285 0 0.4182625 -0.9083263 3.524838 0 0 0 1 0.9999999 0 0 0 0 -0.95089 0.3095305 -2.403461 0 -0.3095304 -0.9508896 1.866578 0 0 0 1 -1 0 -1.30169e-7 5.15269e-7 0 -0.862068 0.506793 -0.5941698 -1.50996e-7 0.5067929 0.8620681 -2.721674 0 0 0 1 0.9999999 -2.98426e-4 1.79857e-4 0.4498479 2.98572e-4 0.4677865 -0.8838415 1.556008 1.79641e-4 0.8838414 0.4677867 -1.740029 0 0 0 1 1 2.98396e-4 -1.79917e-4 -0.4498478 -2.98581e-4 0.4677866 -0.8838414 1.556008 -1.79721e-4 0.8838416 0.4677866 -1.740029 0 0 0 1 -0.05322623 0.9960191 -0.07150709 -0.6743514 -0.6979227 -0.08831995 -0.7107065 1.958099 -0.7141926 0.01207822 0.6998451 -1.863235 0 0 0 1 -0.05322641 -0.9960191 0.07150703 0.6743516 0.6979228 -0.08832013 -0.7107064 1.958099 0.7141926 0.0120778 0.6998453 -1.863235 0 0 0 1 -0.9963545 -0.005436062 0.0851373 -0.2579178 -0.005436122 -0.9918941 -0.1269519 0.5805537 0.08513736 -0.1269521 0.9882484 -2.981319 0 0 0 1 -0.9994986 0.007110774 -0.0308566 0.08986634 0.007110655 -0.8991711 -0.4375398 0.4332379 -0.03085654 -0.4375399 0.8986696 -3.010788 0 0 0 1 1 2.71875e-7 0 -1.50814e-7 -2.47967e-7 0.834925 -0.550364 0.8715973 0 0.5503817 0.8349489 -3.138555 0 0 0 1 1 -7.49196e-7 4.21804e-7 4.1971e-7 7.49305e-7 0.518593 -0.8550274 1.334978 4.21551e-7 0.8550329 0.5186213 -2.840505 0 0 0 1 1 0 0 0 0 -0.02602511 -0.9996823 2.351452 0 0.999671 -0.02599823 -1.865296 0 0 0 1 1 0 0 0 0 -0.02602541 -0.999682 1.608917 0 0.9996711 -0.02599823 -1.865296 0 0 0 1 0.9999973 0.001622676 -0.001465439 0.4533337 -0.001622617 0.1015725 -0.9948267 1.023279 -0.00146538 0.9948268 0.1015749 1.141152 0 0 0 1 0.9999972 -0.001622617 0.00146538 -0.4533336 0.001622676 0.1015726 -0.9948266 1.023279 0.001465082 0.9948267 0.1015751 1.141152 0 0 0 1 0.9999998 0 0 0.4510693 0 0.009662389 -0.9999532 0.2584287 0 0.9999534 0.009662449 1.170538 0 0 0 1 0.9999998 0 0 -0.4510692 0 0.009662449 -0.9999532 0.2584288 -3.09897e-7 0.9999535 0.009662508 1.170539 0 0 0 1 0.9999995 4.417e-4 -4.91384e-4 0.4495436 -4.4188e-4 -0.1058403 -0.9943829 1.225934 -4.91145e-4 0.9943829 -0.1058403 -1.272353 0 0 0 1 0.9999998 -4.41849e-4 4.91396e-4 -0.4495435 4.4198e-4 -0.1058403 -0.994383 1.225933 4.9129e-4 0.9943832 -0.1058402 -1.272354 0 0 0 1 0.9999999 0 0 0.4500001 0 -0.6131634 -0.7899562 0.9936776 0 0.789956 -0.6131634 -0.8811547 0 0 0 1 1 0 0 -0.4500001 1.36762e-7 -0.6131635 -0.7899559 0.9936776 0 0.7899561 -0.6131637 -0.8811547 0 0 0 1 1 0 0 0 0 0 1 0 0 -1 0 0 0 0 0 1 0.9999999 0 -5.24638e-7 1.19222e-6 0 0.9956073 0.09362483 2.186823 5.74574e-7 -0.09362536 0.9956054 -2.229257 0 0 0 1 -1 0 0 -0.4499999 0 -1 0 -2.139921 0 0 1 -0.9027369 0 0 0 1 1 0 0 0.4510693 0 0.009662508 -0.9999533 0.2584285 0 0.9999534 0.009662508 1.170539 0 0 0 1 1 -1.78814e-7 1.19209e-7 0.4500003 0 -0.6131635 -0.789956 0.9936776 2.38419e-7 0.789956 -0.6131632 -0.8811542 0 0 0 1 -1 0 0 0 0 -1 0 -3.53381 0 0 1 -2.253349 0 0 0 1 -1 0 0 -0.4496268 0 -1 0 0.4947612 0 0 1 -1.084602 0 0 0 1 -1 0 0 0.4499999 0 -1 0 -2.139921 0 0 1 -0.9027369 0 0 0 1 1 0 0 -0.4510693 0 0.009662508 -0.9999533 0.2584285 0 0.9999534 0.009662508 1.170539 0 0 0 1 1 1.78814e-7 -1.19209e-7 -0.4500003 0 -0.6131635 -0.789956 0.9936776 -2.38419e-7 0.789956 -0.6131632 -0.8811542 0 0 0 1 -1 0 0 0.4496268 0 -1 0 0.4947612 0 0 1 -1.084602 0 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Bovidae_Skeleton_Aurochs_saddle_b-skin-bind_poses-array" count="41" stride="16">
+              <param name="TRANSFORM" type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Bovidae_Skeleton_Aurochs_saddle_b-skin-weights">
+          <float_array id="Bovidae_Skeleton_Aurochs_saddle_b-skin-weights-array" count="45">0.08279347 0.08049643 0.8110957 0.0256145 0.03753852 0.06175601 0.02671438 0.1192145 0.7547765 1 0.7599428 0.1540614 0.03466039 0.05133539 1 0.09335732 0.9066427 1 0.08279323 0.08049625 0.8110938 0.0256167 0.03711611 0.06182026 0.02690422 0.1192389 0.7549206 0.04408705 0.9559129 0.7598907 0.1540889 0.03465944 0.05136096 1 0.09335649 0.9066435 1 0.5238698 0.4761302 1 0.8488048 0.1511952 0.09662121 0.9033788 1</float_array>
+          <technique_common>
+            <accessor source="#Bovidae_Skeleton_Aurochs_saddle_b-skin-weights-array" count="45" stride="1">
+              <param name="WEIGHT" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#Bovidae_Skeleton_Aurochs_saddle_b-skin-joints"/>
+          <input semantic="INV_BIND_MATRIX" source="#Bovidae_Skeleton_Aurochs_saddle_b-skin-bind_poses"/>
+        </joints>
+        <vertex_weights count="19">
+          <input semantic="JOINT" source="#Bovidae_Skeleton_Aurochs_saddle_b-skin-joints" offset="0"/>
+          <input semantic="WEIGHT" source="#Bovidae_Skeleton_Aurochs_saddle_b-skin-weights" offset="1"/>
+          <vcount>4 5 1 4 1 2 1 4 5 2 4 1 2 1 2 1 2 2 1 </vcount>
+          <v>5 0 9 1 10 2 17 3 0 4 5 5 7 6 16 7 17 8 17 9 5 10 7 11 10 12 17 13 17 14 16 15 17 16 17 17 6 18 9 19 10 20 17 21 0 22 6 23 8 24 16 25 17 26 16 27 17 28 6 29 8 30 10 31 17 32 17 33 16 34 17 35 17 36 16 37 17 38 17 39 16 40 17 41 16 42 17 43 17 44</v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="Bovidae_Skeleton" name="Bovidae_Skeleton" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <node id="Bovidae_Skeleton_Bovidae_Root" name="Bovidae_Root" sid="Bovidae_Root" type="JOINT">
+          <matrix sid="transform">1 0 0 0 0 0 -1 0 0 1 0 0 0 0 0 1</matrix>
+          <node id="Bovidae_Skeleton_Bovidae_pelvis" name="Bovidae_pelvis" sid="Bovidae_pelvis" type="JOINT">
+            <matrix sid="transform">-1 0 -1.50996e-7 1.04308e-7 -1.30169e-7 0.5067929 0.8620678 2.647388 7.65236e-8 0.8620677 -0.506793 -0.8671107 0 0 0 1</matrix>
+            <node id="Bovidae_Skeleton_Bovidae_spine" name="Bovidae_spine" sid="Bovidae_spine" type="JOINT">
+              <matrix sid="transform">0.9963543 0.005436264 -0.08513751 -5.68434e-14 0.0478333 0.7907415 0.6102787 0.7785346 0.07063942 -0.6121261 0.787599 4.76837e-7 0 0 0 1</matrix>
+              <node id="Bovidae_Skeleton_Bovidae_spine1" name="Bovidae_spine1" sid="Bovidae_spine1" type="JOINT">
+                <matrix sid="transform">0.9931892 -0.03944785 0.109633 -2.98023e-8 0.002297584 0.94739 0.3200729 1.133574 -0.1164915 -0.317641 0.9410281 0 0 0 0 1</matrix>
+                <node id="Bovidae_Skeleton_Bovidae_FrontLegTop_L" name="Bovidae_FrontLegTop_L" sid="Bovidae_FrontLegTop_L" type="JOINT">
+                  <matrix sid="transform">-0.8131222 0.5723742 0.1059267 0.282884 -0.4358211 -0.4780001 -0.7626114 0.8548762 -0.385866 -0.6662612 0.6381251 -0.4610996 0 0 0 1</matrix>
+                  <node id="Bovidae_Skeleton_Bovidae_FrontThigh_L" name="Bovidae_FrontThigh_L" sid="Bovidae_FrontThigh_L" type="JOINT">
+                    <matrix sid="transform">0.8123522 0.1408118 0.5659115 0 -0.5697417 0.3986595 0.718655 0.3519043 -0.1244108 -0.9062245 0.4040783 0 0 0 0 1</matrix>
+                    <node id="Bovidae_Skeleton_Bovidae_FrontCalf_left" name="Bovidae_FrontCalf_left" sid="Bovidae_FrontCalf_left" type="JOINT">
+                      <matrix sid="transform">0.9997835 -0.01606878 -0.01321497 2.98023e-8 0.01461873 0.99454 -0.1033268 1.054924 0.01480319 0.1031114 0.9945598 0 0 0 0 1</matrix>
+                      <node id="Bovidae_Skeleton_Bovidae_FrontFoot_left" name="Bovidae_FrontFoot_left" sid="Bovidae_FrontFoot_left" type="JOINT">
+                        <matrix sid="transform">0.9999977 0.001481074 0.001608441 5.96046e-8 -0.001622711 0.9957618 0.09195534 0.65904 -0.00146546 -0.09195771 0.9957618 0 0 0 0 1</matrix>
+                        <extra>
+                          <technique profile="blender">
+                            <connect sid="connect" type="bool">1</connect>
+                            <layer sid="layer" type="string">1</layer>
+                            <roll sid="roll" type="float">0</roll>
+                            <tip_x sid="tip_x" type="float">0</tip_x>
+                            <tip_y sid="tip_y" type="float">0.002294182</tip_y>
+                            <tip_z sid="tip_z" type="float">-0.237419</tip_z>
+                          </technique>
+                        </extra>
+                      </node>
+                      <extra>
+                        <technique profile="blender">
+                          <connect sid="connect" type="bool">1</connect>
+                          <layer sid="layer" type="string">0</layer>
+                          <roll sid="roll" type="float">0</roll>
+                        </technique>
+                      </extra>
+                    </node>
+                    <extra>
+                      <technique profile="blender">
+                        <connect sid="connect" type="bool">1</connect>
+                        <layer sid="layer" type="string">0</layer>
+                        <roll sid="roll" type="float">0</roll>
+                      </technique>
+                    </extra>
+                  </node>
+                  <extra>
+                    <technique profile="blender">
+                      <layer sid="layer" type="string">0</layer>
+                      <roll sid="roll" type="float">0</roll>
+                    </technique>
+                  </extra>
+                </node>
+                <node id="Bovidae_Skeleton_Bovidae_Neck" name="Bovidae_Neck" sid="Bovidae_Neck" type="JOINT">
+                  <matrix sid="transform">-0.9994986 -0.01631267 0.02714024 7.45058e-9 0.007110742 0.7195804 0.6943728 0.8666204 -0.03085666 0.6942176 -0.7191035 0 0 0 0 1</matrix>
+                  <node id="Bovidae_Skeleton_Bovidae_Head" name="Bovidae_Head" sid="Bovidae_Head" type="JOINT">
+                    <matrix sid="transform">1 -1.21858e-8 -5.06914e-8 0 -2.54657e-8 0.7342528 -0.6788763 0.7698674 4.5493e-8 0.6788762 0.7342527 0 0 0 0 1</matrix>
+                    <node id="Bovidae_Skeleton_Bovidae_ear_L" name="Bovidae_ear_L" sid="Bovidae_ear_L" type="JOINT">
+                      <matrix sid="transform">-0.3025506 -0.7876343 -0.5367454 -0.3335629 -0.7986102 0.5168761 -0.3083197 0.1320196 0.520274 0.3353682 -0.7853938 -0.2052052 0 0 0 1</matrix>
+                      <node id="Bovidae_Skeleton_Bovidae_eartip_L" name="Bovidae_eartip_L" sid="Bovidae_eartip_L" type="JOINT">
+                        <matrix sid="transform">0.3216642 -0.4182017 0.8494934 0 -0.2680845 0.8202385 0.5053111 0.2727352 -0.9081093 -0.3902766 0.1517281 0 0 0 0 1</matrix>
+                        <extra>
+                          <technique profile="blender">
+                            <connect sid="connect" type="bool">1</connect>
+                            <layer sid="layer" type="string">0</layer>
+                            <roll sid="roll" type="float">-0.188883</roll>
+                            <tip_x sid="tip_x" type="float">-0.09398376</tip_x>
+                            <tip_y sid="tip_y" type="float">-0.195672</tip_y>
+                            <tip_z sid="tip_z" type="float">-0.2115864</tip_z>
+                          </technique>
+                        </extra>
+                      </node>
+                      <extra>
+                        <technique profile="blender">
+                          <layer sid="layer" type="string">0</layer>
+                          <roll sid="roll" type="float">-0.6355634</roll>
+                        </technique>
+                      </extra>
+                    </node>
+                    <node id="Bovidae_Skeleton_Bovidae_ear_R" name="Bovidae_ear_R" sid="Bovidae_ear_R" type="JOINT">
+                      <matrix sid="transform">-0.3025508 0.7876343 0.5367454 0.3335626 0.7986102 0.5168761 -0.3083195 0.1320199 -0.5202739 0.3353682 -0.785394 -0.2052052 0 0 0 1</matrix>
+                      <node id="Bovidae_Skeleton_Bovidae_eartip_R" name="Bovidae_eartip_R" sid="Bovidae_eartip_R" type="JOINT">
+                        <matrix sid="transform">0.3216641 0.418202 -0.8494935 0 0.2680842 0.8202387 0.505311 0.2727352 0.9081097 -0.3902764 0.1517282 -2.38419e-7 0 0 0 1</matrix>
+                        <extra>
+                          <technique profile="blender">
+                            <connect sid="connect" type="bool">1</connect>
+                            <layer sid="layer" type="string">0</layer>
+                            <roll sid="roll" type="float">0.188883</roll>
+                            <tip_x sid="tip_x" type="float">0.09398376</tip_x>
+                            <tip_y sid="tip_y" type="float">-0.195672</tip_y>
+                            <tip_z sid="tip_z" type="float">-0.2115864</tip_z>
+                          </technique>
+                        </extra>
+                      </node>
+                      <extra>
+                        <technique profile="blender">
+                          <layer sid="layer" type="string">0</layer>
+                          <roll sid="roll" type="float">0.6355634</roll>
+                        </technique>
+                      </extra>
+                    </node>
+                    <extra>
+                      <technique profile="blender">
+                        <connect sid="connect" type="bool">1</connect>
+                        <layer sid="layer" type="string">0</layer>
+                        <tip_x sid="tip_x" type="float">0</tip_x>
+                        <tip_y sid="tip_y" type="float">-1.094088</tip_y>
+                        <tip_z sid="tip_z" type="float">-0.5038018</tip_z>
+                      </technique>
+                    </extra>
+                  </node>
+                  <extra>
+                    <technique profile="blender">
+                      <connect sid="connect" type="bool">1</connect>
+                      <layer sid="layer" type="string">0</layer>
+                    </technique>
+                  </extra>
+                </node>
+                <node id="Bovidae_Skeleton_prop_neck" name="prop_neck" sid="prop_neck" type="JOINT">
+                  <matrix sid="transform">-0.9994987 0.004190532 -0.03138638 0.01073223 0.007110668 -0.9361864 -0.3514347 1.697076 -0.03085616 -0.3514802 0.9356884 -0.1562726 0 0 0 1</matrix>
+                  <extra>
+                    <technique profile="blender">
+                      <layer sid="layer" type="string">0</layer>
+                      <roll sid="roll" type="float">4.76837e-7</roll>
+                      <tip_x sid="tip_x" type="float">0</tip_x>
+                      <tip_y sid="tip_y" type="float">0.7664858</tip_y>
+                      <tip_z sid="tip_z" type="float">0.07207918</tip_z>
+                    </technique>
+                  </extra>
+                </node>
+                <node id="Bovidae_Skeleton_Bovidae_FrontLegTop_R" name="Bovidae_FrontLegTop_R" sid="Bovidae_FrontLegTop_R" type="JOINT">
+                  <matrix sid="transform">-0.8290979 -0.5369241 -0.1559155 -0.2540417 0.4475042 -0.4701083 -0.7607486 0.8586961 0.3351671 -0.7005078 0.6300415 -0.4776757 0 0 0 1</matrix>
+                  <node id="Bovidae_Skeleton_Bovidae_FrontThigh_R" name="Bovidae_FrontThigh_R" sid="Bovidae_FrontThigh_R" type="JOINT">
+                    <matrix sid="transform">0.8123523 -0.140812 -0.5659114 1.19209e-7 0.5697418 0.3986597 0.718655 0.3519042 0.1244108 -0.9062243 0.4040784 -1.19209e-7 0 0 0 1</matrix>
+                    <node id="Bovidae_Skeleton_Bovidae_FrontCalf_right" name="Bovidae_FrontCalf_right" sid="Bovidae_FrontCalf_right" type="JOINT">
+                      <matrix sid="transform">0.9997836 0.01606884 0.0132149 2.98023e-8 -0.01461881 0.99454 -0.1033268 1.054924 -0.01480312 0.1031114 0.9945597 1.19209e-7 0 0 0 1</matrix>
+                      <node id="Bovidae_Skeleton_Bovidae_FrontFoot_right" name="Bovidae_FrontFoot_right" sid="Bovidae_FrontFoot_right" type="JOINT">
+                        <matrix sid="transform">0.9999976 -0.001481073 -0.001608441 -5.96046e-8 0.001622707 0.9957618 0.09195538 0.65904 0.001465462 -0.09195776 0.9957618 0 0 0 0 1</matrix>
+                        <extra>
+                          <technique profile="blender">
+                            <connect sid="connect" type="bool">1</connect>
+                            <layer sid="layer" type="string">1</layer>
+                            <roll sid="roll" type="float">0</roll>
+                            <tip_x sid="tip_x" type="float">0</tip_x>
+                            <tip_y sid="tip_y" type="float">0.002294182</tip_y>
+                            <tip_z sid="tip_z" type="float">-0.237419</tip_z>
+                          </technique>
+                        </extra>
+                      </node>
+                      <extra>
+                        <technique profile="blender">
+                          <connect sid="connect" type="bool">1</connect>
+                          <layer sid="layer" type="string">0</layer>
+                          <roll sid="roll" type="float">0</roll>
+                        </technique>
+                      </extra>
+                    </node>
+                    <extra>
+                      <technique profile="blender">
+                        <connect sid="connect" type="bool">1</connect>
+                        <layer sid="layer" type="string">0</layer>
+                        <roll sid="roll" type="float">0</roll>
+                      </technique>
+                    </extra>
+                  </node>
+                  <extra>
+                    <technique profile="blender">
+                      <layer sid="layer" type="string">0</layer>
+                      <roll sid="roll" type="float">1.41561e-7</roll>
+                    </technique>
+                  </extra>
+                </node>
+                <extra>
+                  <technique profile="blender">
+                    <connect sid="connect" type="bool">1</connect>
+                    <layer sid="layer" type="string">0</layer>
+                    <roll sid="roll" type="float">3.141593</roll>
+                  </technique>
+                </extra>
+              </node>
+              <node id="Bovidae_Skeleton_Bovidae_belly" name="Bovidae_belly" sid="Bovidae_belly" type="JOINT">
+                <matrix sid="transform">0.9963545 -0.005165881 0.08515389 -0.1074454 0.005436155 0.9999809 -0.002942376 0.1602163 -0.08513707 0.003394566 0.9963635 -1.247193 0 0 0 1</matrix>
+                <extra>
+                  <technique profile="blender">
+                    <layer sid="layer" type="string">0</layer>
+                    <roll sid="roll" type="float">3.141593</roll>
+                    <tip_x sid="tip_x" type="float">0</tip_x>
+                    <tip_y sid="tip_y" type="float">-1.124603</tip_y>
+                    <tip_z sid="tip_z" type="float">-0.1405754</tip_z>
+                  </technique>
+                </extra>
+              </node>
+              <extra>
+                <technique profile="blender">
+                  <connect sid="connect" type="bool">1</connect>
+                  <layer sid="layer" type="string">0</layer>
+                  <roll sid="roll" type="float">3.141593</roll>
+                </technique>
+              </extra>
+            </node>
+            <node id="Bovidae_Skeleton_Bovidae_ReartLegTop_L" name="Bovidae_ReartLegTop_L" sid="Bovidae_ReartLegTop_L" type="JOINT">
+              <matrix sid="transform">0.05322599 0.6979231 0.714192 2.27374e-13 -0.8948747 -0.2840438 0.3442651 -1.19209e-7 0.443132 -0.6574363 0.6094353 -4.76837e-7 0 0 0 1</matrix>
+              <node id="Bovidae_Skeleton_Bovidae_RearThigh_L" name="Bovidae_RearThigh_L" sid="Bovidae_RearThigh_L" type="JOINT">
+                <matrix sid="transform">-0.05353663 0.5291089 0.8468634 0 -0.6980243 0.5866284 -0.4106449 0.6447701 -0.71407 -0.6131158 0.3379248 1.19209e-7 0 0 0 1</matrix>
+                <node id="Bovidae_Skeleton_Bovidae_RearCalf_left" name="Bovidae_RearCalf_left" sid="Bovidae_RearCalf_left" type="JOINT">
+                  <matrix sid="transform">0.9999996 -5.89181e-4 -8.06948e-4 2.98023e-8 9.39458e-4 0.829366 0.5587048 1.249708 3.40099e-4 -0.5587053 0.8293661 1.19209e-7 0 0 0 1</matrix>
+                  <node id="Bovidae_Skeleton_Bovidae_RearFoot_left" name="Bovidae_RearFoot_left" sid="Bovidae_RearFoot_left" type="JOINT">
+                    <matrix sid="transform">0.9999998 1.17398e-4 6.50199e-4 2.98023e-8 -4.41914e-4 0.8504164 0.5261099 0.8446769 -4.91166e-4 -0.52611 0.8504164 0 0 0 0 1</matrix>
+                    <extra>
+                      <technique profile="blender">
+                        <connect sid="connect" type="bool">1</connect>
+                        <layer sid="layer" type="string">1</layer>
+                        <tip_x sid="tip_x" type="float">0</tip_x>
+                        <tip_y sid="tip_y" type="float">-0.1897697</tip_y>
+                        <tip_z sid="tip_z" type="float">-0.244486</tip_z>
+                      </technique>
+                    </extra>
+                  </node>
+                  <extra>
+                    <technique profile="blender">
+                      <connect sid="connect" type="bool">1</connect>
+                      <layer sid="layer" type="string">0</layer>
+                      <roll sid="roll" type="float">2.44346e-7</roll>
+                    </technique>
+                  </extra>
+                </node>
+                <extra>
+                  <technique profile="blender">
+                    <connect sid="connect" type="bool">1</connect>
+                    <layer sid="layer" type="string">0</layer>
+                    <roll sid="roll" type="float">-2.44346e-7</roll>
+                  </technique>
+                </extra>
+              </node>
+              <extra>
+                <technique profile="blender">
+                  <layer sid="layer" type="string">0</layer>
+                  <roll sid="roll" type="float">-0.7823473</roll>
+                </technique>
+              </extra>
+            </node>
+            <node id="Bovidae_Skeleton_Bovidae_SpineBottom" name="Bovidae_SpineBottom" sid="Bovidae_SpineBottom" type="JOINT">
+              <matrix sid="transform">-1 2.55708e-7 -3.29701e-8 3.81027e-8 -2.53702e-7 -0.9986823 -0.0513154 0.1152225 -4.57576e-8 -0.05131865 0.9986532 0.457381 0 0 0 1</matrix>
+              <node id="Bovidae_Skeleton_Bovidae_Tail" name="Bovidae_Tail" sid="Bovidae_Tail" type="JOINT">
+                <matrix sid="transform">1 9.22748e-7 6.34525e-7 7.10543e-14 -1.10563e-6 0.9035624 0.4284562 0.8823929 -1.77976e-7 -0.4284563 0.9035627 -2.38419e-7 0 0 0 1</matrix>
+                <node id="Bovidae_Skeleton_Bovidae_TailMid" name="Bovidae_TailMid" sid="Bovidae_TailMid" type="JOINT">
+                  <matrix sid="transform">1 -4.02176e-7 -7.59918e-7 8.52651e-14 7.49186e-7 0.8412385 0.5406641 0.3653453 4.21831e-7 -0.5406641 0.8412385 0 0 0 0 1</matrix>
+                  <node id="Bovidae_Skeleton_Bovidae_TailTip" name="Bovidae_TailTip" sid="Bovidae_TailTip" type="JOINT">
+                    <matrix sid="transform">1 -9.27874e-16 5.82558e-12 0 4.996e-16 1 8.75443e-8 0.7425351 -5.82652e-12 -3.53903e-8 0.9999999 -1.19209e-7 0 0 0 1</matrix>
+                    <extra>
+                      <technique profile="blender">
+                        <connect sid="connect" type="bool">1</connect>
+                        <layer sid="layer" type="string">0</layer>
+                        <tip_x sid="tip_x" type="float">0</tip_x>
+                        <tip_y sid="tip_y" type="float">-0.01930415</tip_y>
+                        <tip_z sid="tip_z" type="float">-0.7422685</tip_z>
+                      </technique>
+                    </extra>
+                  </node>
+                  <extra>
+                    <technique profile="blender">
+                      <connect sid="connect" type="bool">1</connect>
+                      <layer sid="layer" type="string">0</layer>
+                    </technique>
+                  </extra>
+                </node>
+                <extra>
+                  <technique profile="blender">
+                    <connect sid="connect" type="bool">1</connect>
+                    <layer sid="layer" type="string">0</layer>
+                    <roll sid="roll" type="float">0</roll>
+                  </technique>
+                </extra>
+              </node>
+              <extra>
+                <technique profile="blender">
+                  <layer sid="layer" type="string">0</layer>
+                  <roll sid="roll" type="float">0</roll>
+                </technique>
+              </extra>
+            </node>
+            <node id="Bovidae_Skeleton_Bovidae_ReartLegTop_R" name="Bovidae_ReartLegTop_R" sid="Bovidae_ReartLegTop_R" type="JOINT">
+              <matrix sid="transform">0.0532268 -0.6979222 -0.7141929 2.08616e-7 0.8948746 -0.2840439 0.3442651 -1.19209e-7 -0.443132 -0.6574373 0.6094342 -4.76837e-7 0 0 0 1</matrix>
+              <node id="Bovidae_Skeleton_Bovidae_RearThigh_R" name="Bovidae_RearThigh_R" sid="Bovidae_RearThigh_R" type="JOINT">
+                <matrix sid="transform">-0.05353671 -0.5291089 -0.8468634 5.96046e-8 0.6980243 0.5866283 -0.4106449 0.6447704 0.7140699 -0.6131159 0.3379247 1.19209e-7 0 0 0 1</matrix>
+                <node id="Bovidae_Skeleton_Bovidae_RearCalf_right" name="Bovidae_RearCalf_right" sid="Bovidae_RearCalf_right" type="JOINT">
+                  <matrix sid="transform">0.9999996 5.89214e-4 8.07169e-4 -5.96046e-8 -9.3963e-4 0.829366 0.5587048 1.249708 -3.40244e-4 -0.5587052 0.8293663 0 0 0 0 1</matrix>
+                  <node id="Bovidae_Skeleton_Bovidae_RearFoot_right" name="Bovidae_RearFoot_right" sid="Bovidae_RearFoot_right" type="JOINT">
+                    <matrix sid="transform">0.9999998 -1.17258e-4 -6.50387e-4 -5.96046e-8 4.41891e-4 0.8504163 0.5261101 0.8446769 4.91406e-4 -0.5261103 0.8504162 0 0 0 0 1</matrix>
+                    <extra>
+                      <technique profile="blender">
+                        <connect sid="connect" type="bool">1</connect>
+                        <layer sid="layer" type="string">1</layer>
+                        <roll sid="roll" type="float">0</roll>
+                        <tip_x sid="tip_x" type="float">0</tip_x>
+                        <tip_y sid="tip_y" type="float">-0.1897698</tip_y>
+                        <tip_z sid="tip_z" type="float">-0.244486</tip_z>
+                      </technique>
+                    </extra>
+                  </node>
+                  <extra>
+                    <technique profile="blender">
+                      <connect sid="connect" type="bool">1</connect>
+                      <layer sid="layer" type="string">0</layer>
+                      <roll sid="roll" type="float">0</roll>
+                    </technique>
+                  </extra>
+                </node>
+                <extra>
+                  <technique profile="blender">
+                    <connect sid="connect" type="bool">1</connect>
+                    <layer sid="layer" type="string">0</layer>
+                    <roll sid="roll" type="float">2.1702e-7</roll>
+                  </technique>
+                </extra>
+              </node>
+              <extra>
+                <technique profile="blender">
+                  <layer sid="layer" type="string">0</layer>
+                  <roll sid="roll" type="float">0.7823473</roll>
+                </technique>
+              </extra>
+            </node>
+            <extra>
+              <technique profile="blender">
+                <layer sid="layer" type="string">0</layer>
+                <roll sid="roll" type="float">3.141593</roll>
+              </technique>
+            </extra>
+          </node>
+          <extra>
+            <technique profile="blender">
+              <layer sid="layer" type="string">0</layer>
+              <tip_x sid="tip_x" type="float">0</tip_x>
+              <tip_y sid="tip_y" type="float">0</tip_y>
+              <tip_z sid="tip_z" type="float">0.2725734</tip_z>
+            </technique>
+          </extra>
+        </node>
+        <node id="Bovidae_Skeleton_Bovidae_front_knee_L" name="Bovidae_front_knee_L" sid="Bovidae_front_knee_L" type="JOINT">
+          <matrix sid="transform">-1 0 0 -0.4499999 0 -1 0 -2.139921 0 0 1 0.9027368 0 0 0 1</matrix>
+          <extra>
+            <technique profile="blender">
+              <layer sid="layer" type="string">0</layer>
+              <tip_x sid="tip_x" type="float">0</tip_x>
+              <tip_y sid="tip_y" type="float">-0.3000002</tip_y>
+              <tip_z sid="tip_z" type="float">0</tip_z>
+            </technique>
+          </extra>
+        </node>
+        <node id="Bovidae_Skeleton_Bovidae_Frontfoot_IK_L" name="Bovidae_Frontfoot_IK_L" sid="Bovidae_Frontfoot_IK_L" type="JOINT">
+          <matrix sid="transform">1 0 0 -0.4510693 0 0.009662561 0.9999533 -1.172981 0 -0.9999533 0.009662509 0.2471061 0 0 0 1</matrix>
+          <extra>
+            <technique profile="blender">
+              <layer sid="layer" type="string">0</layer>
+              <tip_x sid="tip_x" type="float">0</tip_x>
+              <tip_y sid="tip_y" type="float">0.002294182</tip_y>
+              <tip_z sid="tip_z" type="float">-0.237419</tip_z>
+            </technique>
+          </extra>
+        </node>
+        <node id="Bovidae_Skeleton_Bovidae_RearFoot_IK_L" name="Bovidae_RearFoot_IK_L" sid="Bovidae_RearFoot_IK_L" type="JOINT">
+          <matrix sid="transform">1 7.10543e-15 2.38419e-7 -0.4500001 -1.88341e-7 -0.6131634 0.7899562 1.30536 1.4619e-7 -0.7899562 -0.6131636 0.24467 0 0 0 1</matrix>
+          <extra>
+            <technique profile="blender">
+              <layer sid="layer" type="string">0</layer>
+              <roll sid="roll" type="float">2.38419e-7</roll>
+              <tip_x sid="tip_x" type="float">0</tip_x>
+              <tip_y sid="tip_y" type="float">-0.1897698</tip_y>
+              <tip_z sid="tip_z" type="float">-0.244486</tip_z>
+            </technique>
+          </extra>
+        </node>
+        <node id="Bovidae_Skeleton_Bovidae_Head_IK" name="Bovidae_Head_IK" sid="Bovidae_Head_IK" type="JOINT">
+          <matrix sid="transform">-1 0 0 1.03381e-7 0 -1 0 -3.53381 0 0 1 2.253349 0 0 0 1</matrix>
+          <extra>
+            <technique profile="blender">
+              <layer sid="layer" type="string">0</layer>
+              <tip_x sid="tip_x" type="float">0</tip_x>
+              <tip_y sid="tip_y" type="float">-0.5110195</tip_y>
+              <tip_z sid="tip_z" type="float">0</tip_z>
+            </technique>
+          </extra>
+        </node>
+        <node id="Bovidae_Skeleton_Bovidae_rear_knee_L" name="Bovidae_rear_knee_L" sid="Bovidae_rear_knee_L" type="JOINT">
+          <matrix sid="transform">-1 0 0 -0.4496268 0 -1 0 0.4947612 0 0 1 1.084602 0 0 0 1</matrix>
+          <extra>
+            <technique profile="blender">
+              <layer sid="layer" type="string">0</layer>
+              <tip_x sid="tip_x" type="float">0</tip_x>
+              <tip_y sid="tip_y" type="float">-0.3</tip_y>
+              <tip_z sid="tip_z" type="float">0</tip_z>
+            </technique>
+          </extra>
+        </node>
+        <node id="Bovidae_Skeleton_Bovidae_front_knee_R" name="Bovidae_front_knee_R" sid="Bovidae_front_knee_R" type="JOINT">
+          <matrix sid="transform">-1 0 0 0.4499999 0 -1 0 -2.139921 0 0 1 0.9027368 0 0 0 1</matrix>
+          <extra>
+            <technique profile="blender">
+              <layer sid="layer" type="string">0</layer>
+              <tip_x sid="tip_x" type="float">0</tip_x>
+              <tip_y sid="tip_y" type="float">-0.3000002</tip_y>
+              <tip_z sid="tip_z" type="float">0</tip_z>
+            </technique>
+          </extra>
+        </node>
+        <node id="Bovidae_Skeleton_Bovidae_Frontfoot_IK_R" name="Bovidae_Frontfoot_IK_R" sid="Bovidae_Frontfoot_IK_R" type="JOINT">
+          <matrix sid="transform">1 0 0 0.4510693 0 0.009662561 0.9999533 -1.172981 0 -0.9999533 0.009662509 0.2471061 0 0 0 1</matrix>
+          <extra>
+            <technique profile="blender">
+              <layer sid="layer" type="string">0</layer>
+              <tip_x sid="tip_x" type="float">0</tip_x>
+              <tip_y sid="tip_y" type="float">0.002294182</tip_y>
+              <tip_z sid="tip_z" type="float">-0.237419</tip_z>
+            </technique>
+          </extra>
+        </node>
+        <node id="Bovidae_Skeleton_Bovidae_RearFoot_IK_R" name="Bovidae_RearFoot_IK_R" sid="Bovidae_RearFoot_IK_R" type="JOINT">
+          <matrix sid="transform">1 -7.10543e-15 -2.38419e-7 0.4500001 1.88341e-7 -0.6131634 0.7899562 1.30536 -1.4619e-7 -0.7899562 -0.6131636 0.24467 0 0 0 1</matrix>
+          <extra>
+            <technique profile="blender">
+              <layer sid="layer" type="string">0</layer>
+              <roll sid="roll" type="float">-2.38419e-7</roll>
+              <tip_x sid="tip_x" type="float">0</tip_x>
+              <tip_y sid="tip_y" type="float">-0.1897698</tip_y>
+              <tip_z sid="tip_z" type="float">-0.244486</tip_z>
+            </technique>
+          </extra>
+        </node>
+        <node id="Bovidae_Skeleton_Bovidae_rear_knee_R" name="Bovidae_rear_knee_R" sid="Bovidae_rear_knee_R" type="JOINT">
+          <matrix sid="transform">-1 0 0 0.4496268 0 -1 0 0.4947612 0 0 1 1.084602 0 0 0 1</matrix>
+          <extra>
+            <technique profile="blender">
+              <layer sid="layer" type="string">0</layer>
+              <tip_x sid="tip_x" type="float">0</tip_x>
+              <tip_y sid="tip_y" type="float">-0.3</tip_y>
+              <tip_z sid="tip_z" type="float">0</tip_z>
+            </technique>
+          </extra>
+        </node>
+      </node>
+      <node id="Aurochs_saddle_b" name="Aurochs_saddle_b" type="NODE">
+        <translate sid="location">0 0 0</translate>
+        <rotate sid="rotationZ">0 0 1 0</rotate>
+        <rotate sid="rotationY">0 1 0 0</rotate>
+        <rotate sid="rotationX">1 0 0 0</rotate>
+        <scale sid="scale">1 1 1</scale>
+        <instance_controller url="#Bovidae_Skeleton_Aurochs_saddle_b-skin">
+          <skeleton>#Bovidae_Skeleton_Bovidae_Root</skeleton>
+          <skeleton>#Bovidae_Skeleton_Bovidae_front_knee_L</skeleton>
+          <skeleton>#Bovidae_Skeleton_Bovidae_Frontfoot_IK_L</skeleton>
+          <skeleton>#Bovidae_Skeleton_Bovidae_RearFoot_IK_L</skeleton>
+          <skeleton>#Bovidae_Skeleton_Bovidae_Head_IK</skeleton>
+          <skeleton>#Bovidae_Skeleton_Bovidae_rear_knee_L</skeleton>
+          <skeleton>#Bovidae_Skeleton_Bovidae_front_knee_R</skeleton>
+          <skeleton>#Bovidae_Skeleton_Bovidae_Frontfoot_IK_R</skeleton>
+          <skeleton>#Bovidae_Skeleton_Bovidae_RearFoot_IK_R</skeleton>
+          <skeleton>#Bovidae_Skeleton_Bovidae_rear_knee_R</skeleton>
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Material_scale-material" target="#Material_scale-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>
