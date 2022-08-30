@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_infantry_melee2">
+  <Attack>
+    <Melee>
+      <AttackName>Melee Weapon</AttackName>
+      <Damage>
+        <Hack>4</Hack>
+        <Pierce>6</Pierce>
+      </Damage>
+      <MaxRange>4</MaxRange>
+      <PrepareTime>500</PrepareTime>
+      <RepeatTime>1000</RepeatTime>
+      <Bonuses>
+        <BonusCavMelee>
+          <Classes>Cavalry</Classes>
+          <Multiplier>2.0</Multiplier>
+        </BonusCavMelee>
+      </Bonuses>
+      <PreferredClasses datatype="tokens">Human</PreferredClasses>
+    </Melee>
+  </Attack>
+  <Cost>
+    <Resources>
+      <wood>60</wood>
+      <metal>40</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>100</Max>
+  </Health>
+  <Identity>
+    <Classes datatype="tokens">Worker Rower Biome</Classes>
+    <GenericName>Champion</GenericName>
+    <Tooltip>Counters: 2× vs Cavalry.</Tooltip>
+    <VisibleClasses datatype="tokens">Spearman</VisibleClasses>
+  </Identity>
+  <Loot>
+    <wood>5</wood>
+  </Loot>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>5</Hack>
+        <Pierce>8</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <ResourceGatherer>
+    <MaxDistance>2.0</MaxDistance>
+    <BaseSpeed>1.0</BaseSpeed>
+	<Rates>
+      <skull.trophy>1</skull.trophy>
+	</Rates>
+    <Capacities>
+      <skull>10</skull>
+    </Capacities>
+  </ResourceGatherer>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/spear_attack.xml</attack_melee>
+    </SoundGroups>
+  </Sound>
+  <Turretable/>
+</Entity>

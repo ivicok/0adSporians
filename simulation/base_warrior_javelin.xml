@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_infantry">
+  <Attack>
+    <Ranged>
+      <AttackName>Javelin Throw</AttackName>
+      <Damage>
+        <Pierce>20</Pierce>
+      </Damage>
+      <MaxRange>30</MaxRange>
+      <PrepareTime>400</PrepareTime>
+      <RepeatTime>1250</RepeatTime>
+      <Projectile>
+        <Speed>70</Speed>
+        <Spread>1.2</Spread>
+        <Gravity>35</Gravity>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3"/>
+      </Projectile>
+      <PreferredClasses datatype="tokens">Human</PreferredClasses>
+    </Ranged>
+    <Melee>
+      <AttackName>Javelin Melee</AttackName>
+      <Damage>
+        <Pierce>10</Pierce>
+      </Damage>
+      <MaxRange>3</MaxRange>
+      <PrepareTime>500</PrepareTime>
+      <RepeatTime>1000</RepeatTime>
+      <PreferredClasses datatype="tokens">Unit+!Ship</PreferredClasses>
+    </Melee>
+  </Attack>
+  <Builder>
+	<Rate>1.0</Rate>
+	<Entities datatype="tokens"/>
+  </Builder>
+  <Health>
+    <Max>80</Max>
+  </Health>
+  <Identity>
+    <GenericName>Infantry Javelineer</GenericName>
+    <Classes datatype="tokens">Biome</Classes>
+    <VisibleClasses datatype="tokens">Ranged Javelinman Swimmer</VisibleClasses>
+    <Formations datatype="tokens">
+      special/formations/skirmish
+    </Formations>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>4</Hack>
+        <Pierce>5</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <ResourceGatherer>
+    <MaxDistance>1.0</MaxDistance>
+    <BaseSpeed>1.0</BaseSpeed>
+    <Rates>
+      <food.fruit>0.5</food.fruit>
+      <food.grain>0.25</food.grain>
+      <food.meat>1</food.meat>
+      <wood.tree>0.75</wood.tree>
+      <wood.ruins>5</wood.ruins>
+      <stone.rock>0.5</stone.rock>
+      <stone.ruins>2</stone.ruins>
+      <metal.ore>0.5</metal.ore>
+      <metal.ruins>2</metal.ruins>
+      <skull.trophy>1</skull.trophy>
+    </Rates>
+    <Capacities>
+      <food>10</food>
+      <wood>10</wood>
+      <stone>10</stone>
+      <metal>10</metal>
+      <skull>10</skull>
+    </Capacities>
+  </ResourceGatherer>
+  <Sound>
+    <SoundGroups>
+      <attack_ranged>attack/weapon/javelin_attack.xml</attack_ranged>
+      <attack_impact_ranged>attack/impact/javelin_impact.xml</attack_impact_ranged>
+    </SoundGroups>
+  </Sound>
+  <Turretable/>
+  <UnitMotion>
+    <FormationController>false</FormationController>
+    <PassabilityClass>swimmer</PassabilityClass>
+    <WalkSpeed>10.5</WalkSpeed>
+    <RunMultiplier>1.67</RunMultiplier>
+  </UnitMotion>
+</Entity>

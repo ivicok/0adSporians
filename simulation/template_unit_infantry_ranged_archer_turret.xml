@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_infantry_ranged_turret">
+  <Attack>
+    <Ranged>
+      <AttackName>Bow</AttackName>
+      <Damage>
+        <Pierce>6.7</Pierce>
+      </Damage>
+      <MaxRange>60</MaxRange>
+      <PrepareTime>400</PrepareTime>
+      <RepeatTime>1000</RepeatTime>
+      <Projectile>
+        <Speed>100</Speed>
+        <Spread>2.5</Spread>
+        <Gravity>50</Gravity>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="1"/>
+      </Projectile>
+      <PreferredClasses datatype="tokens">Human</PreferredClasses>
+    </Ranged>
+  </Attack>
+  <Builder>
+    <Rate>1.0</Rate>
+  </Builder>
+  <Cost>
+    <Resources>
+      <food>40</food>
+      <wood>60</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>80</Max>
+  </Health>
+  <Identity>
+    <VisibleClasses datatype="tokens">Archer</VisibleClasses>
+    <GenericName>Archer</GenericName>
+  </Identity>
+  <Loot>
+    <wood>5</wood>
+  </Loot>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>2</Crush>
+        <Hack>1</Hack>
+        <Pierce>1</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_impact_ranged>attack/impact/arrow_impact.xml</attack_impact_ranged>
+      <attack_ranged>attack/weapon/bow_attack.xml</attack_ranged>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <WalkSpeed op="add">1.5</WalkSpeed>
+  </UnitMotion>
+</Entity>

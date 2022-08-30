@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_cavalry">
+  <Attack>
+    <Capture disable=""/>
+    <Melee>
+      <AttackName>Horns</AttackName>
+      <Damage>
+		<Crush>75</Crush>
+        <Pierce>6</Pierce>
+      </Damage>
+      <MaxRange>7</MaxRange>
+      <PrepareTime>500</PrepareTime>
+      <RepeatTime>1000</RepeatTime>
+      <Splash>
+        <Shape>Circular</Shape>
+        <Range>7</Range>
+        <FriendlyFire>false</FriendlyFire>
+        <Damage>
+          <Crush>10</Crush>
+        </Damage>
+      </Splash>
+      <PreferredClasses datatype="tokens">Structure</PreferredClasses>
+    </Melee>
+  </Attack>
+  <Cost>
+    <Population>2</Population>
+    <BuildTime>15</BuildTime>
+    <Resources>
+      <food>80</food>
+      <wood>20</wood>
+      <metal>20</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>240</Max>
+  </Health>
+  <Identity>
+    <Classes datatype="tokens">Biome</Classes>
+    <GenericName>Bull Cavalry</GenericName>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>8</Hack>
+        <Pierce>6</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <ResourceGatherer>
+    <MaxDistance>2.0</MaxDistance>
+    <BaseSpeed>1.0</BaseSpeed>
+	<Rates>
+      <skull.trophy>5</skull.trophy>
+	</Rates>
+    <Capacities>
+      <skull>20</skull>
+    </Capacities>
+  </ResourceGatherer>
+  <UnitMotion>
+    <WalkSpeed>13</WalkSpeed>
+  </UnitMotion>
+</Entity>

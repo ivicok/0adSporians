@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_cavalry">
+  <Attack>
+    <Melee>
+      <AttackName>Melee Weapon</AttackName>
+      <Damage>
+        <Hack>6</Hack>
+        <Pierce>4</Pierce>
+      </Damage>
+      <MaxRange>4</MaxRange>
+      <PrepareTime>500</PrepareTime>
+      <RepeatTime>1000</RepeatTime>
+      <PreferredClasses datatype="tokens">Human</PreferredClasses>
+    </Melee>
+  </Attack>
+  <Cost>
+    <Population>2</Population>
+    <BuildTime>10</BuildTime>
+    <Resources>
+      <food>80</food>
+      <wood>20</wood>
+      <metal>20</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>130</Max>
+  </Health>
+  <Identity>
+    <Classes datatype="tokens">Worker Biome</Classes>
+    <GenericName>Raider</GenericName>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>3</Hack>
+        <Pierce>1</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <ResourceGatherer>
+    <MaxDistance>2.0</MaxDistance>
+    <BaseSpeed>1.0</BaseSpeed>
+    <Rates>
+      <food.meat>5</food.meat>
+      <skull.trophy>1</skull.trophy>
+    </Rates>
+    <Capacities>
+      <food>20</food>
+      <skull>20</skull>
+    </Capacities>
+  </ResourceGatherer>
+</Entity>

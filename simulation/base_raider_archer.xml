@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_cavalry">
+  <Attack>
+    <Ranged>
+      <AttackName>Bow</AttackName>
+      <Damage>
+        <Pierce>0</Pierce>
+      </Damage>
+      <MaxRange>40</MaxRange>
+      <PrepareTime>400</PrepareTime>
+      <RepeatTime>1000</RepeatTime>
+      <Projectile>
+        <Speed>100</Speed>
+        <Spread>3.5</Spread>
+        <Gravity>50</Gravity>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="1"/>
+      </Projectile>
+      <PreferredClasses datatype="tokens">Human</PreferredClasses>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <Population>2</Population>
+    <BuildTime>15</BuildTime>
+    <Resources>
+      <food>80</food>
+      <wood>20</wood>
+      <metal>20</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>160</Max>
+  </Health>
+  <Identity>
+    <GenericName>Horse Archer</GenericName>
+    <VisibleClasses datatype="tokens">Archer</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>5</Hack>
+        <Pierce>3</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <ResourceGatherer>
+    <MaxDistance>2.0</MaxDistance>
+    <BaseSpeed>1.0</BaseSpeed>
+	<Rates>
+      <skull.trophy>5</skull.trophy>
+	</Rates>
+    <Capacities>
+      <skull>20</skull>
+    </Capacities>
+  </ResourceGatherer>
+  <TurretHolder>
+	<TurretPoints>
+		<One>
+			<X>1</X>
+			<Y>1</Y>
+			<Z>1</Z>
+		</One>
+	</TurretPoints>
+  </TurretHolder>
+  <UnitAI>
+    <DefaultStance>passive</DefaultStance>
+    <FleeDistance>20.0</FleeDistance>
+    <FormationController>false</FormationController>
+    <CanGuard>true</CanGuard>
+    <CanPatrol>true</CanPatrol>
+    <PatrolWaitTime>1</PatrolWaitTime>
+    <CheeringTime>2800</CheeringTime>
+  </UnitAI>
+</Entity>

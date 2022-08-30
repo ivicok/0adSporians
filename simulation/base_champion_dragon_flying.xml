@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_cavalry">
+  <Attack>
+    <Melee>
+      <AttackName>Smash</AttackName>
+      <Damage>
+        <Hack>12</Hack>
+        <Crush>50</Crush>
+      </Damage>
+      <MaxRange>20</MaxRange>
+      <PrepareTime>1200</PrepareTime>
+      <RepeatTime>1200</RepeatTime>
+      <Bonuses>
+        <BonusCavMelee>
+          <Classes>Infantry</Classes>
+          <Multiplier>3.0</Multiplier>
+        </BonusCavMelee>
+      </Bonuses>
+      <Splash>
+        <Shape>Circular</Shape>
+        <Range>10</Range>
+        <FriendlyFire>false</FriendlyFire>
+        <Damage>
+			<Hack>5</Hack>
+			<Crush>20</Crush>
+        </Damage>
+      </Splash>
+    </Melee>
+    <!--Ranged>
+      <AttackName>Fiery Breath</AttackName>
+      <Damage>
+        <Fire>40</Fire>
+        <Crush>20</Crush>
+      </Damage>
+      <MaxRange>120</MaxRange>
+      <MinRange>80</MinRange>
+      <PrepareTime>0</PrepareTime>
+      <RepeatTime>2000</RepeatTime>
+      <Projectile>
+        <Speed>50</Speed>
+        <Spread>1</Spread>
+        <Gravity>9.81</Gravity>
+        <FriendlyFire>true</FriendlyFire>
+        <LaunchPoint y="3"/>
+      </Projectile>
+	  <PreferredClasses datatype="tokens">Human</PreferredClasses>
+      <Splash>
+        <Shape>Circular</Shape>
+        <Range>10</Range>
+        <FriendlyFire>false</FriendlyFire>
+        <Damage>
+          <Fire>10</Fire>
+        </Damage>
+      </Splash>
+    </Ranged-->
+  </Attack>
+  <Cost>
+    <Resources>
+      <wood>60</wood>
+      <metal>40</metal>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Circle radius="10"/>
+    <Height>7.0</Height>
+  </Footprint>
+  <Health>
+    <Max>600</Max>
+  </Health>
+  <Identity>
+    <GenericName>Dragon Warrior</GenericName>
+    <Tooltip>Counters: 3× vs Infantry.</Tooltip>
+    <VisibleClasses datatype="tokens">Dragon</VisibleClasses>
+    <Formations datatype="tokens" replace=""/>
+  </Identity>
+  <Loot>
+    <wood>5</wood>
+  </Loot>
+  <Position>
+    <Anchor>upright</Anchor>
+    <Floating>true</Floating>
+    <FloatDepth>0</FloatDepth>
+    <TurnRate>1</TurnRate>
+  </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>16</Hack>
+        <Pierce>16</Pierce>
+        <Crush>12</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <ResourceGatherer>
+    <MaxDistance>2.0</MaxDistance>
+    <BaseSpeed>1.0</BaseSpeed>
+	<Rates>
+      <skull.trophy>1</skull.trophy>
+	</Rates>
+    <Capacities>
+      <skull>20</skull>
+    </Capacities>
+  </ResourceGatherer>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>256x256/ellipse.png</MainTexture>
+        <MainTextureMask>256x256/ellipse_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>actor/fauna/animal/elephant_attack_order.xml</attack_melee>
+    </SoundGroups>
+  </Sound>
+  <!--UnitMotion>
+    <WalkSpeed op="mul">1.2</WalkSpeed>
+  </UnitMotion-->
+  <UnitMotion disable=""/>
+  <UnitMotionFlying>
+    <MaxSpeed>25.0</MaxSpeed>
+    <TakeoffSpeed>25.0</TakeoffSpeed>
+    <LandingSpeed>25.0</LandingSpeed>
+    <AccelRate>50.0</AccelRate>
+    <SlowingRate>100.0</SlowingRate>
+    <BrakingRate>100.0</BrakingRate>
+    <TurnRate>0.5</TurnRate>
+    <OvershootTime>0.0</OvershootTime>
+    <FlyingHeight>10.0</FlyingHeight>
+    <ClimbRate>25.0</ClimbRate>
+    <DiesInWater>false</DiesInWater>
+    <PassabilityClass>unrestricted</PassabilityClass>
+	<StationaryDistance>20</StationaryDistance>
+  </UnitMotionFlying>
+</Entity>

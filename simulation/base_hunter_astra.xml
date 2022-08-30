@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_infantry">
+  <Attack>
+    <Ranged>
+      <AttackName>Astra Bow</AttackName>
+      <Damage>
+        <Pierce>8.5</Pierce>
+      </Damage>
+      <MaxRange>75</MaxRange>
+      <MinRange>5</MinRange>
+      <PrepareTime>400</PrepareTime>
+      <RepeatTime>1000</RepeatTime>
+      <Projectile>
+        <Speed>100</Speed>
+        <Spread>1.5</Spread>
+        <Gravity>10</Gravity>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3"/>
+        <ImpactActorName>props/p_arrow_astra_impact.xml</ImpactActorName>
+        <ImpactAnimationLifetime>0.1</ImpactAnimationLifetime>
+      </Projectile>
+      <PreferredClasses datatype="tokens">Human</PreferredClasses>
+      <Splash>
+        <Shape>Circular</Shape>
+        <Range>10</Range>
+        <FriendlyFire>false</FriendlyFire>
+        <Damage>
+          <Pierce>5</Pierce>
+        </Damage>
+      </Splash>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <Resources>
+      <food>40</food>
+      <wood>60</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>125</Max>
+  </Health>
+  <Identity>
+    <Classes datatype="tokens">Biome</Classes>
+    <VisibleClasses datatype="tokens">Archer</VisibleClasses>
+    <GenericName>Archer</GenericName>
+  </Identity>
+  <Loot>
+    <metal>5</metal>
+    <wood>5</wood>
+  </Loot>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>5</Hack>
+        <Pierce>5</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <ResourceGatherer>
+    <MaxDistance>1.0</MaxDistance>
+    <BaseSpeed>1.0</BaseSpeed>
+    <Rates>
+      <food.fruit>0.5</food.fruit>
+      <food.grain>0.25</food.grain>
+      <food.meat>1</food.meat>
+      <wood.tree>0.75</wood.tree>
+      <wood.ruins>5</wood.ruins>
+      <stone.rock>0.5</stone.rock>
+      <stone.ruins>2</stone.ruins>
+      <metal.ore>0.5</metal.ore>
+      <metal.ruins>2</metal.ruins>
+      <skull.trophy>1</skull.trophy>
+    </Rates>
+    <Capacities>
+      <food>10</food>
+      <wood>10</wood>
+      <stone>10</stone>
+      <metal>10</metal>
+      <skull>10</skull>
+    </Capacities>
+  </ResourceGatherer>
+  <Sound>
+    <SoundGroups>
+      <attack_impact_ranged>attack/impact/arrow_impact.xml</attack_impact_ranged>
+      <attack_ranged>attack/weapon/bow_attack.xml</attack_ranged>
+    </SoundGroups>
+  </Sound>
+  <Turretable/>
+  <UnitMotion>
+    <WalkSpeed op="add">1.5</WalkSpeed>
+  </UnitMotion>
+</Entity>
