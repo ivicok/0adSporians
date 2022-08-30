@@ -94,9 +94,9 @@ Heaviest Sporian ship is slightly stronger than bireme, but weaker than trireme,
 
 References
 
-0 A.D. - https://github.com/0ad/0ad
-Curta 2004 - https://www.academia.edu/422133/The_making_of_the_Slavs_Slavic_ethnogenesis_revisited
-Holzer 2011 - http://knjige.ihjj.hr/knjiga/glasovni-razvoj-hrvatskoga-jezika/149/
-Leake 1814 - https://books.google.at/books/about/Researches_in_Greece.html?id=DjxEAAAAcAAJ&redir_esc=y
+0 A.D. - https://github.com/0ad/0ad 
+Curta 2004 - https://www.academia.edu/422133/The_making_of_the_Slavs_Slavic_ethnogenesis_revisited 
+Holzer 2011 - http://knjige.ihjj.hr/knjiga/glasovni-razvoj-hrvatskoga-jezika/149/ 
+Leake 1814 - https://books.google.at/books/about/Researches_in_Greece.html?id=DjxEAAAAcAAJ&redir_esc=y 
 
 
