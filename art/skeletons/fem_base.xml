@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='utf-8'?>
+<skeletons>
+	<standard_skeleton id="fem_base" title="fem_base">
+		<bone name="root">
+			<bone name="hips">
+				<bone name="torso">
+					<bone name="spine">
+						<bone name="head">
+							<bone name="hair" />
+						</bone>
+						<bone name="r_arm">
+							<bone name="r_elbow">
+								<bone name="r_wrist">
+									<bone name="r_weapon" />
+								</bone>
+							</bone>
+						</bone>
+						<bone name="l_arm">
+							<bone name="l_elbow">
+								<bone name="l_wrist" />
+							</bone>
+						</bone>
+					</bone>
+				</bone>
+				<bone name="r_upper_leg">
+					<bone name="r_lower_leg">
+						<bone name="r_foot" />
+					</bone>
+				</bone>
+				<bone name="l_upper_leg">
+					<bone name="l_lower_leg">
+						<bone name="l_foot" />
+					</bone>
+				</bone>
+			</bone>
+		</bone>
+	</standard_skeleton>
+	
+	<skeleton target="fem_base" title="fem_base">
+		<identifier>
+			<root>root</root>
+		</identifier>
+		<bone name="root">
+			<target>root</target>
+			<bone name="hips">
+				<target>hips</target>
+				<bone name="torso">
+					<target>torso</target>
+					<bone name="spine">
+						<target>spine</target>
+						<bone name="head">
+							<target>head</target>
+							<bone name="hair">
+								<target>hair</target>
+							</bone>
+						</bone>
+						<bone name="r_arm">
+							<target>r_arm</target>
+							<bone name="r_elbow">
+								<target>r_elbow</target>
+								<bone name="r_wrist">
+									<target>r_wrist</target>
+									<bone name="r_weapon">
+										<target>r_weapon</target>
+									</bone>
+								</bone>
+							</bone>
+						</bone>
+						<bone name="l_arm">
+							<target>l_arm</target>
+							<bone name="l_elbow">
+								<target>l_elbow</target>
+								<bone name="l_wrist">
+									<target>l_wrist</target>
+								</bone>
+							</bone>
+						</bone>
+					</bone>
+				</bone>
+				<bone name="r_upper_leg">
+					<target>r_upper_leg</target>
+					<bone name="r_lower_leg">
+						<target>r_lower_leg</target>
+						<bone name="r_foot">
+							<target>r_foot</target>
+						</bone>
+					</bone>
+				</bone>
+				<bone name="l_upper_leg">
+					<target>l_upper_leg</target>
+					<bone name="l_lower_leg">
+						<target>l_lower_leg</target>
+						<bone name="l_foot">
+							<target>l_foot</target>
+						</bone>
+					</bone>
+				</bone>
+			</bone>
+		</bone>
+	</skeleton>
+</skeletons>
