@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.79.0 commit date:2018-03-22, commit time:14:10, hash:f4dc9f9d68b</authoring_tool>
+    </contributor>
+    <created>2021-12-14T13:02:46</created>
+    <modified>2021-12-14T13:02:46</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="shields_jpg_001" name="shields_jpg_001">
+      <init_from>shields.jpg.001.dds</init_from>
+    </image>
+  </library_images>
+  <library_effects>
+    <effect id="Material_shield-effect">
+      <profile_COMMON>
+        <newparam sid="shields_jpg_001-surface">
+          <surface type="2D">
+            <init_from>shields_jpg_001</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="shields_jpg_001-sampler">
+          <sampler2D>
+            <source>shields_jpg_001-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="shields_jpg_001-sampler"/>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="Material_shield-material" name="Material_shield">
+      <instance_effect url="#Material_shield-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="round_t_f-Geometry_003-mesh" name="round_t_f-Geometry.003">
+      <mesh>
+        <source id="round_t_f-Geometry_003-mesh-positions">
+          <float_array id="round_t_f-Geometry_003-mesh-positions-array" count="51">0.2716397 -0.2703072 -0.3096702 0.206247 -0.1181294 -0.4204075 0.3128312 -0.372927 0.246841 0.3293223 -0.4082021 0.0514428 -0.06288266 0.4925787 0.2465755 -0.01966428 0.3907186 0.4122675 0.1233397 0.0592128 0.5619292 0.2013539 -0.1199629 0.5231143 0.314858 -0.3721673 -0.143978 0.05062097 0.2403751 -0.4205169 -0.01591944 0.3921222 -0.309873 0.1286355 0.06119847 -0.4593316 0.04572832 0.2385407 0.523005 -0.06085598 0.4933384 -0.1442436 -0.07734739 0.5286144 0.05115455 0.2678948 -0.2717108 0.4124704 0.2283073 0.1032134 0.0467385</float_array>
+          <technique_common>
+            <accessor source="#round_t_f-Geometry_003-mesh-positions-array" count="17" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="round_t_f-Geometry_003-mesh-normals">
+          <float_array id="round_t_f-Geometry_003-mesh-normals-array" count="51">0.9175094 0.3977003 0.003357112 0.9571273 0.2502533 -0.1458793 0.9296658 0.3140087 -0.1926656 0.8956652 0.3889313 0.2156762 0.9277459 0.3150472 0.2000823 0.8643926 0.4645923 -0.1923009 0.8367886 0.5278684 -0.1453958 0.8367154 0.5254497 0.1543052 0.8637479 0.4626981 0.1996245 0.9552438 0.2519952 0.1549448 0.8184713 0.569524 -0.07581037 0.8121177 0.5834674 0.005554497 0.9739791 0.2093594 0.08679562 0.98102 0.1938235 0.005676448 0.9751545 0.2080504 -0.07608473 0.8185843 0.5678696 0.0862776 0.8970475 0.389393 -0.2089947</float_array>
+          <technique_common>
+            <accessor source="#round_t_f-Geometry_003-mesh-normals-array" count="17" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="round_t_f-Geometry_003-mesh-map-0">
+          <float_array id="round_t_f-Geometry_003-mesh-map-0-array" count="96">0.5002484 0.5051453 0.7831146 0.9237887 0.5994143 0.9998645 0.5002484 0.5051453 0.5994585 1.03533e-4 0.7832096 0.07623487 0.5002484 0.5051453 0.2168845 0.9237882 0.07626521 0.783206 0.5002484 0.5051453 0.2168005 0.07622617 0.4005561 9.9957e-5 0.5002484 0.5051453 0.4005561 9.9957e-5 0.5994585 1.03533e-4 0.5002484 0.5051453 0.7832096 0.07623487 0.9238263 0.2168919 0.5002484 0.5051453 1.36435e-4 0.5995029 9.9957e-5 0.4006365 0.9238263 0.2168919 0.9998999 0.4006452 0.5002484 0.5051453 0.9998609 0.5995079 0.9237325 0.7832075 0.5002484 0.5051453 9.9957e-5 0.4006365 0.0761789 0.2168818 0.5002484 0.5051453 0.07626521 0.783206 1.36435e-4 0.5995029 0.5002484 0.5051453 0.4005864 0.9998645 0.2168845 0.9237882 0.5002484 0.5051453 0.5994143 0.9998645 0.4005864 0.9998645 0.5002484 0.5051453 0.9237325 0.7832075 0.7831146 0.9237887 0.5002484 0.5051453 0.0761789 0.2168818 0.2168005 0.07622617 0.5002484 0.5051453 0.9998999 0.4006452 0.9998609 0.5995079 0.5002484 0.5051453</float_array>
+          <technique_common>
+            <accessor source="#round_t_f-Geometry_003-mesh-map-0-array" count="48" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="round_t_f-Geometry_003-mesh-map-1">
+          <float_array id="round_t_f-Geometry_003-mesh-map-1-array" count="96">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#round_t_f-Geometry_003-mesh-map-1-array" count="48" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="round_t_f-Geometry_003-mesh-vertices">
+          <input semantic="POSITION" source="#round_t_f-Geometry_003-mesh-positions"/>
+        </vertices>
+        <triangles material="Material_shield-material" count="16">
+          <input semantic="VERTEX" source="#round_t_f-Geometry_003-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#round_t_f-Geometry_003-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#round_t_f-Geometry_003-mesh-map-0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#round_t_f-Geometry_003-mesh-map-1" offset="2" set="1"/>
+          <p>16 0 0 0 1 1 1 2 2 16 0 3 6 3 4 7 4 5 16 0 6 9 5 7 10 6 8 16 0 9 5 7 10 12 8 11 16 0 12 12 8 13 6 3 14 16 0 15 7 4 16 15 9 17 16 0 18 13 10 19 14 11 20 15 9 21 2 12 22 16 0 23 3 13 24 8 14 25 16 0 26 14 11 27 4 15 28 16 0 29 10 6 30 13 10 31 16 0 32 11 16 33 9 5 34 16 0 35 1 2 36 11 16 37 16 0 38 8 14 39 0 1 40 16 0 41 4 15 42 5 7 43 16 0 44 2 12 45 3 13 46 16 0 47</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers/>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="s_round_remap" name="s_round_remap" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#round_t_f-Geometry_003-mesh" name="s_round_remap">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Material_shield-material" target="#Material_shield-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>
