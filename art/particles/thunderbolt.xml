@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<particles>
+    <!--texture>art/textures/particles/stone_shrapnel.png</texture-->
+	<texture>art/textures/particles/bolt.dds</texture>
+    <start_full/>
+    <blend mode="over"/>
+    <constant name="emissionrate" value="3.0"/>
+    <constant name="lifetime" value="1"/>
+    <constant name="size" value="75"/>
+    <constant name="size.growthRate" value="10.0"/>
+    <uniform name="angle" min="-0.3" max="0.3"/>
+    <constant name="position.x" value="-2"/>
+    <constant name="velocity.y" value="3"/>
+    <uniform name="color.r" min="0.8" max="1"/>
+    <uniform name="color.g" min="0.8" max="1"/>
+    <uniform name="color.b" min="0.8" max="1"/>
+</particles>
