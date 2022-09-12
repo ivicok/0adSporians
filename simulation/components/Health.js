@@ -115,6 +115,20 @@ Health.prototype.WarmClothes = function()
 	this.biomeVar = winterVar;
 };
 
+// mod: blood variant chosen if the unit takes or gives beating
+Health.prototype.Bloody = function()
+{
+	let cmpVisual = Engine.QueryInterface(this.entity, IID_Visual);	
+	cmpVisual.SetVariant("key3", "bloody");
+};
+
+// mod: blood gets cleansed if the unit goes swimming or is garrisoned
+Health.prototype.Cleanse = function()
+{
+	let cmpVisual = Engine.QueryInterface(this.entity, IID_Visual);	
+	cmpVisual.SetVariant("key3", "clean");
+};
+
 /**
  * Returns the current hitpoint value.
  * This is 0 if (and only if) the unit is dead.
@@ -345,6 +359,16 @@ Health.prototype.Reduce = function(amount)
 
 	this.hitpoints -= amount;
 	this.RegisterHealthChanged(oldHitpoints);
+	
+	// mod: biome variants can be bloodied
+	let maxHP = this.GetMaxHitpoints();
+	let thisId = Engine.QueryInterface(this.entity, IID_Identity);
+	if (thisId && thisId.HasClass("Biome"))
+	{
+		if (this.hitpoints / maxHP < 0.5)
+			this.Bloody();
+	}		
+	
 	return { "healthChange": this.hitpoints - oldHitpoints };
 };
 
@@ -454,6 +478,9 @@ Health.prototype.CreateCorpse = function()
 		// mod: biome variant should be applied to the corpse too
 		if (this.biomeVar && this.biomeVar != "base")
 			cmpVisualCorpse.SetVariant("key2", this.biomeVar);
+		
+		// mod: the corpse is bloodied, if applicable
+		cmpVisualCorpse.SetVariant("key3", "bloody");
 		
 		cmpVisualCorpse.SelectAnimation("death", true, 1);
 	}

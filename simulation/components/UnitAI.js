@@ -3508,6 +3508,11 @@ UnitAI.prototype.ResetIdle = function()
 
 UnitAI.prototype.SetGarrisoned = function()
 {
+	// mod: garrisoned units are cleansed of blood
+	var cmpHealth = Engine.QueryInterface(this.entity, IID_Health);
+	if (cmpHealth)
+		cmpHealth.Cleanse();
+	
 	// UnitAI caches its own garrisoned state for performance.
 	this.isGarrisoned = true;
 	this.SetImmobile();
@@ -4273,6 +4278,9 @@ UnitAI.prototype.OnUpdate = function()
 			{
 				cmpPosition.SetFloating(true);
 				this.SetSpeedMultiplier(0.25);
+				var cmpHealth = Engine.QueryInterface(this.entity, IID_Health);
+				if (cmpHealth)
+					cmpHealth.Cleanse();
 				let cmpUnitMotion = Engine.QueryInterface(this.entity, IID_UnitMotion);
 				let cmpAttack = Engine.QueryInterface(this.entity, IID_Attack);
 				if (cmpUnitMotion && cmpUnitMotion.GetCurrentSpeed() > 0)

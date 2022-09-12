@@ -17,6 +17,7 @@
 	<group>
 		<variant file="javelinist_mle_attack_ranged.xml" frequency="1"/>
 		<variant file="0ad_build.xml"/>
+		<variant file="0ad_die.xml"/>
 		<variant file="0ad_gather_grain_mle.xml"/>
 		<variant file="0ad_gather_fruit_mle.xml"/>
 		<variant file="0ad_gather_meat_mle.xml"/>

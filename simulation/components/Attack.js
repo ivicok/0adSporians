@@ -638,6 +638,21 @@ Attack.prototype.PerformAttack = function(type, target)
 		if (cmpTurret && cmpTurret.HolderID() !== INVALID_ENTITY)
 			attacker = cmpTurret.HolderID();
 	}
+	
+	// mod: the attacker may get bloodied too, if the target is injured too much
+	let targetId = Engine.QueryInterface(target, IID_Identity);
+	if (targetId && type == "Melee") {
+		let targetHP = QueryMiragedInterface(target, IID_Health);
+		let cmpHealth = Engine.QueryInterface(this.entity, IID_Health);
+		if (targetHP && cmpId.HasClass("Biome") && targetId.HasClass("Organic")) {
+			let maxHP = targetHP.GetMaxHitpoints();
+			var rnd = Math.random();
+			if (rnd <= 0.3)
+				if (targetHP.hitpoints / maxHP < rnd)
+					cmpHealth.Bloody();
+		}
+	}
+
 
 	let data = {
 		"type": type,

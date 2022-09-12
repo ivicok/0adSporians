@@ -1,9 +1,9 @@
 
-Attack.js - 1. nontarget check: hack to prevent units to attack "turrets" of horse archers; 2. some checks for swimming
+Attack.js - 1. nontarget check: hack to prevent units to attack "turrets" of horse archers; 2. some checks for swimming; 3. handling of blood overlay for melee attackers
 
 Auras.js - 1. application (and removal) of life drain effect for shaman's aura; 2. control of winter biome (both cf. Health)
 
-Health.js - 1. life drain effect of attacks by injured units against organic enemies, triggered by a specific aura (cf. Auras); the effect of aura is limited to organic melee units by the aura template (vampiric.json); the drain rate is set here to 25%, i.e. the attacker gains 1/4 of dealt damage to its HP; 2. lootable trophies: 50% chance of spawning an entity (skull) on death for the attacker; 3. handling of winter biome actor variants
+Health.js - 1. life drain effect of attacks by injured units against organic enemies, triggered by a specific aura (cf. Auras); the effect of aura is limited to organic melee units by the aura template (vampiric.json); the drain rate is set here to 25%, i.e. the attacker gains 1/4 of dealt damage to its HP; 2. lootable trophies: 50% chance of spawning an entity (skull) on death for the attacker; 3. handling of winter biome actor variants; 4. general handling of blood overlay
 
 Identity.js - RequiredTechBuilding element: used for building prerequisites of units in TechnologyManager
 
@@ -15,6 +15,6 @@ TechnologyManager.js - check for buildings required for production of units (e.g
 
 TurretHolder.js - 1. stuff for horse archers: sets up rotation, checks for death; 2. stuff for monoxyla: the number of passengers and rowers determines the speed of the boat
 
-UnitAI.js - 1. more stuff for horse archers: "turrets" return to default position when entering the idle state; 2. lootable trophies: prevents units in formation run towards the drop site, when not collecting; 3. swimming: special animations selected for swimming-capable infantry; 4. special animations for units in boats
+UnitAI.js - 1. more stuff for horse archers: "turrets" return to default position when entering the idle state; 2. lootable trophies: prevents units in formation run towards the drop site, when not collecting; 3. swimming: special animations selected for swimming-capable infantry; 4. special animations for units in boats; 4. units are cleansed from blood when entering water or being garrisoned
 
 UnitMotionFlying.js - added animations to various states of movement

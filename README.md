@@ -21,6 +21,8 @@ The Sporian faction is loosely based on early medieval Sclaveni, so to call it a
 
 - Winter Variants: most units use different clothes in warm and cold environment.
 
+- Blood Overlay: the shader applies a secondary texture on units getting too much damage - or dealing it to other organic units. Blood can be cleansed from the unit by water or garrisoning.
+
 //
  
 Children (PSl *jauˀnāku/*dēˀwāˀ)

@@ -1,23 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <actor version="1">
-  <castshadow/>
-  <group>
-    <variant>
-      <mesh>props/0ad_fem_head.dae</mesh>
-    </variant>
-  </group>
+	<castshadow/>
 	<group>
 	<variant frequency="1" name="basic">
+      <mesh>props/0ad_fem_head.dae</mesh>
 	  <textures>
 		<texture file="body_fem_head.png" name="baseTex" />
 	  </textures>
 	</variant>
 	<variant frequency="1" name="scarred">
+      <mesh>props/0ad_fem_head.dae</mesh>
 	  <textures>
 		<texture file="body_fem_head_black.png" name="baseTex" />
 	  </textures>
 	</variant>
 	<variant frequency="1" name="painted">
+      <mesh>props/0ad_fem_head.dae</mesh>
 	  <textures>
 		<texture file="body_fem_head_blond.png" name="baseTex" />
 	  </textures>
@@ -45,4 +43,17 @@
 			</props>
 		</variant>
 	</group>
+	<group>
+		<variant name="clean" frequency="1">
+		  <textures>
+			<texture file="props/blank.png" name="overTex"/>
+		  </textures>
+		</variant>
+		<variant name="bloody">
+		  <textures>
+			<texture file="props/blood_03.dds" name="overTex"/>
+		  </textures>
+		</variant>
+	</group>
+  <material>basic_trans_overlay.xml</material>
 </actor>

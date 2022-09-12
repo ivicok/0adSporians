@@ -40,6 +40,7 @@
 	<group>
 		<variant name="Idle" frequency="1"/>
 		<variant file="0ad_build.xml"/>
+		<variant file="0ad_die.xml"/>
 		<variant file="0ad_gather_grain_fem.xml"/>
 		<variant file="0ad_gather_fruit_fem.xml"/>
 		<variant file="0ad_gather_meat_fem.xml"/>
