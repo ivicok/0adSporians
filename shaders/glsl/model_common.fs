@@ -5,10 +5,12 @@
 #include "common/shadows_fragment.h"
 
 uniform sampler2D baseTex;
-uniform sampler2D overTex;
 uniform sampler2D aoTex;
 uniform sampler2D normTex;
 uniform sampler2D specTex;
+
+// mod: overlay texture
+uniform sampler2D overTex;
 
 #if USE_OBJECTCOLOR
   uniform vec3 objectColor;
@@ -100,6 +102,8 @@ void main()
   #endif
 
   vec4 tex = texture2D(baseTex, coord);
+  
+  // mod: overlay texture
   vec4 tex2 = texture2D(overTex, coord);
 
   // Alpha-test as early as possible
@@ -116,6 +120,7 @@ void main()
   
   vec3 texdiffuse = tex.rgb;
 
+  // mod: overlay texture
   #if USE_OVERLAY
 	texdiffuse = mix(texdiffuse, tex2.rgb, tex2.a);
   #endif
