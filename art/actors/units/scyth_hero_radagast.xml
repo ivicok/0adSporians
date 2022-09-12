@@ -12,6 +12,8 @@
 				<animation file="units/0ad_swim_idle.dae" name="Float" id="float" frequency="1" speed="60"/>
 				<animation file="units/0ad_swim_move.dae" name="Swim" id="swim" frequency="1" speed="50"/>
 				<animation file="units/0ad_boat_crew_mle.dae" name="garrisoned" id="g_idle1" frequency="1" speed="50"/>
+				<animation file="units/0ad_fem_death1.dae" name="Death" id="death1" frequency="1" speed="80"/>
+				<animation file="units/0ad_fem_death2.dae" name="Death" id="death2" frequency="1" speed="80"/>
 			</animations>
 		</variant>
 	</group>

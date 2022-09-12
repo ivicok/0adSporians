@@ -79,6 +79,15 @@
 	<group>
 		<variant name="Idle" frequency="1"/>
 		<variant file="0ad_build.xml"/>
+		<variant name="death">
+			<animations>
+				<animation file="units/0ad_fem_death1.dae" name="Death" id="death1" frequency="1" speed="80"/>
+				<animation file="units/0ad_fem_death2.dae" name="Death" id="death2" frequency="1" speed="80"/>
+			</animations>
+			<props>
+				<prop actor="" attachpoint="r_weapon" />
+			</props>
+		</variant>
 		<variant file="0ad_gather_grain_fem.xml"/>
 		<variant file="0ad_gather_fruit_fem.xml"/>
 		<variant file="0ad_gather_meat_fem.xml"/>

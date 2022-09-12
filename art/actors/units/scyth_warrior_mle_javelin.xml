@@ -102,6 +102,7 @@
 	<group>
 		<variant file="javelinist_mle_attack_ranged.xml" frequency="1"/>
 		<variant file="0ad_build.xml"/>
+		<variant file="0ad_die.xml"/>
 		<variant file="0ad_gather_grain_mle.xml"/>
 		<variant file="0ad_gather_fruit_mle.xml"/>
 		<variant file="0ad_gather_meat_mle.xml"/>
@@ -111,4 +112,17 @@
 		<variant file="0ad_gather_skull_mle.xml"/>
 		<variant file="0ad_gather_tree.xml"/>
 	</group>
+	<group>
+		<variant name="clean" frequency="1">
+		  <textures>
+			<texture file="props/blank.png" name="overTex"/>
+		  </textures>
+		</variant>
+		<variant name="bloody">
+		  <textures>
+			<texture file="body_mle_blood.png" name="overTex"/>
+		  </textures>
+		</variant>
+	</group>
+	<material>basic_trans_overlay.xml</material>
 </actor>

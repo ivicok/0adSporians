@@ -10,8 +10,6 @@
 			<animations>
 				<animation file="units/0ad_mle_run.dae" name="Run" id="run" frequency="1" speed="7"/>
 				<animation file="units/0ad_mle_walk.dae" name="Walk" id="walk" frequency="1" speed="7"/>
-				<animation file="units/0ad_fem_death1.dae" name="Death" id="death1" frequency="1" speed="80"/>
-				<animation file="units/0ad_fem_death2.dae" name="Death" id="death2" frequency="1" speed="80"/>
 			</animations>
 		</variant>
 	</group>
@@ -29,6 +27,7 @@
 	</group>
 	<group>
 		<variant name="Idle" frequency="1"/>
+		<variant file="0ad_die.xml"/>
 		<variant file="0ad_gather_meat_fem.xml"/>
 		<variant file="0ad_gather_skull_rider.xml"/>
 	</group>

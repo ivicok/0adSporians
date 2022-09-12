@@ -11,8 +11,6 @@
 				<animation file="units/0ad_mle_march.dae" name="Walk" id="walk" frequency="1" speed="10"/>
 				<animation file="units/0ad_mle_dance.dae" name="promotion" id="promotion" frequency="1" speed="100"/>
 				<animation file="units/0ad_boat_crew_mle.dae" name="garrisoned" id="g_idle1" frequency="1" speed="50"/>
-				<animation file="units/0ad_fem_death1.dae" name="Death" id="death1" frequency="1" speed="80"/>
-				<animation file="units/0ad_fem_death2.dae" name="Death" id="death2" frequency="1" speed="80"/>
 			</animations>
 		</variant>
 	</group>
@@ -111,6 +109,7 @@
 	<group>
 		<variant name="Idle" frequency="1"/>
 		<variant file="0ad_build.xml"/>
+		<variant file="0ad_die.xml"/>
 		<variant file="0ad_gather_grain_mle.xml"/>
 		<variant file="0ad_gather_fruit_mle.xml"/>
 		<variant file="0ad_gather_meat_mle.xml"/>
@@ -122,4 +121,17 @@
 		<variant file="0ad_row.xml"/>
 		<variant file="0ad_row_left.xml"/>
 	</group>
+	<group>
+		<variant name="clean" frequency="1">
+		  <textures>
+			<texture file="props/blank.png" name="overTex"/>
+		  </textures>
+		</variant>
+		<variant name="bloody">
+		  <textures>
+			<texture file="body_mle_blood.png" name="overTex"/>
+		  </textures>
+		</variant>
+	</group>
+	<material>basic_trans_overlay.xml</material>
 </actor>

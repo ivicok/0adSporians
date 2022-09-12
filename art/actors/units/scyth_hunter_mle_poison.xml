@@ -8,8 +8,6 @@
 				<animation file="units/0ad_mle_run.dae" name="Run" id="run" frequency="1" speed="7"/>
 				<animation file="units/0ad_fem_walk_bow.dae" name="Walk" id="walk" frequency="1" speed="12"/>
 				<animation file="units/0ad_mle_dance.dae" name="promotion" id="promotion" frequency="1" speed="100"/>
-				<animation file="units/0ad_fem_death1.dae" name="Death" id="death1" frequency="1" speed="80"/>
-				<animation file="units/0ad_fem_death2.dae" name="Death" id="death2" frequency="1" speed="80"/>
 			</animations>
 			<props>
 				<prop actor="props/head_hunter_mle.xml" attachpoint="head" />
@@ -148,6 +146,7 @@
 			</props>
 		</variant>
 		<variant file="0ad_build.xml"/>
+		<variant file="0ad_die.xml"/>
 		<variant file="0ad_gather_grain_mle.xml"/>
 		<variant file="0ad_gather_fruit_mle.xml"/>
 		<variant file="0ad_gather_meat_mle.xml"/>
