@@ -9,5 +9,17 @@
 	  </textures>
 	</variant>
 	</group>   
-  <material>basic_spec.xml</material>
+	<group>
+		<variant name="clean" frequency="1">
+		  <textures>
+			<texture file="props/blank.png" name="overTex"/>
+		  </textures>
+		</variant>
+		<variant name="bloody">
+		  <textures>
+			<texture file="props/w_blood.png" name="overTex"/>
+		  </textures>
+		</variant>
+	</group>
+	<material>basic_spec_overlay.xml</material>
 </actor>
