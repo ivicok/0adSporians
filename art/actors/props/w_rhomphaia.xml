@@ -17,7 +17,7 @@
 		</variant>
 		<variant name="bloody">
 		  <textures>
-			<texture file="props/w_blood.png" name="overTex"/>
+			<texture file="body_mle_blood.png" name="overTex"/>
 		  </textures>
 		</variant>
 	</group>
