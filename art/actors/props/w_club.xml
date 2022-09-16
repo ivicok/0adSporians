@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+	<group>
+	<variant frequency="1" name="club">
+	  <mesh>props/w_club.dae</mesh>
+	  <textures>
+		<texture file="props/w_color.png" name="baseTex"/>
+	  </textures>
+	</variant>
+	</group>   
+	<group>
+		<variant name="clean" frequency="1">
+		  <textures>
+			<texture file="props/blank.png" name="overTex"/>
+		  </textures>
+		</variant>
+		<variant name="bloody">
+		  <textures>
+			<texture file="props/w_blood.png" name="overTex"/>
+		  </textures>
+		</variant>
+	</group>
+	<material>basic_trans_overlay.xml</material>
+</actor>
