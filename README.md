@@ -1,7 +1,7 @@
 # 0adSporians
 
 
-The mod has started as an exploration of 0 AD engine's capabilities, without much care for the original game's setting and historicity, adding the faction of Sporians.
+The mod has started as an exploration of 0 AD engine's capabilities, without much care for the original game's setting and historicity, adding the faction of Sporians. Currently compatible with 0.25 version only!
 
 The Sporian faction is loosely based on early medieval Sclaveni, so to call it a "civilization" would be misleading, as they were considered a prototypical barbarian tribe, with all the stereotypes (cf. Curta 2004), the name "Sporoi" itself coming from Procopius. The idea crystallized while reading on the menace of "Sclavonian Scythians" (Leake 1814) as a supposed cause for the emergence of Balkan Sprachbund. The language tries to be close to the reconstructed Proto-Slavic of Georg Holzer (2011) - from the perspective of diachronic linguistics, each form should be considered with an "*", they are left unaccented (for obvious reasons), and slightly adjusted towards Lithuanian orthography. 
 
