@@ -3,6 +3,7 @@
   <Identity>
     <Civ>pers</Civ>
     <SpecificName>Waidžāˀ barˀnināˀjāˀ</SpecificName>
+    <RequiredTechnology>phase_city</RequiredTechnology>
   </Identity>
   <StatusBars>
     <HeightOffset>19.0</HeightOffset>

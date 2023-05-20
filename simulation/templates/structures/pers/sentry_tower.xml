@@ -2,8 +2,22 @@
 <Entity parent="template_structure_defensive_tower_sentry">
   <Identity>
     <Civ>pers</Civ>
+    <RequiredTechnology>phase_town</RequiredTechnology>
     <SpecificName>Waidžāˀ stardžināˀjāˀ</SpecificName>
   </Identity>
+  <Upgrade>
+    <Tower>
+      <Entity>structures/{civ}/defense_tower</Entity>
+      <Tooltip>Reinforce with stone and upgrade to a defense tower.</Tooltip>
+      <RequiredTechnology>phase_city</RequiredTechnology>
+      <Cost>
+        <wood>50</wood>
+        <stone>100</stone>
+      </Cost>
+      <Variant>upgrading</Variant>
+      <Time>100</Time>
+    </Tower>
+  </Upgrade>
   <VisualActor>
     <Actor>structures/britons/wooden_tower.xml</Actor>
   </VisualActor>
